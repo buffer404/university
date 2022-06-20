@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1341.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerMain">
+    <children>
+        <AnchorPane fx:id="anime" layoutY="113.0" prefHeight="587.0" prefWidth="1300.0" style="-fx-background-color: #293133;">
+         <children>
+            <Button fx:id="org" alignment="CENTER" layoutY="469.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="140.0" text="Мои организации" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="output" alignment="CENTER" layoutY="25.0" prefHeight="374.0" prefWidth="474.0" style="-fx-background-color: #ffffff; -fx-background-radius: 25;" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="history" layoutY="530.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="140.0" text="История" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="average" alignment="CENTER" contentDisplay="CENTER" layoutY="405.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="140.0" text="Средний доход" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="fullName" layoutX="167.0" layoutY="530.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="140.0" text="Полное название" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="countLess" layoutX="167.0" layoutY="405.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="140.0" text="Доход" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="help" layoutX="335.0" layoutY="405.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="140.0" text="Помощь" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="orgAll" layoutX="167.0" layoutY="469.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="140.0" text="Все организации" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="removeAll" layoutX="335.0" layoutY="535.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="140.0" text="Инфа" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="commands" alignment="CENTER" layoutX="582.0" layoutY="14.0" prefHeight="36.0" prefWidth="331.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="result" alignment="CENTER" layoutX="82.0" layoutY="4.0" prefHeight="18.0" prefWidth="331.0" text="Результат" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="animation" alignment="CENTER" layoutX="335.0" layoutY="469.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="140.0" text="Анимация" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="outputanimation" layoutX="519.0" layoutY="30.0" prefHeight="543.0" prefWidth="824.0" />
+         </children>
+        </AnchorPane>
+        <Label layoutX="538.0" layoutY="33.0" prefHeight="61.0" prefWidth="268.0" text="Organization.inc">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="33.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="lang" layoutX="1177.0" layoutY="14.0" prefWidth="150.0" style="-fx-background-color: #2F4F4F;" />
+      <Label fx:id="username" alignment="CENTER" layoutX="14.0" layoutY="13.0" prefHeight="37.0" prefWidth="106.0" style="-fx-background-color: #2F4F4F;" text="User" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="logout" layoutX="1201.0" layoutY="63.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="126.0" style="-fx-background-color: #2F4F4F;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

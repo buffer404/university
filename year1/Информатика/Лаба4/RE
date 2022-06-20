@@ -1,0 +1,51 @@
+import re
+
+#А ты знал, что ВТ – лучшая кафедра в ИТМО?
+#ВТ ИТМО
+#А ты знал, что ВТ 1 2222 к33 0 4 ИТМО?
+#ВТ _ ИТМО
+#ВТ _ hello HELLO ИТМО
+
+#result=re.search(r'Людовик(?=X(IX|IV|V?I{,3}))',"ЛюдовикXVI")
+
+
+#ree=re.search(r'(\b(ВТ(\s\S+){,4}\sИТМО\b)',"А ты знал, что ВТ jhjhjg iuuihj khjk ИТМО?")
+
+#print(result.group())
+
+
+#res=re.search(r'(?<!(XIX|VII|XII|XVI|XIV|III)) век',"VIII век")
+
+#print(res.group())
+
+res=re.search(r'\".*\"',"Слова \"рег\" и \"отдебажить\" явл ывфы")
+
+print(res.group())
+#2
+
+#f=open('Hamlet.txt', 'r')
+#print(re.findall(r'((?<=[.?!]\s)\W.+?,\W.+?,\W.+\s.)',f.read()))
+
+
+
+"""
+#3
+
+#20 + 22 = 42
+#3 - 4 = wew
+#3.23 = 3
+#ytytt ytyt
+#4
+
+def d (x):
+    return 3*x**2+5
+l2=''
+l='3.23 = 3'
+l1=l.split()
+for i in range (len(l1)):
+    if (re.fullmatch(r'\d+',l1[i])):
+        l2+=' '+str(d(int(l1[i])))+' '
+    else:
+        l2+=' '+l1[i]+' '
+print(l2)
+"""

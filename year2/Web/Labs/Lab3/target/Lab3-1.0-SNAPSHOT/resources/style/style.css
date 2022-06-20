@@ -1,0 +1,140 @@
+body{
+    vertical-align: middle;
+    background-image: url(Fon.jpg);
+}
+table{
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    margin: auto;
+}
+TD, TH {
+    text-align: center;
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    /* Параметры рамки */
+    color: whitesmoke;
+}
+TH {
+    text-align: center;
+    color: whitesmoke;
+    font-weight:bold;
+    font-family: Bradley Hand, cursive;
+    font-size: medium;
+}
+table > caption{ /* Стиль дочернего элемента */
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 130%;
+    color: white;
+    font-style: italic;
+}
+td{
+    text-align: center;
+    color: whitesmoke;
+}
+th{
+    text-align: center;
+}
+td.head{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 120%;
+    color: white;
+    font-style: italic;
+}
+td.main{
+    color: whitesmoke;
+    font-weight:bold;
+    font-family: Bradley Hand, cursive;
+    font-size: larger;
+}
+td.history-td{
+    text-align: center;
+    font-style: oblique ;
+    margin: auto;
+    color: whitesmoke;
+    font-weight:bold;
+    font-size: large;
+}
+
+option, select, input, button {
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: Bradley Hand, cursive;
+    font-size: medium;
+    background-color: black;
+    border: none;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+div.container{
+    font-weight:bold;
+    font-family: Bradley Hand, cursive;
+    font-size: larger;
+}
+.answerTable{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: whitesmoke;
+    font-style: italic;
+}
+#canvas{
+    border: 2px solid black;
+}
+
+#next{
+    color: rgb(49, 151, 116);
+    margin-left: auto;
+    margin-right: auto;
+}
+#startDiv{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#timeInfo{
+    color: whitesmoke;
+    font-weight:bold;
+    font-family: Bradley Hand, cursive;
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+}
+#nextButton{
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+
+}
+#math{
+    visibility: hidden;
+}
+#x *{
+    /*pointer-events: none;*/
+    background-color: black;
+    border: none;
+    color: whitesmoke;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+#ResultTable{
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+    font-weight:bold;
+    font-family: Bradley Hand, cursive;
+    font-size: medium;
+}
+#checkButton{
+    background-color: chartreuse;
+}
+#forreset{
+    background-color: crimson;
+}

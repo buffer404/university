@@ -1,0 +1,16 @@
+"C:\Users\Леонид\Desktop\ITMO\Программирование\1.2\lab5\src\main\resources\script1.txt"
+"C:\\Users\\Леонид\\Desktop\\ITMO\\Программирование\\1.2\\lab5\\src\\main\\resources\script2.txt"
+
+add
+ЛЭТИ
+44
+55
+4
+Электротехнический
+23423
+коммерческая
+34324
+444
+33
+22
+Спб

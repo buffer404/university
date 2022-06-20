@@ -1,0 +1,3 @@
+D:/Рабочий стол/ITMO/ВсС/online_lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Рабочий стол/ITMO/ВсС/online_lab1/cmake-build-debug/CMakeFiles/online_lab1.dir
+D:/Рабочий стол/ITMO/ВсС/online_lab1/cmake-build-debug/CMakeFiles/edit_cache.dir

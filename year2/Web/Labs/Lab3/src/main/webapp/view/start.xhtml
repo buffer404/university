@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui" >
+<f:view>
+    <h:head>
+        <title>lab3</title>
+        <link rel="stylesheet" type="text/css" href="../resources/style/style.css" />
+        <link rel="shortcut icon" href="../resources/style/logo.ico" type="image/x-icon"/>
+    </h:head>
+    <h:body>
+    <h2 style="color: whitesmoke; text-align: center">
+        Андрейченко Леонид Вадимович   Группа: P3230   Вариант: 36104
+    </h2>
+    <div id="startDiv" style="margin-left: 40%">
+        <h:form>
+            <p:poll interval="13" listener="#{TimeBean.set}" update="timeInfo"/>
+            <h:outputText id="timeInfo" value="#{TimeBean.time}" style="color: whitesmoke;
+    font-weight:bold;
+    font-family: Bradley Hand, cursive;
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto; ">
+            </h:outputText>
+            <p:commandButton style="background-color: black" value="GO to main page" id="nextButton" action="/view/main.xhtml?faces-redirect=true"/>
+        </h:form>
+    </div>
+    <h:form id="form">
+        <p:poll interval="1"
+                listener="#{TimeBean.increment}" update=":form" />
+        <p:outputLabel value="#{TimeBean.number}" />
+    </h:form>
+    </h:body>
+</f:view>
+</html>

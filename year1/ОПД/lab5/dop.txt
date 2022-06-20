@@ -1,0 +1,84 @@
+ORG		0x000
+S:		WORD	$STRING
+RES:	WORD	0x00
+WORK:	WORD	0x00
+I:		WORD	0x00
+B1:		WORD	0x0080
+B2:		WORD	0x00C0
+B3:		WORD	0x00E0
+B4:		WORD	0x00F0
+
+P4:		LD		RES
+		ADD		#1
+		ST		RES
+		BR		START
+		
+P3:		LD		RES
+		ADD		#1
+		ST		RES
+		BR		START
+		
+P2:		LD		RES
+		ADD		#1
+		ST		RES
+		BR		START
+		
+P1:		LD		RES
+		INC
+		ST		RES
+		BR		START
+
+START:	CLA
+		LD 		$I
+		BEQ		WORD1
+		BR 		WORD2	
+WORD1:	CLA
+		LD		$I
+		INC
+		ST		$I
+		CLA
+		LD		(S)+
+		ST		WORK
+		CLA
+		BR		CHAR
+
+WORD2: 	CLA
+		LD		$I
+		DEC
+		ST		$I
+		CLA
+		BR		CHAR
+		
+CHAR:	LD		$WORK
+		SWAB
+		ST		$WORK
+		AND 	B4
+		SUB		B4
+		BEQ		P4
+		
+		LD		$WORK
+		AND 	B3
+		SUB		B3
+		BEQ		P3
+		
+		LD		$WORK
+		AND 	B2
+		SUB		B2
+		BEQ		P2
+		
+		LD		$WORK
+		BEQ		FINISH
+		
+		LD		$WORK
+		AND 	B1
+		SUB		B1
+		BEQ		START
+		
+		BR		P1
+		
+FINISH:	HLT
+		
+		ORG		0x110
+STRING: WORD	0x4954
+		WORD	0xD0BC
+		WORD	0xD0BE

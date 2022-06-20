@@ -1,0 +1,3 @@
+D:/Рабочий стол/ITMO/algorithms/6/cmake-build-debug/CMakeFiles/6.dir
+D:/Рабочий стол/ITMO/algorithms/6/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Рабочий стол/ITMO/algorithms/6/cmake-build-debug/CMakeFiles/rebuild_cache.dir

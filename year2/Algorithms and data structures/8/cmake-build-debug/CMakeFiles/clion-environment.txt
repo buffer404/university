@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+ToolSet: w64 9.0 (local)@C:\Program Files\JetBrains\CLion 2021.3.4\bin\mingw
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.4/bin/ninja/win/ninja.exe
+=======
+ToolSet: w64 6.0 (local)@C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.2/bin/ninja/win/ninja.exe
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281

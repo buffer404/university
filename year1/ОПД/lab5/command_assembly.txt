@@ -1,0 +1,57 @@
+ORG			0xE1C
+ADDR:		WORD	$RES
+NOW:		WORD	0
+NUL:		WORD	0x00
+GOD:		WORD	0xFF00
+START:		LD		ADDR
+			ST		NOW
+NEXT:		CLA
+WAIT1:		IN		5
+			AND		#0x40
+			BEQ		WAIT1
+			IN		4
+			SWAB
+			ST		(NOW)
+			SWAB
+			CMP		NUL
+			BEQ		STOP
+			CLA
+WAIT2:		IN		5
+			AND		#0x40
+			BEQ		WAIT2
+			LD		(NOW)
+			IN		4
+			SWAB
+			ST		(NOW)+
+			AND		GOD
+			CMP		NUL
+			BNE		NEXT
+STOP:		HLT
+			ORG		0x610
+RES:		WORD		?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

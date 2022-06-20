@@ -1,0 +1,8 @@
+ArrayList/Vector
+Связный список
+HashSet
+TreeSet
+HashMap
+TreeMap
+Затирание типов в дженериках
+Автоупаковка

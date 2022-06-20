@@ -1,0 +1,107 @@
+		ORG		0x0
+V0:		WORD 	$DEFAULT,0x180
+V1:		WORD	$INT1,0x180
+V2:		WORD 	$DEFAULT,0x180
+V3:		WORD	$INT3,0x180
+V4:		WORD 	$DEFAULT,0x180
+V5:		WORD	$DEFAULT,0x180
+V6:		WORD 	$DEFAULT,0x180
+V7:		WORD	$DEFAULT,0x180
+
+DEFAULT: 
+		IRET					
+
+		ORG		0x00F
+X:		WORD	0x0000
+		ORG		0x020
+START:	DI		
+		CLA
+		OUT 1 					; MR КВУ-0 на вектор 0
+		OUT 5 					; MR КВУ-2 на вектор 0
+		LD #9 					; разрешить прерывания и вектор №1 
+		OUT 3 					; (1000|0001=1001) в MR ВУ-1 Готовность 
+		LD #0xB 				; разрешить прерывания и вектор №3 
+		OUT 7 					; (1000|0011=1011) в MR ВУ-3 Готовность
+		BR PROG
+		
+PROG:	EI 						; Установка состояния разр. прерывания
+		CLA 					; Первоначальная очистка аккумулятора
+INCX:  	DEC
+		DEC						; Цикл для наращивания 
+		ST		$X
+		CALL	RVV
+		ST		$X
+		BR 		INCX 				; содержимого аккумулятора	
+		
+		ORG 	0x040
+INT1: 	PUSH
+		ASL 					; Умножили AC на 2
+		NEG						; Инверсия
+		ADD		#3				; Прибавли 3
+		CALL	RVV
+		OUT		2
+		POP
+		IRET
+		
+		ORG		0x050
+INT3:
+		CLA
+		IN		6
+		ST 		$X
+		IRET
+		
+		ORG		0x060
+RVV:	CMP	#0x7F	;F(x) < 128  
+		BGE	OVER
+		CMP	#0x80	;F(x) >= -128
+		BLT 	OVER
+		RET
+		
+		ORG		0x070
+OVER:	LD	#0x7F		
+		ST	$X
+		RET
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

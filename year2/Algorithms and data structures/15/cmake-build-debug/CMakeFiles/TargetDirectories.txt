@@ -1,0 +1,3 @@
+D:/Рабочий стол/ITMO/archiveITMO/year2/Algorithms and data structures/15/cmake-build-debug/CMakeFiles/15.dir
+D:/Рабочий стол/ITMO/archiveITMO/year2/Algorithms and data structures/15/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Рабочий стол/ITMO/archiveITMO/year2/Algorithms and data structures/15/cmake-build-debug/CMakeFiles/rebuild_cache.dir

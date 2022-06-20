@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui" >
+<h:head>
+    <title>lab3</title>
+    <link rel="shortcut icon" href="../resources/style/logo.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../resources/style/style.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <h:outputScript library="script" name="test171.js"/>
+</h:head>
+<h:body>
+    <h:form>
+        <p:commandButton style="background-color: black" value="back" id="startButton" action="/view/start.xhtml?faces-redirect=true"/>
+    </h:form>
+<h:outputLabel id="errors" style="color: crimson"/>
+<table>
+    <tr>
+        <td align="right" >
+            <b:canvas id="canvasMath" value="#{PaintBean.canvas}" height="240" width="239" style="border:2px solid black; background-color: white"/>
+        </td>
+        <td align="left">
+                <img src="../resources/style/rick.jpg" id="rick" alt=""/>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="head">
+            Введите данные для определения попадания точки
+        </td>
+    </tr>
+    <h:form name="Data"  id="input-form" action="" method="POST">
+        <td class="main">
+            Enter X:
+        </td>
+        <td>
+            <h:outputLabel for="x"/>
+            <div id = "x">
+                <h:commandLink id="x1" title="-2" style="color: whitesmoke; font-weight:bold; font-family: Bradley Hand, cursive; font-size: small;" onclick="newR('input-form:x1')" value="-2" action="#{TableBean.setX(-2)}">
+                    <f:ajax execute="x"/>
+                </h:commandLink>
+                <h:commandLink id="x2" title="-1.5" style="color: whitesmoke; font-weight:bold; font-family: Bradley Hand, cursive; font-size: small;"  onclick="newR('input-form:x2')" value="-1.5" action="#{TableBean.setX(-1.5)}">
+                    <f:ajax execute="@form" render="x" />
+                </h:commandLink>
+                <h:commandLink id="x3" title="-1" style="color: whitesmoke; font-weight:bold; font-family: Bradley Hand, cursive; font-size: small;" onclick="newR('input-form:x3')" value="-1" action="#{TableBean.setX(-1)}">
+                    <f:ajax execute="@form" render="x" />
+                </h:commandLink>
+                <h:commandLink id="x4" title="-0.5" style="color: whitesmoke; font-weight:bold; font-family: Bradley Hand, cursive; font-size: small;" onclick="newR('input-form:x4')" value="-0.5" action="#{TableBean.setX(-0.5)}">
+                    <f:ajax execute="@form" render="x" />
+                </h:commandLink>
+                <h:commandLink id="x5" title="0" style="color: whitesmoke; font-weight:bold; font-family: Bradley Hand, cursive; font-size: small;" onclick="newR('input-form:x5')" value="0" action="#{TableBean.setX(0)}">
+                    <f:ajax execute="@form" render="x" />
+                </h:commandLink>
+                <h:commandLink id="x6" title="0.5" style="color: whitesmoke; font-weight:bold; font-family: Bradley Hand, cursive; font-size: small;" onclick="newR('input-form:x6')" value="0.5" action="#{TableBean.setX(0.5)}">
+                    <f:ajax execute="@form" render="x" />
+                </h:commandLink>
+                <h:commandLink id="x7" title="1" style="color: whitesmoke; font-weight:bold; font-family: Bradley Hand, cursive; font-size: small;" onclick="newR('input-form:x7')" value="1" action="#{TableBean.setX(1)}">
+                    <f:ajax execute="@form" render="x" />
+                </h:commandLink>
+                <h:commandLink id="x8" title="1.5" style="color: whitesmoke; font-weight:bold; font-family: Bradley Hand, cursive; font-size: small;" onclick="newR('input-form:x8')" value="1.5" action="#{TableBean.setX(1.5)}">
+                    <f:ajax execute="@form" render="x" />
+                </h:commandLink>
+                <h:commandLink id="x9" title="2" style="color: whitesmoke; font-weight:bold; font-family: Bradley Hand, cursive; font-size: small;" onclick="newR('input-form:x9')" value="2" action="#{TableBean.setX(2)}">
+                    <f:ajax execute="@form" render="x" />
+                </h:commandLink>
+            </div>
+        </td>
+        <tr>
+            <td class="main">
+                Enter Y (-5;5):
+            </td>
+            <td class="answer">
+                <div>
+<!--                    <h:message for="y"/>-->
+                    <h:inputText id="y" class="numberY" data-min="-4.9999" data-max="4.99999" data-separator="." required="true" value="#{TableBean.y}">
+                        <f:validateDoubleRange for="y" minimum="-4.9999" maximum="4.99999"/>
+                    </h:inputText>
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="main">
+                Enter R (2;5):
+            </td>
+            <td>
+                <div>
+<!--                    <h:message for="r"/>-->
+                    <h:inputText id="r" class="numberR" data-min="1.99999" data-max="4.99999" data-separator="." required="true" value="#{TableBean.r}" maxlength="7">
+                        <f:validateDoubleRange for="r" minimum="1.99999" maximum="4.99999"/>
+                    </h:inputText>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h:message for="forreset"/>
+                <h:commandButton id="forreset" style="background-color: black" value="Очистить" action="#{TableBean.clear}">
+                    <f:ajax render="employeeTable"
+                            execute="forreset"/>
+                </h:commandButton>
+            </td>
+            <td>
+                <h:commandButton id="checkButton" style="background-color: black" value="Проверить" action="#{TableBean.add}">
+                    <f:ajax render="employeeTable"
+                            execute="@form"/>
+                </h:commandButton>
+            </td>
+        </tr>
+    </h:form>
+</table>
+
+<h:panelGroup id="employeeTable">
+    <h:dataTable value="#{TableBean.hitsArrayList}" var="array" width="600" id="ResultTable">
+        <h:column>
+            <f:facet name="header">x</f:facet>
+            <h:outputText value="#{array.x}"/>
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">y</f:facet>
+            <h:outputText value="#{array.y}"/>
+        </h:column>
+
+        <h:column>
+            <f:facet name="header">r</f:facet>
+            <h:outputText value="#{array.r}"/>
+        </h:column>
+        <h:column>
+            <f:facet name="header">hit</f:facet>
+            <h:outputText value="#{array.hit}"/>
+        </h:column>
+    </h:dataTable>
+</h:panelGroup>
+    <h:outputScript library="script" name="test171.js"/>
+</h:body>
+</html>

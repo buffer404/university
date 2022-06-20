@@ -1,0 +1,28 @@
+body{
+    background-color: #F89B4D;
+}
+table{
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+}
+TD, TH {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid black; /* Параметры рамки */
+}
+TH {
+    background: #b0e0e6; /* Цвет фона */
+}
+caption{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 110%;
+    color: indigo;
+    font-style: italic;
+}
+td{
+    text-align: center;
+}
+td.head{
+    text-align: right;
+    font-style: oblique;
+}
+
+

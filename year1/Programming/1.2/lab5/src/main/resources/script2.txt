@@ -1,0 +1,2 @@
+show
+execute_script C:\Users\Леонид\Desktop\ITMO\Programming\1.2\lab5\src\main\resources\script1.txt

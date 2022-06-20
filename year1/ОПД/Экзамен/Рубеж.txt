@@ -1,0 +1,47 @@
+ORG 		0x00
+ADDR:	WORD	0x200
+ADDR2:	WORD	0x200
+N:			WORD	5
+N2:		WORD	5
+R:			WORD	0
+MUSK1:	WORD	0x0050
+M1:		WORD	0x0000
+MUSK2:	WORD	0xFF00
+M2:		WORD	0x0000
+O:			WORD    0x0011
+START:	CLA
+BEGIN:	CLA
+			ADD	(ADDR)+
+			ST 	M1
+			AND  MUSK1
+			BNE	BEGIN
+			LD		M1
+			ADD	#0x44
+			ASL
+			ST		M2
+			AND	MUSK2
+			BNE	OF
+			LD		M2
+			LD		-(ADDR)
+			ST		(ADDR)+
+			LOOP	N
+			BR	BEGIN
+			BEQ	EXIT
+
+OF:
+			ST		O
+			LD		-(ADDR)
+			ST		(ADDR)+
+			LOOP	N
+			BR	BEGIN
+			BEQ	EXIT
+
+EXIT:		
+			AND		(ADDR2)+
+			LOOP	N
+			BR	EXIT
+			ST		R
+			HLT
+			
+ORG		0x200
+X:			WORD	0001, 0003, 0002, 0004, 0001

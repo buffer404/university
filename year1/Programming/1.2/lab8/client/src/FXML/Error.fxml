@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.Error">
+   <children>
+      <Label alignment="CENTER" layoutX="5.0" prefHeight="200.0" prefWidth="292.0" text="Произошла ошибка на сервере. Пожалуйста зайдите позже(" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

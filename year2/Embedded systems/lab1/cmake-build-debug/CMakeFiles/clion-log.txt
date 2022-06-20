@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+"C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.2/bin/ninja/win/ninja.exe" -G Ninja "D:\Рабочий стол\ITMO\ВсС\lab1"
+=======
+"C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.2/bin/ninja/win/ninja.exe" -G Ninja "D:\Рабочий стол\ITMO\archiveITMO\year2\Embedded systems\lab1"
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+-- The C compiler identification is GNU 8.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+<<<<<<< HEAD
+-- Build files have been written to: D:/Рабочий стол/ITMO/ВсС/lab1/cmake-build-debug
+=======
+-- Build files have been written to: D:/Рабочий стол/ITMO/archiveITMO/year2/Embedded systems/lab1/cmake-build-debug
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281

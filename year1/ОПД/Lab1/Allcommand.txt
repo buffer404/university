@@ -1,0 +1,149 @@
+#1.1
+mkdir lab1
+mkdir lab1/bayleef3
+mkdir lab1/porygonz4
+mkdir lab1/shellder1
+touch lab1/bayleef3/tentacruel
+touch lab1/bayleef3/deerling
+touch lab1/bayleef3/tympole
+touch lab1/gothorita0
+touch lab1/mismagius7
+touch lab1/porygonz4/liepard
+touch lab1/porygonz4/jynx
+touch lab1/porygonz4/blissey
+mkdir lab1/porygonz4/deino
+touch lab1/samurott7
+mkdir lab1/shellder1/skuntank
+mkdir lab1/shellder1/mantine
+touch lab1/shellder1/unfezant
+touch lab1/shellder1/ninetales
+#1.2
+echo "Тип покемона WATER POISON" /lab1/bayleef3/tentacruel 
+
+cat > lab1/bayleef3/deerling <<EOF
+Живет Forest
+Grassland
+EOF
+
+cat > lab1/bayleef3/tympole <<EOF
+weight=9.9 height=20.0 atk=5 def=4
+EOF
+
+cat > lab1/gothorita0 <<EOF
+Тип
+диеты Herbivore
+EOF
+
+cat > lab1/bayleef3/mismagius7 <<EOF
+Ходы Astonisht Dark Pulse Defense Curl
+Double-Edge Foul Play Heal Bell Hyper Voice Icy Wind Ominous Wind
+Lucky Chantt Magic Coat Magical Leaft Pain Split Psywavet Role Play
+Shock Wave Skill Swap Sleep Talk Snatch Snore Spitet Sucker Punch
+Swift Trick Uproar Wonder Room
+EOF
+
+cat > lab1/porygonz4/liepard <<EOF
+Способности Dark Art Limber
+Unburden
+EOF
+
+cat > lab1/bayleef3/jynx <<EOF
+Развитые способности Hydration Dry
+Skin
+EOF
+
+cat > lab1/porygonz4/blissey <<EOF
+Способности Tail Whip Refresh Doubleslap Softboiled
+Bestow Minimize Take Down Sing Fling Heal Pulse Egg Bomb Light Screen
+Healing Wish Double-Edge
+EOF
+
+cat > lab1/samurott7 <<EOF
+Тип покемона Water
+NONE
+EOF
+
+cat > lab1/shellder1/unfezant <<EOF
+Способности Last Chance Mach Speed Big Pecks Super
+Luck
+EOF
+
+cat > lab1/shellder1/ninetales <<EOF
+Живет Grassland Mountain
+EOF
+#2
+
+chmod 771 lab1/bayleef3
+chmod 700 lab1/porygonz4
+chmod 357 lab1/shellder1
+chmod u=---,g=r--,o=rw- lab1/bayleef3/tentacruel
+chmod u=---,g=---,o=r-- lab1/bayleef3/deerling
+chmod u=r--,g=r--,o=rw- lab1/bayleef3/tympole
+chmod u=r--,g=---,o=--- lab1/gothorita0
+chmod u=r--,g=r--,o=--- lab1/mismagius7
+chmod 640 lab1/porygonz4/liepard
+chmod 440 lab1/porygonz4/jynx
+chmod 400 lab1/porygonz4/blissey
+chmod u=rw-,g=rwx,o=-wx lab1/porygonz4/deino
+chmod u=r--,g=r--,o=--- lab1/samurott7
+chmod 330 lab1/shellder1/skuntank
+chmod 571 lab1/shellder1/mantine
+chmod u=---,g=---,o=r-- lab1/shellder1/unfezant
+chmod u=r-x,g=r--,o=--- lab1/shellder1/ninetales
+#3
+cat lab1/porygonz4/jynx lab1/porygonz4/liepard > lab1/mismagius7_21
+ln lab1/bayleef3/mismagius7 lab1/bayleef3/tentacruelmismagius
+cp -R lab1/bayleef3 lab1/shellder1/mantine
+cp samurott7 lab1/shellder1/ninetalessamurott
+ln -s lab1/bayleef3/mismagius7 lab1/porygonz4/liepardmismagius
+cp lab1/gothorita0 lab1/shellder1/mantine
+ln -s lab1/shellder1 lab1/Copy_73
+#4
+wc -l gothorita0 > ~tmp/s307471
+ls -lR | sort -k5r | grep '^.*le.*$' | head -n4
+cat -n *7 **/*7 | sort-k2r
+wc -m *7 **/*7 | sort
+ls -lR | sort -k9r | grep '^.*le.*$' | head -n3
+cat -n ./* 2>&1 | grep -iv "e$"
+#5
+rm lab1/samurott7
+rm lab1/bayleef3/tentacruel
+rm lab1/porygonz4/liepardmismagi*
+rm lab1/bayleef3/tentacruelmismagi*
+rmdir lab1/shellder1
+rmdir lab1/porygonz4/deino
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

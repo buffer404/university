@@ -1,0 +1,248 @@
+Address of entry point: 14e0
+
+Name: .text
+<<<<<<< HEAD
+Virtual Size: 1fc0
+Virtual Address: 1000
+Raw Address: 400
+Raw Size: 2000
+=======
+Virtual Size: 1ce8
+Virtual Address: 1000
+Raw Address: 400
+Raw Size: 1e00
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 60500060
+
+Name: .data
+Virtual Size: d0
+Virtual Address: 3000
+<<<<<<< HEAD
+Raw Address: 2400
+=======
+Raw Address: 2200
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Raw Size: 200
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: c0500040
+
+Name: .rdata
+<<<<<<< HEAD
+Virtual Size: 524
+Virtual Address: 4000
+Raw Address: 2600
+=======
+Virtual Size: 4f0
+Virtual Address: 4000
+Raw Address: 2400
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Raw Size: 600
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 40600040
+
+Name: .pdata
+<<<<<<< HEAD
+Virtual Size: 294
+Virtual Address: 5000
+Raw Address: 2c00
+=======
+Virtual Size: 270
+Virtual Address: 5000
+Raw Address: 2a00
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Raw Size: 400
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 40300040
+
+Name: .xdata
+<<<<<<< HEAD
+Virtual Size: 218
+Virtual Address: 6000
+Raw Address: 3000
+Raw Size: 400
+=======
+Virtual Size: 1f4
+Virtual Address: 6000
+Raw Address: 2e00
+Raw Size: 200
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 40300040
+
+Name: .bss
+Virtual Size: 980
+Virtual Address: 7000
+Raw Address: 0
+Raw Size: 0
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: c0600080
+
+Name: .idata
+<<<<<<< HEAD
+Virtual Size: 8b4
+Virtual Address: 8000
+Raw Address: 3400
+Raw Size: a00
+=======
+Virtual Size: 76c
+Virtual Address: 8000
+Raw Address: 3000
+Raw Size: 800
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: c0300040
+
+Name: .CRT
+Virtual Size: 68
+Virtual Address: 9000
+<<<<<<< HEAD
+Raw Address: 3e00
+=======
+Raw Address: 3800
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Raw Size: 200
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: c0400040
+
+Name: .tls
+Virtual Size: 10
+Virtual Address: a000
+<<<<<<< HEAD
+Raw Address: 4000
+=======
+Raw Address: 3a00
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Raw Size: 200
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: c0400040
+
+Name: /4
+Virtual Size: 80
+Virtual Address: b000
+<<<<<<< HEAD
+Raw Address: 4200
+=======
+Raw Address: 3c00
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Raw Size: 200
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 42500040
+
+Name: /19
+<<<<<<< HEAD
+Virtual Size: 6176
+Virtual Address: c000
+Raw Address: 4400
+Raw Size: 6200
+=======
+Virtual Size: 2084
+Virtual Address: c000
+Raw Address: 3e00
+Raw Size: 2200
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 42100040
+
+Name: /31
+<<<<<<< HEAD
+Virtual Size: 789
+Virtual Address: 13000
+Raw Address: a600
+Raw Size: 800
+=======
+Virtual Size: 193
+Virtual Address: f000
+Raw Address: 6000
+Raw Size: 200
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 42100040
+
+Name: /45
+<<<<<<< HEAD
+Virtual Size: 778
+Virtual Address: 14000
+Raw Address: ae00
+Raw Size: 800
+=======
+Virtual Size: 28a
+Virtual Address: 10000
+Raw Address: 6200
+Raw Size: 400
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 42100040
+
+Name: /57
+<<<<<<< HEAD
+Virtual Size: 100
+Virtual Address: 15000
+Raw Address: b600
+=======
+Virtual Size: 88
+Virtual Address: 11000
+Raw Address: 6600
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Raw Size: 200
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 42400040
+
+Name: /70
+<<<<<<< HEAD
+Virtual Size: 1ae
+Virtual Address: 16000
+Raw Address: b800
+=======
+Virtual Size: 9b
+Virtual Address: 12000
+Raw Address: 6800
+>>>>>>> 0c1c239b235a2d06e4480776d2bfb4f264e97281
+Raw Size: 200
+Reloc Address: 0
+Linenumbers: 0
+Relocation Number: 0
+Linenumbers Numbers: 0
+Characteristics: 42100040

@@ -1,0 +1,22 @@
+show
+add
+Бонч
+-23423
+55
+
+435
+-235234
+2
+sadds
+-23424
+345435345
+АПРПР
+
+ffff
+АПРПАРПАР
+234
+2344
+23434
+Спб
+execute_script C:\Users\Леонид\Desktop\ITMO\Programming\1.2\lab5\src\main\resources\script2.txt
+exit

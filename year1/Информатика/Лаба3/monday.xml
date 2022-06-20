@@ -1,0 +1,38 @@
+<MONDAY>
+     <LESSON1>
+        <subject>ФИЗИКА(ЛЕК)</subject>
+        <time>11:30-13:10</time>
+		<week> </week>
+		<place>Биржевая линия, д. 16, лит.А</place>
+		<class>550 АУД.</class>
+		<teacher>Агадуллин Вадим Рафаилевич</teacher>
+		<format>Очно - дистанционный</format>
+    </LESSON1>
+	<LESSON2.1>
+        <subject>ФИЗИКА(ЛАБ)<s/ubject>
+        <time>13:30-15:00</time>
+		<week>Четная неделя </week>
+		<place>Биржевая линия, д. 16, лит.А</place>
+		<class>539 АУД.</class>
+		<teacher>Агадуллин Вадим Рафаилевич</teacher>
+		<format>Очно - дистанционный</format>
+    </LESSON2.1>
+	<LESSON2.2>
+        <subject>ФИЗИКА(ПРАК)</subject>
+        <time>13:30-15:00</time>
+		<week>Нечетная неделя</week>
+		<place>Биржевая линия, д. 16, лит.А</place>
+		<class>539 АУД.</class>
+		<teacher>Агадуллин Вадим Рафаилевич</teacher>
+		<format>Очно - дистанционный</format>
+    </LESSON2.2>
+	<LESSON3>
+        <subject>ФИЗИКА(ваааааааааа)</subject>
+        <time>13:30-15:00</time>
+		<week>Нечетная неделя</week>
+		<place>Биржевая линия, д. 16, лит.А</place>
+		<class>539 АУД.</class>
+		<teacher>Агадуллин Вадим Рафаилевич</teacher>
+		<format>Очно - дистанционный</format>
+    </LESSON3>
+</MONDAY>
