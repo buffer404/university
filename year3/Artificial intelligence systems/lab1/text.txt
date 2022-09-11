@@ -1,0 +1,84 @@
+parent(mikhail_fedorovich, alexey_michailovich).
+parent(alexey_michailovich, ioann_alexeyevich).
+parent(maria_miloslavskaya,ioann_alexeyevich).
+parent(alexey_michailovich, sofiya_alexeyevna).
+parent(maria_miloslavskaya,sofiya_alexeyevna).
+parent(alexey_michailovich, fyodor_alexeyevich).
+parent(maria_miloslavskaya, fyodor_alexeyevich).
+parent(ioann_alexeyevich, anna_ioannovna).
+parent(ioann_alexeyevich, ekaterina_ioannovna).
+parent(prakofya_fedorovna, anna_ioannovna).
+parent(prakofya_fedorovna, ekaterina_ioannovna).
+parent(karl_leopold, anna_leopoldovna).
+parent(ekaterina_ioannovna, anna_leopoldovna).
+parent(anton_ulrich, ioann_antonovich).
+parent(anna_leopoldovna, ioann_antonovich).
+parent(natalya_naryzhkina, petr_alexeyevich).
+parent(alexey_michailovich, petr_alexeyevich).
+parent(petr_alexeyevich, alexey_petrovich).
+parent(evdokiya_lopukhina, alexey_petrovich).
+parent(alexey_petrovich, petr2_alexeyevich).
+parent(petr_alexeyevich, anna_petrovna).
+parent(yekaterina_alexeyevna, anna_petrovna).
+parent(petr_alexeyevich, elizabeth_petrovna).
+parent(yekaterina_alexeyevna, elizabeth_petrovna).
+parent(anna_petrovna, petr_fedorovich).
+parent(petr_fedorovich, pavel_petrovich).
+parent(yekaterina_alexeyevna, pavel_petrovich).
+parent(pavel_petrovich, alexandr_pavlovich).
+parent(pavel_petrovich, nikolay_pavlovich).
+parent(nikolay_pavlovich, alexandr_nikolayevich).
+parent(alexandr_nikolayevich, alexandr_alexandrovich).
+parent(alexandr_alexandrovich, nikolay_alexandrovich).
+parent(nikolay_alexandrovich, olga_nikolaevna).
+parent(nikolay_alexandrovich, tatyana_nikolaevna).
+parent(nikolay_alexandrovich, maria_nikolaevna).
+parent(nikolay_alexandrovich, anastasia_nikolaevna).
+parent(nikolay_alexandrovich, aleksey_nikolayevich).
+parent(aleksandra_fedorovna, olga_nikolaevna).
+parent(aleksandra_fedorovna, tatyana_nikolaevna).
+parent(aleksandra_fedorovna, maria_nikolaevna).
+parent(aleksandra_fedorovna, anastasia_nikolaevna).
+parent(aleksandra_fedorovna, aleksey_nikolayevich).
+
+male(mikhail_fedorovich).
+male(alexey_michailovich).
+male(ioann_alexeyevich).
+male(fyodor_alexeyevich).
+male(petr_alexeyevich).
+male(alexey_petrovich).
+male(petr2_alexeyevich).
+male(petr_fedorovich).
+male(pavel_petrovich).
+male(ioann_antonovich).
+male(nikolay_alexandrovich).
+male(alexandr_alexandrovich).
+male(nikolay_pavlovich).
+male(aleksey_nikolayevich).
+male(anton_ulrich).
+male(karl_leopold).
+male(alexandr_pavlovich).
+male(alexandr_nikolayevich).
+
+spouse(alexey_michailovich, maria_miloslavskaya).
+spouse(fyodor_alexeyevich, marfa_matveevna).
+spouse(ioann_alexeyevich, prakofya_fedorovna).
+spouse(karl_leopold, ekaterina_ioannovna).
+spouse(anton_ulrich, anna_leopoldovna).
+spouse(alexey_michailovich, natalya_naryzhkina).
+spouse(petr_alexeyevich, evdokiya_lopukhina).
+spouse(petr_fedorovich, yekaterina_alexeyevna).
+spouse(nikolay_alexandrovich, aleksandra_fedorovna).
+
+spouse(X, Y) :- male(Y), \+ male(X), spouse(Y, X). 
+wife(X) :- spouse(Y, X), male(Y).
+sibling(X,Y) :- parent(Z,X), male(Z), parent(Z,Y), X \= Y. 
+brother(X, Y) :- male(X), sibling(X, Y).
+sister(X, Y) :-  sibling(X, Y), \+ male(X).
+grandparent(X, Y) :- parent(X, Z), parent(Z, Y).
+uncle(X, Y) :- parent(Z, Y), sibling(Z, X), male(X).
+aunt(X, Y) :- parent(Z, Y), sibling(Z, X), \+ male(X).
+son(X, Y) :- parent(Y, X), male(X).
+daughter(X, Y) :- parent(Y, X), \+ male(X).
+mother(X, Y) :- parent(X, Y), \+ male(X).
+father(X, Y) :- parent(X, Y), male(X).
