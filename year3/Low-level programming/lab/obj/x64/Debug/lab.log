@@ -1,0 +1,7 @@
+﻿  Проверка исходных файлов
+  Удаленное копирование исходных файлов в "192.168.0.13"
+  Команда сборки не настроена, действие пропущено.
+  Вызов "make build", рабочий каталог: "/home/leonid/projects/lab/"
+  gcc -g -O0 -o ./app ./main.c
+  
+  Копирование файла "/home/leonid/projects/lab/app" в "D:\Рабочий стол\university\year3\Low-level programming\lab\bin\x64\Debug\app"
