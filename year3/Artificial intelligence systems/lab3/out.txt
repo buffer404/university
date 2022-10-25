@@ -1,0 +1,132 @@
+If  salary if available=1
+    If ntal status=1
+        If =2
+            If er of sisters/brothers (if available)=2
+                If ing frequency (scientific books/journals) in [2, 1]
+                    Then class=0
+                If ing frequency (scientific books/journals) in [3]
+                    Then class=1
+
+            If er of sisters/brothers (if available)=1
+                If ing frequency (scientific books/journals) in [2, 3]
+                    Then class=1
+
+            If er of sisters/brothers (if available)=4
+                If ing frequency (scientific books/journals) in [2, 3]
+                    Then class=0
+                If ing frequency (scientific books/journals) in [1]
+                    Then class=1
+
+            If er of sisters/brothers (if available) in [3, 5]
+                Then class=1
+
+        If =1
+            If er of sisters/brothers (if available)=2
+                If ing frequency (scientific books/journals) in [2, 1]
+                    Then class=0
+
+            If er of sisters/brothers (if available)=4
+                If ing frequency (scientific books/journals) in [2]
+                    Then class=0
+                If ing frequency (scientific books/journals) in [3]
+                    Then class=1
+
+            If er of sisters/brothers (if available)=5
+                If ing frequency (scientific books/journals) in [3]
+                    Then class=0
+                If ing frequency (scientific books/journals) in [2, 1]
+                    Then class=1
+
+            If er of sisters/brothers (if available)=1
+                If ing frequency (scientific books/journals) in [1, 2, 3]
+                    Then class=0
+
+            If er of sisters/brothers (if available)=3
+                If ing frequency (scientific books/journals) in [3, 2]
+                    Then class=0
+
+
+
+    If ntal status=2
+        If ing frequency (scientific books/journals)=2
+            If er of sisters/brothers (if available) in [3]
+                Then class=0
+            If er of sisters/brothers (if available) in [4, 1, 2]
+                Then class=1
+
+        If ing frequency (scientific books/journals) in [3]
+            Then class=0
+
+    If ntal status=3
+        If er of sisters/brothers (if available)=2
+            If  in [1]
+                Then class=0
+            If  in [2]
+                Then class=1
+
+        If er of sisters/brothers (if available) in [5]
+            Then class=1
+
+
+If  salary if available=2
+    If ntal status=1
+        If ing frequency (scientific books/journals)=2
+            If er of sisters/brothers (if available)=2
+                If  in [2, 1]
+                    Then class=0
+
+            If er of sisters/brothers (if available)=1
+                If  in [1, 2]
+                    Then class=0
+
+            If er of sisters/brothers (if available) in [5, 3]
+                Then class=0
+            If er of sisters/brothers (if available) in [4]
+                Then class=1
+
+        If ing frequency (scientific books/journals)=1
+            If er of sisters/brothers (if available) in [3, 4, 2]
+                Then class=0
+            If er of sisters/brothers (if available) in [5]
+                Then class=1
+
+        If ing frequency (scientific books/journals) in [3]
+            Then class=1
+
+    If ntal status in [2]
+        Then class=0
+    If ntal status in [3]
+        Then class=1
+
+If  salary if available=3
+    If ntal status=1
+        If ing frequency (scientific books/journals)=2
+            If er of sisters/brothers (if available)=3
+                If  in [2]
+                    Then class=0
+                If  in [1]
+                    Then class=1
+
+            If er of sisters/brothers (if available) in [2, 5]
+                Then class=0
+
+        If ing frequency (scientific books/journals) in [1, 3]
+            Then class=0
+
+    If ntal status in [2]
+        Then class=0
+    If ntal status in [3]
+        Then class=1
+
+If  salary if available=4
+    If ing frequency (scientific books/journals) in [2]
+        Then class=0
+    If ing frequency (scientific books/journals) in [3]
+        Then class=1
+
+If  salary if available=5
+    If er of sisters/brothers (if available) in [3]
+        Then class=0
+    If er of sisters/brothers (if available) in [4, 1]
+        Then class=1
+
