@@ -125,3 +125,28 @@ SELECT ИМЯ, ИД FROM Н_ЛЮДИ WHERE ИМЯ IN (
 	WHERE f1.count_name	> 1)
 ORDER BY ИМЯ;
 
+
+SELECT COUNT(*) AS COUNT
+ FROM (
+  SELECT Н_УЧЕНИКИ.ИД
+  FROM Н_УЧЕНИКИ
+  JOIN Н_ВЕДОМОСТИ ON Н_УЧЕНИКИ.ЧЛВК_ИД=Н_ВЕДОМОСТИ.ЧЛВК_ИД
+  WHERE Н_УЧЕНИКИ.ГРУППА='3100' 
+  AND (Н_ВЕДОМОСТИ.ОЦЕНКА='5' OR Н_ВЕДОМОСТИ.ОЦЕНКА='зачет')
+ ) as otlichniki;
+ 
+SELECT * FROM Н_ЛЮДИ 
+WHERE ИД IN(
+	SELECT Н_УЧЕНИКИ.ИД
+	FROM Н_УЧЕНИКИ
+	JOIN Н_ВЕДОМОСТИ ON Н_УЧЕНИКИ.ЧЛВК_ИД=Н_ВЕДОМОСТИ.ЧЛВК_ИД
+	WHERE Н_УЧЕНИКИ.ГРУППА='3100') 
+AND ИД IN (
+	SELECT DISTINCT ЧЛВК_ИД 
+	FROM Н_ВЕДОМОСТИ 
+	WHERE (ОЦЕНКА = '5') OR (ОЦЕНКА = 'зачет')); 
+
+
+
+
+SELECT DISTINCT ЧЛВК_ИД FROM Н_ВЕДОМОСТИ WHERE (ОЦЕНКА = '5') OR (ОЦЕНКА = 'зачет');
