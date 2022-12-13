@@ -1,5 +1,10 @@
-obj-m += kmod.o
+obj-m += my_module.o
+KDIR  := /lib/modules/$(shell uname -r)/build
+
 all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+	gcc user.c -o user
+	make -C $(KDIR) M=$(PWD) modules
+	insmod my_module.ko
+
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	make -C $(KDIR) M=$(PWD) clean
