@@ -20,7 +20,6 @@ MODULE_DESCRIPTION("Get PCI devices info");
 #define PCI_DEV 2
 
 struct dentry* request = NULL;
-u64 pid = NULL;
 u64 struct_num = NULL;
 
 char buffer [BUFFER_MAX_SIZE];

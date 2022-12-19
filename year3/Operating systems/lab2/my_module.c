@@ -19,8 +19,15 @@ ssize_t get_net_device(char __user *user_buff, size_t user_buffer_length, loff_t
 
 	net_dev = first_net_device(&init_net);
 
-	buffer_size = sprintf(buffer, "The net_device structure was obtained successfully!\n{\n name: %s\n irq: %d\n type: %d\n dma: %d\n mtu: %d\n tx_queue_len: %d\n watchdog_timeo: %d\n mem_start: %d\n}\n",
-  net_dev->name, net_dev->irq, net_dev->type, net_dev->dma, net_dev->mtu, net_dev->tx_queue_len, net_dev->watchdog_timeo, net_dev->mem_start);
+	buffer_size = sprintf(buffer, "The net_device structure was obtained successfully!\n{\n\
+		 name: %s (The name of this interface)\n \
+		 dev_id: %d (Used to distinguish between devices that share the same address)\n \
+		 flags: %u (Interface flags (a la BSD))\n \
+		 dev_port: %d (Used to differentiate between devices that share a port)\n \
+		 mtu: %d (The maximum transmission unit that is installed now)\n \
+		 proto_down: %d (Protocol port state information can be sent to the switch driver)\n \
+		 tx_queue_len: %d (The maximum number of frames that can be queued in the device transfer queue)\n}\n",
+  net_dev->name, net_dev->dev_id, net_dev->flags, net_dev->dev_port, net_dev->mtu, net_dev->proto_down, net_dev->tx_queue_len);
 
 	return write_response(user_buff, user_buffer_length, offset);
 }
@@ -29,8 +36,13 @@ ssize_t get_pci_dev(char __user *user_buff, size_t user_buffer_length, loff_t *o
 
 	my_pci_dev = pci_get_device(PCI_ANY_ID, PCI_ANY_ID, NULL);
 
-	buffer_size = sprintf(buffer, "The pci_dev structure was obtained successfully!\n{\n device: %d\n vendor: %d\n devfn: %d\n subsystem_device: %d\n subsystem_vendor: %d\n}\n",
-	my_pci_dev->device, my_pci_dev->vendor, my_pci_dev->devfn, my_pci_dev->subsystem_device, my_pci_dev->subsystem_vendor);
+	buffer_size = sprintf(buffer, "The pci_dev structure was obtained successfully!\n{\n\
+		device: %d (Device id)\n \
+		vendor: %d (Manufacturer's id)\n \
+		devfn: %u (Encoded device & function index)\n \
+		cfg_size: %d (Size of config space)\n \
+		dma_mask: %lx (Mask of the bits of bus address this device implements.  Normally this is 0xffffffff.)\n}\n",
+	my_pci_dev->device, my_pci_dev->vendor, my_pci_dev->devfn, my_pci_dev->cfg_size, my_pci_dev->dma_mask);
 
 	return write_response(user_buff, user_buffer_length, offset);
 }
