@@ -1,3 +1,0 @@
-D:/Рабочий стол/ITMO/archiveITMO/year2/Algorithms and data structures/13/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/Рабочий стол/ITMO/archiveITMO/year2/Algorithms and data structures/13/cmake-build-debug/CMakeFiles/13.dir
-D:/Рабочий стол/ITMO/archiveITMO/year2/Algorithms and data structures/13/cmake-build-debug/CMakeFiles/edit_cache.dir

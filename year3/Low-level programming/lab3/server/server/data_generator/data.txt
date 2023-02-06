@@ -1,0 +1,10 @@
+9 string name integer age
+0 leo 100
+0 leo 78
+1 leo 444
+2 roma 456
+2 roma 55555
+1 roma 45654
+3 mike 1078780
+0 mike 7867
+4 mike 4441124
