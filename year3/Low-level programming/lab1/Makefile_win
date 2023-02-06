@@ -1,0 +1,22 @@
+CC=gcc
+CFLAGS= -Wall -Isrc/ -Wextra -DDEBUG -g -o0
+
+SRCDIR=src
+TARGETDIR=.
+
+SOURCES=$(wildcard src/*.c) $(wildcard src/*/*.c) $(wildcard src/*/*/*.c) $(wildcard src/*/*/*/*.c)
+EXECUTABLE=main
+
+.PHONY: all
+all: build run clean
+
+run:
+	$(EXECUTABLE)
+
+build: $(SOURCES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(SOURCES)
+	$(CC) $(SOURCES) -o $@
+	
+clean:
+	del -rf  $(EXECUTABLE).exe
