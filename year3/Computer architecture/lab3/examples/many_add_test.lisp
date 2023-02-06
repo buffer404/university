@@ -1,0 +1,7 @@
+( defvar a 1 )
+( defvar b 2 )
+( defvar c 3 )
+( defvar d 4 )
+( defvar r 0 )
+( setq r ( + a b c d ) )
+( print r )

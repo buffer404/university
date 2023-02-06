@@ -1,2 +1,4 @@
 gitpull.bat
 *.idea
+__pycache__/*
+target.out
