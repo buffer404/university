@@ -19,3 +19,4 @@ server.vcxproj
 server.vcxproj.user
 report.docx
 target/*
+*.html
