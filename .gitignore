@@ -18,3 +18,4 @@ client.vcxproj.user
 server.vcxproj
 server.vcxproj.user
 report.docx
+target/*
