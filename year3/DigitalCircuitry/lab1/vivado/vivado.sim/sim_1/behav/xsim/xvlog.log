@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sources_1/new/ADDER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADDER
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sources_1/new/BCD_2_BIN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD_2_BIN
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sources_1/new/FUNC_BLOCK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FUNC_BLOCK
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sim_1/new/BCD_2_BIN_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD_2_BIN_test

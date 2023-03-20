@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sim_1/new/BCD_2_BIN_test.v,1676840481,verilog,,,,BCD_2_BIN_test,,,,,,,,
+/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sources_1/new/ADDER.v,1676831444,verilog,,/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sources_1/new/BCD_2_BIN.v,,ADDER,,,,,,,,
+/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sources_1/new/BCD_2_BIN.v,1676834288,verilog,,/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sources_1/new/FUNC_BLOCK.v,,BCD_2_BIN,,,,,,,,
+/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sources_1/new/FUNC_BLOCK.v,1676842954,verilog,,/home/leonid/Desktop/university/year3/DigitalCircuitry/lab1/vivado/vivado.srcs/sim_1/new/BCD_2_BIN_test.v,,FUNC_BLOCK,,,,,,,,
