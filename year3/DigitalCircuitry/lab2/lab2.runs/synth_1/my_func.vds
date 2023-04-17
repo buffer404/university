@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 11 20:30:33 2023
+# Process ID: 167928
+# Current directory: /home/leonid/Desktop/university/year3/DigitalCircuitry/lab2/lab2.runs/synth_1
+# Command line: vivado -log my_func.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source my_func.tcl
+# Log file: /home/leonid/Desktop/university/year3/DigitalCircuitry/lab2/lab2.runs/synth_1/my_func.vds
+# Journal file: /home/leonid/Desktop/university/year3/DigitalCircuitry/lab2/lab2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source my_func.tcl -notrace
+Command: synth_design -top my_func -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 167958 
+ERROR: [Synth 8-2576] procedural assignment to a non-register y_o is not permitted [/home/leonid/Desktop/university/year3/DigitalCircuitry/lab2/lab2.srcs/sources_1/new/my_func.v:38]
+INFO: [Synth 8-2350] module my_func ignored due to previous errors [/home/leonid/Desktop/university/year3/DigitalCircuitry/lab2/lab2.srcs/sources_1/new/my_func.v:4]
+Failed to read verilog '/home/leonid/Desktop/university/year3/DigitalCircuitry/lab2/lab2.srcs/sources_1/new/my_func.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 20:30:46 2023...

@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "a6550b3738f88808",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f84733a18518eb8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8cf1945a876c4cb",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/mul.md"
+              }
+            }
+          },
+          {
+            "id": "79e21948731963ad",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/lab2.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e30430fdd781ba1f",
+    "type": "split",
+    "children": [
+      {
+        "id": "debef679e970f3a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c544ac5ca96fd946",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2887523d00bae76e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a6b460a1faf7318c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "f806b233eb905e1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a053213700837e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4dbc4ec14d0086ba",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/lab2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "be2f48d5535ada31",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Excalidraw/lab2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bb0b599f51aeb950",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "db205585e78cc3c9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Excalidraw/lab2.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "79e21948731963ad",
+  "lastOpenFiles": [
+    "Excalidraw/mul.md",
+    "Excalidraw/lab2.md",
+    "Excalidraw/CAD1.md",
+    "Pasted Image 20230407140448_120.png",
+    "Pasted Image 20230407135446_077.png",
+    "Pasted Image 20230406205942_646.png",
+    "Pasted Image 20230406151822_852.png",
+    "Pasted Image 20230406150021_564.png",
+    "Excalidraw"
+  ]
+}

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leonid/Desktop/university/year3/DigitalCircuitry/lab2/lab2.srcs/sources_1/new/mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leonid/Desktop/university/year3/DigitalCircuitry/lab2/lab2.srcs/sources_1/new/my_func.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_func
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/leonid/Desktop/university/year3/DigitalCircuitry/lab2/lab2.srcs/sim_1/new/my_func_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_func_tb
