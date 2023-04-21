@@ -9,6 +9,7 @@ module my_func_tb;
     reg start = 0;
 
     wire [23:0] y;
+    wire busy;
 
     my_func my_func1(
         .clk_i(clk),
@@ -17,7 +18,8 @@ module my_func_tb;
         .b_i(b),
         .start_i(start),
 
-        .y_o(y)
+        .y_o(y),
+        .busy(busy)
     );
 
     task test_func;
@@ -31,7 +33,9 @@ module my_func_tb;
             start = 1;
             #10
             start = 0;
-            #350
+            while (busy) begin
+                #5;
+            end
             if(y == test_res) $display("Test %d: Correct", iter);
             else $display("Test %d: Failed %d", iter, y);
         end
@@ -42,6 +46,9 @@ module my_func_tb;
         // a = 255;
         // b = 255;
         // start = 1;
+        // #250;
+        // rst = 1;
+
 
 
         // 10 test 

@@ -40,7 +40,7 @@ module mul(
         if (rst_i) begin
             ctr <= 0;
             part_res <= 0;
-            y_bo = 0;
+            y_bo <= 0;
 
             state <= IDLE;
         end else begin
@@ -58,7 +58,7 @@ module mul(
                     begin
                         if (end_step) begin
                             state <= IDLE;
-                            y_bo = part_res;
+                            y_bo <= part_res;
                         end
                         part_res <= part_res + shifted_part_sum;
                         ctr <= ctr + 1;
