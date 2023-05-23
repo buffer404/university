@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 16 17:19:53 2023
+# Process ID: 55636
+# Current directory: /home/leonid/Desktop/university/year3/DigitalCircuitry/lab3/lab3.runs/synth_1
+# Command line: vivado -log my_func.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source my_func.tcl
+# Log file: /home/leonid/Desktop/university/year3/DigitalCircuitry/lab3/lab3.runs/synth_1/my_func.vds
+# Journal file: /home/leonid/Desktop/university/year3/DigitalCircuitry/lab3/lab3.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source my_func.tcl -notrace

@@ -1,0 +1,91 @@
+
+(rules PCB lab2
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 660)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.0)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd-smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    "unconnected-(ITMO1-Pad1)" "Net-(ITMO1-Pad2)" "unconnected-(ITMO1-Pad3)" "Net-(ITMO1-Pad4)" "unconnected-(ITMO1-Pad6)" "unconnected-(ITMO1-Pad7)" "unconnected-(ITMO1-Pad8)" "Net-(ITMO1-Pad9)"
+    "unconnected-(ITMO1-Pad10)" "unconnected-(ITMO1-Pad11)" "Net-(ITMO1-Pad12)" "unconnected-(ITMO1-Pad13)" "unconnected-(ITMO1-Pad14)" "Net-(ITMO12-Pad9)" "Net-(ITMO11-Pad13)" "unconnected-(ITMO2-Pad4)"
+    "unconnected-(ITMO2-Pad7)" "Net-(ITMO11-Pad3)" "unconnected-(ITMO2-Pad10)" "Net-(ITMO11-Pad4)" "unconnected-(ITMO2-Pad13)" "unconnected-(ITMO2-Pad14)" "Net-(ITMO14-Pad3)" "Net-(ITMO14-Pad13)"
+    "Net-(ITMO12-Pad4)" "Net-(ITMO14-Pad4)" "Net-(ITMO10-Pad12)" "Net-(ITMO14-Pad9)" "unconnected-(ITMO3-Pad7)" "Net-(ITMO10-Pad9)" "Net-(ITMO10-Pad13)" "unconnected-(ITMO3-Pad14)"
+    "Net-(ITMO13-Pad1)" "unconnected-(ITMO4-Pad4)" "unconnected-(ITMO4-Pad6)" "unconnected-(ITMO4-Pad7)" "Net-(ITMO10-Pad10)" "unconnected-(ITMO4-Pad13)" "unconnected-(ITMO4-Pad14)" "Net-(ITMO5-Pad12)"
+    "unconnected-(ITMO5-Pad7)" "Net-(ITMO15-Pad5)" "Net-(ITMO15-Pad11)" "Net-(ITMO12-Pad13)" "unconnected-(ITMO5-Pad14)" "Net-(ITMO10-Pad4)" "Net-(ITMO10-Pad8)" "Net-(ITMO12-Pad12)"
+    "unconnected-(ITMO6-Pad7)" "unconnected-(ITMO6-Pad14)" "unconnected-(ITMO7-Pad1)" "unconnected-(ITMO7-Pad3)" "unconnected-(ITMO7-Pad5)" "unconnected-(ITMO7-Pad7)" "unconnected-(ITMO7-Pad9)" "unconnected-(ITMO7-Pad11)"
+    "Net-(ITMO18-Pad6)" "unconnected-(ITMO7-Pad13)" "unconnected-(ITMO7-Pad14)" "unconnected-(ITMO8-Pad6)" "unconnected-(ITMO8-Pad7)" "unconnected-(ITMO8-Pad9)" "unconnected-(ITMO8-Pad10)" "unconnected-(ITMO8-Pad14)"
+    "unconnected-(ITMO9-Pad1)" "Net-(ITMO10-Pad11)" "unconnected-(ITMO9-Pad7)" "unconnected-(ITMO9-Pad8)" "Net-(ITMO10-Pad1)" "unconnected-(ITMO9-Pad14)" "unconnected-(ITMO10-Pad2)" "unconnected-(ITMO10-Pad3)"
+    "Net-(ITMO10-Pad5)" "unconnected-(ITMO10-Pad7)" "unconnected-(ITMO10-Pad14)" "unconnected-(ITMO11-Pad7)" "unconnected-(ITMO11-Pad9)" "unconnected-(ITMO11-Pad12)" "unconnected-(ITMO11-Pad14)" "unconnected-(ITMO12-Pad7)"
+    "Net-(ITMO12-Pad11)" "unconnected-(ITMO12-Pad14)" "unconnected-(ITMO13-Pad2)" "unconnected-(ITMO13-Pad3)" "unconnected-(ITMO13-Pad4)" "unconnected-(ITMO13-Pad5)" "unconnected-(ITMO13-Pad7)" "Net-(ITMO13-Pad8)"
+    "unconnected-(ITMO13-Pad9)" "unconnected-(ITMO13-Pad10)" "unconnected-(ITMO13-Pad12)" "unconnected-(ITMO13-Pad14)" "unconnected-(ITMO14-Pad5)" "unconnected-(ITMO14-Pad6)" "unconnected-(ITMO14-Pad7)" "unconnected-(ITMO14-Pad12)"
+    "unconnected-(ITMO14-Pad14)" "unconnected-(ITMO15-Pad7)" "unconnected-(ITMO15-Pad13)" "unconnected-(ITMO15-Pad14)" "unconnected-(ITMO16-Pad3)" "unconnected-(ITMO16-Pad6)" "unconnected-(ITMO16-Pad7)" "unconnected-(ITMO16-Pad14)"
+    "unconnected-(ITMO17-Pad4)" "unconnected-(ITMO17-Pad5)" "unconnected-(ITMO17-Pad6)" "unconnected-(ITMO17-Pad7)" "unconnected-(ITMO17-Pad14)" "unconnected-(ITMO18-Pad7)" "unconnected-(ITMO18-Pad14)" "Net-(ITMO1-Pad5)"
+    "Net-(ITMO11-Pad1)" "Net-(ITMO11-Pad5)" "Net-(ITMO17-Pad1)" "Net-(ITMO2-Pad11)" "Net-(ITMO15-Pad4)" "Net-(ITMO4-Pad11)" "Net-(ITMO14-Pad11)" "Net-(ITMO6-Pad5)"
+    "Net-(ITMO10-Pad6)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

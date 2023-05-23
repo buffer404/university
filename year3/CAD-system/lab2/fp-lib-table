@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "LibraryITMO")(type "KiCad")(uri "${KIPRJMOD}/lab2-backups/LibraryITMO.pretty")(options "")(descr ""))
+)

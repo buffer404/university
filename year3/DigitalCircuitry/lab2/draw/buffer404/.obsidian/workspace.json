@@ -4,31 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "9f84733a18518eb8",
+        "id": "a2f913982ccc9ec7",
         "type": "tabs",
         "children": [
           {
-            "id": "e8cf1945a876c4cb",
+            "id": "8a957dfa1885a1ad",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/mul.md"
+                "file": "Drawing 2023-05-09 15.18.49.excalidraw.md"
               }
             }
           },
           {
-            "id": "79e21948731963ad",
+            "id": "e927ae72c43a7e8f",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "release-notes",
               "state": {
-                "file": "Excalidraw/lab2.md"
+                "currentVersion": "1.2.7"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,13 +72,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "a8dbb305d7b95bd3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "f806b233eb905e1b",
@@ -95,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/lab2.md",
+                "file": "Drawing 2023-05-09 15.18.49.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/lab2.md",
+                "file": "Drawing 2023-05-09 15.18.49.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/lab2.md"
+                "file": "Drawing 2023-05-09 15.18.49.excalidraw.md"
               }
             }
           }
@@ -157,10 +163,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "79e21948731963ad",
+  "active": "c544ac5ca96fd946",
   "lastOpenFiles": [
-    "Excalidraw/mul.md",
     "Excalidraw/lab2.md",
+    "Drawing 2023-05-09 15.18.49.excalidraw.md",
+    "Excalidraw/mul.md",
     "Excalidraw/CAD1.md",
     "Pasted Image 20230407140448_120.png",
     "Pasted Image 20230407135446_077.png",

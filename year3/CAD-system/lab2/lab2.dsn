@@ -1,0 +1,4198 @@
+
+(PCB lab2
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "6.0.2+dfsg-1")
+    (generated_by_freeroute)
+  )
+  (resolution um 10)
+  (structure
+    (boundary
+      (rect pcb 71922.1 -134875.0 257402.0 -42925.0)
+    )
+    (boundary
+      (polygon signal 0
+        72022.1 -134775.0
+        257302.0 -134775.0
+        257302.0 -43025.0
+        72022.1 -43025.0
+      )
+    )
+    (snap_angle 
+      fortyfive_degree
+    )
+    (via "Via[0-1]_800:400_um" "Via[0-1]_800:400_um")
+    (control
+      (via_at_smd off)
+    )
+    (rule
+      (width 250.0)
+      (clear 200.0)
+      (clear 125.0 (type smd_to_turn_gap))
+      (clear 50.0 (type smd-smd))
+    )
+    (layer F.Cu
+      (type signal)
+    )
+    (layer B.Cu
+      (type signal)
+    )
+    (autoroute_settings
+      (fanout off)
+      (autoroute on)
+      (postroute on)
+      (vias on)
+      (via_costs 50)
+      (plane_via_costs 5)
+      (start_ripup_costs 100)
+      (start_pass_no 660)
+      (layer_rule F.Cu
+        (active on)
+        (preferred_direction horizontal)
+        (preferred_direction_trace_costs 1.0)
+        (against_preferred_direction_trace_costs 3.0)
+      )
+      (layer_rule B.Cu
+        (active on)
+        (preferred_direction vertical)
+        (preferred_direction_trace_costs 1.0)
+        (against_preferred_direction_trace_costs 1.5)
+      )
+    )
+  )
+  (placement
+    (component "Connector_PinHeader_1.00mm:PinHeader_1x10_P1.00mm_Vertical"
+      (place 
+        J1 78740.0 -86940.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+      )
+    )
+    (component LibraryITMO:ITMO
+      (place 
+        ITMO18 246380.0 -109220.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO17 243840.0 -76295.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO16 243840.0 -43275.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO15 218440.0 -109315.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO14 215900.0 -76295.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO13 215900.0 -43275.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO12 187960.0 -109315.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO11 187960.0 -76295.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO10 187960.0 -43275.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO9 160020.0 -109315.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO8 160020.0 -76295.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO7 160020.0 -43275.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO6 132080.0 -109315.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO5 132080.0 -76295.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO4 132080.0 -43275.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO3 104140.0 -109315.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO2 104140.0 -76295.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+      (place 
+        ITMO1 104140.0 -43275.0 front 0
+        (pin 1 (clearance_class default))
+        (pin 2 (clearance_class default))
+        (pin 3 (clearance_class default))
+        (pin 4 (clearance_class default))
+        (pin 5 (clearance_class default))
+        (pin 6 (clearance_class default))
+        (pin 7 (clearance_class default))
+        (pin 8 (clearance_class default))
+        (pin 9 (clearance_class default))
+        (pin 10 (clearance_class default))
+        (pin 11 (clearance_class default))
+        (pin 12 (clearance_class default))
+        (pin 13 (clearance_class default))
+        (pin 14 (clearance_class default))
+      )
+    )
+  )
+  (library
+    (image "Connector_PinHeader_1.00mm:PinHeader_1x10_P1.00mm_Vertical"
+      (side front)
+      (pin "Rect[A]Pad_850x850_um" 1 0.0 0.0)
+      (pin "Oval[A]Pad_850x850_um" 2 0.0 -1000.0)
+      (pin "Oval[A]Pad_850x850_um" 3 0.0 -2000.0)
+      (pin "Oval[A]Pad_850x850_um" 4 0.0 -3000.0)
+      (pin "Oval[A]Pad_850x850_um" 5 0.0 -4000.0)
+      (pin "Oval[A]Pad_850x850_um" 6 0.0 -5000.0)
+      (pin "Oval[A]Pad_850x850_um" 7 0.0 -6000.0)
+      (pin "Oval[A]Pad_850x850_um" 8 0.0 -7000.0)
+      (pin "Oval[A]Pad_850x850_um" 9 0.0 -8000.0)
+      (pin "Oval[A]Pad_850x850_um" 10 0.0 -9000.0)
+      (outline
+        (polygon signal 0
+          369.5 -9620.0
+          719.9 -9620.0
+          755.0 -9584.9
+          755.0 -9535.1
+          719.9 -9500.0
+          369.5 -9500.0
+          334.4 -9535.1
+          334.4 -9584.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -719.9 -745.0
+          -583.3 -745.0
+          -548.2 -709.9
+          -548.2 -660.1
+          -583.3 -625.0
+          -719.9 -625.0
+          -755.0 -660.1
+          -755.0 -709.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          583.3 -745.0
+          719.9 -745.0
+          755.0 -709.9
+          755.0 -660.1
+          719.9 -625.0
+          583.3 -625.0
+          548.2 -660.1
+          548.2 -709.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -719.9 -60.0
+          -670.1 -60.0
+          -635.0 -24.9
+          -635.0 709.9
+          -670.1 745.0
+          -719.9 745.0
+          -755.0 709.9
+          -755.0 -24.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -719.9 -9620.0
+          -670.1 -9620.0
+          -635.0 -9584.9
+          -635.0 -660.1
+          -670.1 -625.0
+          -719.9 -625.0
+          -755.0 -660.1
+          -755.0 -9584.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          670.1 -9620.0
+          719.9 -9620.0
+          755.0 -9584.9
+          755.0 -660.1
+          719.9 -625.0
+          670.1 -625.0
+          635.0 -660.1
+          635.0 -9584.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -719.9 -9620.0
+          -369.5 -9620.0
+          -334.4 -9584.9
+          -334.4 -9535.1
+          -369.5 -9500.0
+          -719.9 -9500.0
+          -755.0 -9535.1
+          -755.0 -9584.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -719.9 625.0
+          24.9 625.0
+          60.0 660.1
+          60.0 709.9
+          24.9 745.0
+          -719.9 745.0
+          -755.0 709.9
+          -755.0 660.1
+        )
+      )
+      (outline
+        (polygon signal 0
+          -1160.4 -10025.0
+          1160.4 -10025.0
+          1175.0 -10010.4
+          1175.0 -9989.6
+          1160.4 -9975.0
+          -1160.4 -9975.0
+          -1175.0 -9989.6
+          -1175.0 -10010.4
+        )
+      )
+      (outline
+        (polygon signal 0
+          -1160.4 975.0
+          1160.4 975.0
+          1175.0 989.6
+          1175.0 1010.4
+          1160.4 1025.0
+          -1160.4 1025.0
+          -1175.0 1010.4
+          -1175.0 989.6
+        )
+      )
+      (outline
+        (polygon signal 0
+          1139.6 -10025.0
+          1160.4 -10025.0
+          1175.0 -10010.4
+          1175.0 1010.4
+          1160.4 1025.0
+          1139.6 1025.0
+          1125.0 1010.4
+          1125.0 -10010.4
+        )
+      )
+      (outline
+        (polygon signal 0
+          -1160.4 -10025.0
+          -1139.6 -10025.0
+          -1125.0 -10010.4
+          -1125.0 1010.4
+          -1139.6 1025.0
+          -1160.4 1025.0
+          -1175.0 1010.4
+          -1175.0 -10010.4
+        )
+      )
+      (outline
+        (polygon signal 0
+          -655.7 -9550.0
+          655.7 -9550.0
+          685.0 -9520.7
+          685.0 -9479.3
+          655.7 -9450.0
+          -655.7 -9450.0
+          -685.0 -9479.3
+          -685.0 -9520.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          -655.7 -9550.0
+          -614.3 -9550.0
+          -585.0 -9520.7
+          -585.0 203.2
+          -614.3 232.5
+          -655.7 232.5
+          -685.0 203.2
+          -685.0 -9520.7
+        )
+      )
+      (outline
+        (polygon signal 0
+          -655.7 132.5
+          -614.3 132.5
+          -267.5 479.3
+          -267.5 520.7
+          -296.8 550.0
+          -338.2 550.0
+          -685.0 203.2
+          -685.0 161.8
+        )
+      )
+      (outline
+        (polygon signal 0
+          -338.2 450.0
+          655.7 450.0
+          685.0 479.3
+          685.0 520.7
+          655.7 550.0
+          -338.2 550.0
+          -367.5 520.7
+          -367.5 479.3
+        )
+      )
+      (outline
+        (polygon signal 0
+          614.3 -9550.0
+          655.7 -9550.0
+          685.0 -9520.7
+          685.0 520.7
+          655.7 550.0
+          614.3 550.0
+          585.0 520.7
+          585.0 -9520.7
+        )
+      )
+    )
+    (image LibraryITMO:ITMO
+      (side front)
+      (pin "Round[A]Pad_1524_um" 1 -10160.0 -7620.0)
+      (pin "Round[A]Pad_1524_um" 2 -10160.0 -10160.0)
+      (pin "Round[A]Pad_1524_um" 3 -10160.0 -12700.0)
+      (pin "Round[A]Pad_1524_um" 4 -10160.0 -15240.0)
+      (pin "Round[A]Pad_1524_um" 5 -10160.0 -17780.0)
+      (pin "Round[A]Pad_1524_um" 6 -10160.0 -20320.0)
+      (pin "Round[A]Pad_1524_um" 7 -10160.0 -22860.0)
+      (pin "Round[A]Pad_1524_um" 8 10160.0 -22860.0)
+      (pin "Round[A]Pad_1524_um" 9 10160.0 -20320.0)
+      (pin "Round[A]Pad_1524_um" 10 10160.0 -17780.0)
+      (pin "Round[A]Pad_1524_um" 11 10160.0 -15240.0)
+      (pin "Round[A]Pad_1524_um" 12 10160.0 -12700.0)
+      (pin "Round[A]Pad_1524_um" 13 10160.0 -10160.0)
+      (pin "Round[A]Pad_1524_um" 14 10160.0 -7620.0)
+      (outline
+        (polygon signal 0
+          -10184.9 -15300.0
+          -7595.1 -15300.0
+          -7560.0 -15264.9
+          -7560.0 -15215.1
+          -7595.1 -15180.0
+          -10184.9 -15180.0
+          -10220.0 -15215.1
+          -10220.0 -15264.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          7595.1 -22920.0
+          10184.9 -22920.0
+          10220.0 -22884.9
+          10220.0 -22835.1
+          10184.9 -22800.0
+          7595.1 -22800.0
+          7560.0 -22835.1
+          7560.0 -22884.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -10184.9 -22920.0
+          -7595.1 -22920.0
+          -7560.0 -22884.9
+          -7560.0 -22835.1
+          -7595.1 -22800.0
+          -10184.9 -22800.0
+          -10220.0 -22835.1
+          -10220.0 -22884.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          7595.1 -7680.0
+          10184.9 -7680.0
+          10220.0 -7644.9
+          10220.0 -7595.1
+          10184.9 -7560.0
+          7595.1 -7560.0
+          7560.0 -7595.1
+          7560.0 -7644.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -10184.9 -10220.0
+          -7595.1 -10220.0
+          -7560.0 -10184.9
+          -7560.0 -10135.1
+          -7595.1 -10100.0
+          -10184.9 -10100.0
+          -10220.0 -10135.1
+          -10220.0 -10184.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -10184.9 -17840.0
+          -7595.1 -17840.0
+          -7560.0 -17804.9
+          -7560.0 -17755.1
+          -7595.1 -17720.0
+          -10184.9 -17720.0
+          -10220.0 -17755.1
+          -10220.0 -17804.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          7595.1 -20380.0
+          10184.9 -20380.0
+          10220.0 -20344.9
+          10220.0 -20295.1
+          10184.9 -20260.0
+          7595.1 -20260.0
+          7560.0 -20295.1
+          7560.0 -20344.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -10184.9 -7680.0
+          -7595.1 -7680.0
+          -7560.0 -7644.9
+          -7560.0 -7595.1
+          -7595.1 -7560.0
+          -10184.9 -7560.0
+          -10220.0 -7595.1
+          -10220.0 -7644.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          7595.1 -17840.0
+          10184.9 -17840.0
+          10220.0 -17804.9
+          10220.0 -17755.1
+          10184.9 -17720.0
+          7595.1 -17720.0
+          7560.0 -17755.1
+          7560.0 -17804.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -10184.9 -12760.0
+          -7595.1 -12760.0
+          -7560.0 -12724.9
+          -7560.0 -12675.1
+          -7595.1 -12640.0
+          -10184.9 -12640.0
+          -10220.0 -12675.1
+          -10220.0 -12724.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          7595.1 -15300.0
+          10184.9 -15300.0
+          10220.0 -15264.9
+          10220.0 -15215.1
+          10184.9 -15180.0
+          7595.1 -15180.0
+          7560.0 -15215.1
+          7560.0 -15264.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          7595.1 -10220.0
+          10184.9 -10220.0
+          10220.0 -10184.9
+          10220.0 -10135.1
+          10184.9 -10100.0
+          7595.1 -10100.0
+          7560.0 -10135.1
+          7560.0 -10184.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          7595.1 -12760.0
+          10184.9 -12760.0
+          10220.0 -12724.9
+          10220.0 -12675.1
+          10184.9 -12640.0
+          7595.1 -12640.0
+          7560.0 -12675.1
+          7560.0 -12724.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -10184.9 -20380.0
+          -7595.1 -20380.0
+          -7560.0 -20344.9
+          -7560.0 -20295.1
+          -7595.1 -20260.0
+          -10184.9 -20260.0
+          -10220.0 -20295.1
+          -10220.0 -20344.9
+        )
+      )
+      (outline
+        (polygon signal 0
+          -7644.9 -25460.0
+          7644.9 -25460.0
+          7680.0 -25424.9
+          7680.0 -5055.1
+          7644.9 -5020.0
+          -7644.9 -5020.0
+          -7680.0 -5055.1
+          -7680.0 -25424.9
+        )
+      )
+    )
+    (padstack "Round[A]Pad_1524_um"
+      (shape
+        (circle F.Cu 1524.0 0.0 0.0)
+      )
+      (shape
+        (circle B.Cu 1524.0 0.0 0.0)
+      )
+      (attach off)
+    )
+    (padstack "Oval[A]Pad_850x850_um"
+      (shape
+        (polygon F.Cu 0
+          -176.0 -425.0
+          176.0 -425.0
+          425.0 -176.0
+          425.0 176.0
+          176.0 425.0
+          -176.0 425.0
+          -425.0 176.0
+          -425.0 -176.0
+        )
+      )
+      (shape
+        (polygon B.Cu 0
+          -176.0 -425.0
+          176.0 -425.0
+          425.0 -176.0
+          425.0 176.0
+          176.0 425.0
+          -176.0 425.0
+          -425.0 176.0
+          -425.0 -176.0
+        )
+      )
+      (attach off)
+    )
+    (padstack "Rect[A]Pad_850x850_um"
+      (shape
+        (rect F.Cu -425.0 -425.0 425.0 425.0)
+      )
+      (shape
+        (rect B.Cu -425.0 -425.0 425.0 425.0)
+      )
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape
+        (circle F.Cu 800.0 0.0 0.0)
+      )
+      (shape
+        (circle B.Cu 800.0 0.0 0.0)
+      )
+      (attach off)
+    )
+  )
+  (network
+    (net "unconnected-(ITMO1-Pad1)" 1
+      (pins
+        ITMO1-1
+      )
+    )
+    (net "Net-(ITMO1-Pad2)" 1
+      (pins
+        ITMO1-2
+        ITMO3-10
+        ITMO3-9
+        ITMO5-4
+        ITMO6-11
+      )
+    )
+    (net "unconnected-(ITMO1-Pad3)" 1
+      (pins
+        ITMO1-3
+      )
+    )
+    (net "Net-(ITMO1-Pad4)" 1
+      (pins
+        ITMO1-4
+        ITMO7-2
+        ITMO11-6
+        ITMO16-9
+        ITMO16-2
+      )
+    )
+    (net "unconnected-(ITMO1-Pad6)" 1
+      (pins
+        ITMO1-6
+      )
+    )
+    (net "unconnected-(ITMO1-Pad7)" 1
+      (pins
+        ITMO1-7
+      )
+    )
+    (net "unconnected-(ITMO1-Pad8)" 1
+      (pins
+        ITMO1-8
+      )
+    )
+    (net "Net-(ITMO1-Pad9)" 1
+      (pins
+        ITMO1-9
+        ITMO2-8
+        ITMO8-11
+        ITMO8-1
+        ITMO11-10
+      )
+    )
+    (net "unconnected-(ITMO1-Pad10)" 1
+      (pins
+        ITMO1-10
+      )
+    )
+    (net "unconnected-(ITMO1-Pad11)" 1
+      (pins
+        ITMO1-11
+      )
+    )
+    (net "Net-(ITMO1-Pad12)" 1
+      (pins
+        ITMO1-12
+        ITMO5-8
+        ITMO12-8
+        ITMO14-8
+        ITMO17-2
+      )
+    )
+    (net "unconnected-(ITMO1-Pad13)" 1
+      (pins
+        ITMO1-13
+      )
+    )
+    (net "unconnected-(ITMO1-Pad14)" 1
+      (pins
+        ITMO1-14
+      )
+    )
+    (net "Net-(ITMO12-Pad9)" 1
+      (pins
+        ITMO2-1
+        ITMO5-5
+        ITMO9-6
+        ITMO12-9
+        ITMO18-13
+      )
+    )
+    (net "Net-(ITMO11-Pad13)" 1
+      (pins
+        ITMO2-2
+        ITMO8-2
+        ITMO11-13
+        ITMO12-1
+        ITMO14-1
+      )
+    )
+    (net "unconnected-(ITMO2-Pad4)" 1
+      (pins
+        ITMO2-4
+      )
+    )
+    (net "unconnected-(ITMO2-Pad7)" 1
+      (pins
+        ITMO2-7
+      )
+    )
+    (net "Net-(ITMO11-Pad3)" 1
+      (pins
+        ITMO2-9
+        ITMO4-5
+        ITMO8-12
+        ITMO9-13
+        ITMO11-3
+      )
+    )
+    (net "unconnected-(ITMO2-Pad10)" 1
+      (pins
+        ITMO2-10
+      )
+    )
+    (net "Net-(ITMO11-Pad4)" 1
+      (pins
+        ITMO2-12
+        ITMO9-9
+        ITMO11-4
+        ITMO18-2
+      )
+    )
+    (net "unconnected-(ITMO2-Pad13)" 1
+      (pins
+        ITMO2-13
+      )
+    )
+    (net "unconnected-(ITMO2-Pad14)" 1
+      (pins
+        ITMO2-14
+      )
+    )
+    (net "Net-(ITMO14-Pad3)" 1
+      (pins
+        ITMO3-1
+        ITMO4-9
+        ITMO6-13
+        ITMO6-9
+        ITMO14-3
+      )
+    )
+    (net "Net-(ITMO14-Pad13)" 1
+      (pins
+        ITMO3-2
+        ITMO14-13
+        ITMO16-11
+      )
+    )
+    (net "Net-(ITMO12-Pad4)" 1
+      (pins
+        ITMO3-3
+        ITMO12-4
+        ITMO13-13
+      )
+    )
+    (net "Net-(ITMO14-Pad4)" 1
+      (pins
+        ITMO3-4
+        ITMO14-4
+        ITMO15-8
+        ITMO15-1
+        ITMO17-13
+      )
+    )
+    (net "Net-(ITMO10-Pad12)" 1
+      (pins
+        ITMO3-5
+        ITMO10-12
+        ITMO12-6
+        ITMO17-12
+        ITMO18-5
+      )
+    )
+    (net "Net-(ITMO14-Pad9)" 1
+      (pins
+        ITMO3-6
+        ITMO14-9
+        ITMO15-2
+      )
+    )
+    (net "unconnected-(ITMO3-Pad7)" 1
+      (pins
+        ITMO3-7
+      )
+    )
+    (net "Net-(ITMO10-Pad9)" 1
+      (pins
+        ITMO3-11
+        ITMO5-1
+        ITMO10-9
+        ITMO15-6
+      )
+    )
+    (net "Net-(ITMO10-Pad13)" 1
+      (pins
+        ITMO3-12
+        ITMO10-13
+        ITMO18-9
+        ITMO18-8
+        ITMO18-4
+      )
+    )
+    (net "unconnected-(ITMO3-Pad14)" 1
+      (pins
+        ITMO3-14
+      )
+    )
+    (net "Net-(ITMO13-Pad1)" 1
+      (pins
+        ITMO4-1
+        ITMO13-1
+      )
+    )
+    (net "unconnected-(ITMO4-Pad4)" 1
+      (pins
+        ITMO4-4
+      )
+    )
+    (net "unconnected-(ITMO4-Pad6)" 1
+      (pins
+        ITMO4-6
+      )
+    )
+    (net "unconnected-(ITMO4-Pad7)" 1
+      (pins
+        ITMO4-7
+      )
+    )
+    (net "Net-(ITMO10-Pad10)" 1
+      (pins
+        ITMO4-10
+        ITMO10-10
+        ITMO13-11
+        ITMO14-2
+        ITMO17-3
+      )
+    )
+    (net "unconnected-(ITMO4-Pad13)" 1
+      (pins
+        ITMO4-13
+      )
+    )
+    (net "unconnected-(ITMO4-Pad14)" 1
+      (pins
+        ITMO4-14
+      )
+    )
+    (net "Net-(ITMO5-Pad12)" 1
+      (pins
+        ITMO5-12
+        ITMO5-6
+        ITMO9-2
+      )
+    )
+    (net "unconnected-(ITMO5-Pad7)" 1
+      (pins
+        ITMO5-7
+      )
+    )
+    (net "Net-(ITMO15-Pad5)" 1
+      (pins
+        ITMO5-9
+        ITMO7-6
+        ITMO8-5
+        ITMO15-5
+        ITMO16-13
+      )
+    )
+    (net "Net-(ITMO15-Pad11)" 1
+      (pins
+        ITMO5-10
+        ITMO7-4
+        ITMO15-12
+        ITMO15-11
+        ITMO15-9
+      )
+    )
+    (net "Net-(ITMO12-Pad13)" 1
+      (pins
+        ITMO5-11
+        ITMO12-13
+        ITMO13-6
+        ITMO14-10
+        ITMO18-12
+      )
+    )
+    (net "unconnected-(ITMO5-Pad14)" 1
+      (pins
+        ITMO5-14
+      )
+    )
+    (net "Net-(ITMO10-Pad4)" 1
+      (pins
+        ITMO6-6
+        ITMO6-1
+        ITMO10-4
+      )
+    )
+    (net "Net-(ITMO10-Pad8)" 1
+      (pins
+        ITMO6-2
+        ITMO10-8
+        ITMO15-10
+        ITMO17-11
+        ITMO17-10
+      )
+    )
+    (net "Net-(ITMO12-Pad12)" 1
+      (pins
+        ITMO6-12
+        ITMO6-4
+        ITMO9-3
+        ITMO12-12
+      )
+    )
+    (net "unconnected-(ITMO6-Pad7)" 1
+      (pins
+        ITMO6-7
+      )
+    )
+    (net "unconnected-(ITMO6-Pad14)" 1
+      (pins
+        ITMO6-14
+      )
+    )
+    (net "unconnected-(ITMO7-Pad1)" 1
+      (pins
+        ITMO7-1
+      )
+    )
+    (net "unconnected-(ITMO7-Pad3)" 1
+      (pins
+        ITMO7-3
+      )
+    )
+    (net "unconnected-(ITMO7-Pad5)" 1
+      (pins
+        ITMO7-5
+      )
+    )
+    (net "unconnected-(ITMO7-Pad7)" 1
+      (pins
+        ITMO7-7
+      )
+    )
+    (net "unconnected-(ITMO7-Pad9)" 1
+      (pins
+        ITMO7-9
+      )
+    )
+    (net "unconnected-(ITMO7-Pad11)" 1
+      (pins
+        ITMO7-11
+      )
+    )
+    (net "Net-(ITMO18-Pad6)" 1
+      (pins
+        ITMO7-12
+        ITMO18-6
+      )
+    )
+    (net "unconnected-(ITMO7-Pad13)" 1
+      (pins
+        ITMO7-13
+      )
+    )
+    (net "unconnected-(ITMO7-Pad14)" 1
+      (pins
+        ITMO7-14
+      )
+    )
+    (net "unconnected-(ITMO8-Pad6)" 1
+      (pins
+        ITMO8-6
+      )
+    )
+    (net "unconnected-(ITMO8-Pad7)" 1
+      (pins
+        ITMO8-7
+      )
+    )
+    (net "unconnected-(ITMO8-Pad9)" 1
+      (pins
+        ITMO8-9
+      )
+    )
+    (net "unconnected-(ITMO8-Pad10)" 1
+      (pins
+        ITMO8-10
+      )
+    )
+    (net "unconnected-(ITMO8-Pad14)" 1
+      (pins
+        ITMO8-14
+      )
+    )
+    (net "unconnected-(ITMO9-Pad1)" 1
+      (pins
+        ITMO9-1
+      )
+    )
+    (net "Net-(ITMO10-Pad11)" 1
+      (pins
+        ITMO9-5
+        ITMO10-11
+        ITMO11-2
+        ITMO12-2
+        ITMO16-8
+      )
+    )
+    (net "unconnected-(ITMO9-Pad7)" 1
+      (pins
+        ITMO9-7
+      )
+    )
+    (net "unconnected-(ITMO9-Pad8)" 1
+      (pins
+        ITMO9-8
+      )
+    )
+    (net "Net-(ITMO10-Pad1)" 1
+      (pins
+        ITMO9-10
+        ITMO10-1
+        ITMO11-8
+        ITMO12-10
+        ITMO16-10
+      )
+    )
+    (net "unconnected-(ITMO9-Pad14)" 1
+      (pins
+        ITMO9-14
+      )
+    )
+    (net "unconnected-(ITMO10-Pad2)" 1
+      (pins
+        ITMO10-2
+      )
+    )
+    (net "unconnected-(ITMO10-Pad3)" 1
+      (pins
+        ITMO10-3
+      )
+    )
+    (net "Net-(ITMO10-Pad5)" 1
+      (pins
+        ITMO10-5
+        ITMO12-5
+        ITMO15-3
+        ITMO18-10
+        ITMO18-1
+      )
+    )
+    (net "unconnected-(ITMO10-Pad7)" 1
+      (pins
+        ITMO10-7
+      )
+    )
+    (net "unconnected-(ITMO10-Pad14)" 1
+      (pins
+        ITMO10-14
+      )
+    )
+    (net "unconnected-(ITMO11-Pad7)" 1
+      (pins
+        ITMO11-7
+      )
+    )
+    (net "unconnected-(ITMO11-Pad9)" 1
+      (pins
+        ITMO11-9
+      )
+    )
+    (net "unconnected-(ITMO11-Pad12)" 1
+      (pins
+        ITMO11-12
+      )
+    )
+    (net "unconnected-(ITMO11-Pad14)" 1
+      (pins
+        ITMO11-14
+      )
+    )
+    (net "unconnected-(ITMO12-Pad7)" 1
+      (pins
+        ITMO12-7
+      )
+    )
+    (net "Net-(ITMO12-Pad11)" 1
+      (pins
+        ITMO12-11
+        ITMO16-1
+      )
+    )
+    (net "unconnected-(ITMO12-Pad14)" 1
+      (pins
+        ITMO12-14
+      )
+    )
+    (net "unconnected-(ITMO13-Pad2)" 1
+      (pins
+        ITMO13-2
+      )
+    )
+    (net "unconnected-(ITMO13-Pad3)" 1
+      (pins
+        ITMO13-3
+      )
+    )
+    (net "unconnected-(ITMO13-Pad4)" 1
+      (pins
+        ITMO13-4
+      )
+    )
+    (net "unconnected-(ITMO13-Pad5)" 1
+      (pins
+        ITMO13-5
+      )
+    )
+    (net "unconnected-(ITMO13-Pad7)" 1
+      (pins
+        ITMO13-7
+      )
+    )
+    (net "Net-(ITMO13-Pad8)" 1
+      (pins
+        ITMO13-8
+        ITMO16-12
+      )
+    )
+    (net "unconnected-(ITMO13-Pad9)" 1
+      (pins
+        ITMO13-9
+      )
+    )
+    (net "unconnected-(ITMO13-Pad10)" 1
+      (pins
+        ITMO13-10
+      )
+    )
+    (net "unconnected-(ITMO13-Pad12)" 1
+      (pins
+        ITMO13-12
+      )
+    )
+    (net "unconnected-(ITMO13-Pad14)" 1
+      (pins
+        ITMO13-14
+      )
+    )
+    (net "unconnected-(ITMO14-Pad5)" 1
+      (pins
+        ITMO14-5
+      )
+    )
+    (net "unconnected-(ITMO14-Pad6)" 1
+      (pins
+        ITMO14-6
+      )
+    )
+    (net "unconnected-(ITMO14-Pad7)" 1
+      (pins
+        ITMO14-7
+      )
+    )
+    (net "unconnected-(ITMO14-Pad12)" 1
+      (pins
+        ITMO14-12
+      )
+    )
+    (net "unconnected-(ITMO14-Pad14)" 1
+      (pins
+        ITMO14-14
+      )
+    )
+    (net "unconnected-(ITMO15-Pad7)" 1
+      (pins
+        ITMO15-7
+      )
+    )
+    (net "unconnected-(ITMO15-Pad13)" 1
+      (pins
+        ITMO15-13
+      )
+    )
+    (net "unconnected-(ITMO15-Pad14)" 1
+      (pins
+        ITMO15-14
+      )
+    )
+    (net "unconnected-(ITMO16-Pad3)" 1
+      (pins
+        ITMO16-3
+      )
+    )
+    (net "unconnected-(ITMO16-Pad6)" 1
+      (pins
+        ITMO16-6
+      )
+    )
+    (net "unconnected-(ITMO16-Pad7)" 1
+      (pins
+        ITMO16-7
+      )
+    )
+    (net "unconnected-(ITMO16-Pad14)" 1
+      (pins
+        ITMO16-14
+      )
+    )
+    (net "unconnected-(ITMO17-Pad4)" 1
+      (pins
+        ITMO17-4
+      )
+    )
+    (net "unconnected-(ITMO17-Pad5)" 1
+      (pins
+        ITMO17-5
+      )
+    )
+    (net "unconnected-(ITMO17-Pad6)" 1
+      (pins
+        ITMO17-6
+      )
+    )
+    (net "unconnected-(ITMO17-Pad7)" 1
+      (pins
+        ITMO17-7
+      )
+    )
+    (net "unconnected-(ITMO17-Pad14)" 1
+      (pins
+        ITMO17-14
+      )
+    )
+    (net "unconnected-(ITMO18-Pad7)" 1
+      (pins
+        ITMO18-7
+      )
+    )
+    (net "unconnected-(ITMO18-Pad14)" 1
+      (pins
+        ITMO18-14
+      )
+    )
+    (net "Net-(ITMO1-Pad5)" 1
+      (pins
+        ITMO1-5
+        ITMO4-2
+        ITMO9-11
+        ITMO11-11
+        ITMO16-5
+        J1-9
+      )
+    )
+    (net "Net-(ITMO11-Pad1)" 1
+      (pins
+        ITMO2-3
+        ITMO3-13
+        ITMO11-1
+        ITMO17-9
+        ITMO17-8
+        J1-10
+      )
+    )
+    (net "Net-(ITMO11-Pad5)" 1
+      (pins
+        ITMO2-5
+        ITMO5-13
+        ITMO6-10
+        ITMO7-10
+        ITMO11-5
+        J1-3
+      )
+    )
+    (net "Net-(ITMO17-Pad1)" 1
+      (pins
+        ITMO2-6
+        ITMO5-2
+        ITMO17-1
+        J1-5
+      )
+    )
+    (net "Net-(ITMO2-Pad11)" 1
+      (pins
+        ITMO2-11
+        ITMO4-8
+        ITMO4-3
+        ITMO8-8
+        J1-1
+      )
+    )
+    (net "Net-(ITMO15-Pad4)" 1
+      (pins
+        ITMO3-8
+        ITMO5-3
+        ITMO6-8
+        ITMO15-4
+        ITMO16-4
+        J1-2
+      )
+    )
+    (net "Net-(ITMO4-Pad11)" 1
+      (pins
+        ITMO4-11
+        ITMO6-3
+        ITMO8-13
+        ITMO8-3
+        ITMO9-4
+        J1-6
+      )
+    )
+    (net "Net-(ITMO14-Pad11)" 1
+      (pins
+        ITMO4-12
+        ITMO9-12
+        ITMO14-11
+        ITMO18-11
+        ITMO18-3
+        J1-8
+      )
+    )
+    (net "Net-(ITMO6-Pad5)" 1
+      (pins
+        ITMO6-5
+        ITMO7-8
+        ITMO8-4
+        J1-7
+      )
+    )
+    (net "Net-(ITMO10-Pad6)" 1
+      (pins
+        ITMO10-6
+        ITMO12-3
+        J1-4
+      )
+    )
+    (via 
+      "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+    )
+    (via 
+      "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+    )
+    (via_rule
+      default "Via[0-1]_800:400_um"
+    )
+    (via_rule
+      "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+    )
+    (class default
+      "unconnected-(ITMO1-Pad1)" "Net-(ITMO1-Pad2)" "unconnected-(ITMO1-Pad3)" "Net-(ITMO1-Pad4)" "unconnected-(ITMO1-Pad6)" "unconnected-(ITMO1-Pad7)" "unconnected-(ITMO1-Pad8)" "Net-(ITMO1-Pad9)"
+      "unconnected-(ITMO1-Pad10)" "unconnected-(ITMO1-Pad11)" "Net-(ITMO1-Pad12)" "unconnected-(ITMO1-Pad13)" "unconnected-(ITMO1-Pad14)" "Net-(ITMO12-Pad9)" "Net-(ITMO11-Pad13)" "unconnected-(ITMO2-Pad4)"
+      "unconnected-(ITMO2-Pad7)" "Net-(ITMO11-Pad3)" "unconnected-(ITMO2-Pad10)" "Net-(ITMO11-Pad4)" "unconnected-(ITMO2-Pad13)" "unconnected-(ITMO2-Pad14)" "Net-(ITMO14-Pad3)" "Net-(ITMO14-Pad13)"
+      "Net-(ITMO12-Pad4)" "Net-(ITMO14-Pad4)" "Net-(ITMO10-Pad12)" "Net-(ITMO14-Pad9)" "unconnected-(ITMO3-Pad7)" "Net-(ITMO10-Pad9)" "Net-(ITMO10-Pad13)" "unconnected-(ITMO3-Pad14)"
+      "Net-(ITMO13-Pad1)" "unconnected-(ITMO4-Pad4)" "unconnected-(ITMO4-Pad6)" "unconnected-(ITMO4-Pad7)" "Net-(ITMO10-Pad10)" "unconnected-(ITMO4-Pad13)" "unconnected-(ITMO4-Pad14)" "Net-(ITMO5-Pad12)"
+      "unconnected-(ITMO5-Pad7)" "Net-(ITMO15-Pad5)" "Net-(ITMO15-Pad11)" "Net-(ITMO12-Pad13)" "unconnected-(ITMO5-Pad14)" "Net-(ITMO10-Pad4)" "Net-(ITMO10-Pad8)" "Net-(ITMO12-Pad12)"
+      "unconnected-(ITMO6-Pad7)" "unconnected-(ITMO6-Pad14)" "unconnected-(ITMO7-Pad1)" "unconnected-(ITMO7-Pad3)" "unconnected-(ITMO7-Pad5)" "unconnected-(ITMO7-Pad7)" "unconnected-(ITMO7-Pad9)" "unconnected-(ITMO7-Pad11)"
+      "Net-(ITMO18-Pad6)" "unconnected-(ITMO7-Pad13)" "unconnected-(ITMO7-Pad14)" "unconnected-(ITMO8-Pad6)" "unconnected-(ITMO8-Pad7)" "unconnected-(ITMO8-Pad9)" "unconnected-(ITMO8-Pad10)" "unconnected-(ITMO8-Pad14)"
+      "unconnected-(ITMO9-Pad1)" "Net-(ITMO10-Pad11)" "unconnected-(ITMO9-Pad7)" "unconnected-(ITMO9-Pad8)" "Net-(ITMO10-Pad1)" "unconnected-(ITMO9-Pad14)" "unconnected-(ITMO10-Pad2)" "unconnected-(ITMO10-Pad3)"
+      "Net-(ITMO10-Pad5)" "unconnected-(ITMO10-Pad7)" "unconnected-(ITMO10-Pad14)" "unconnected-(ITMO11-Pad7)" "unconnected-(ITMO11-Pad9)" "unconnected-(ITMO11-Pad12)" "unconnected-(ITMO11-Pad14)" "unconnected-(ITMO12-Pad7)"
+      "Net-(ITMO12-Pad11)" "unconnected-(ITMO12-Pad14)" "unconnected-(ITMO13-Pad2)" "unconnected-(ITMO13-Pad3)" "unconnected-(ITMO13-Pad4)" "unconnected-(ITMO13-Pad5)" "unconnected-(ITMO13-Pad7)" "Net-(ITMO13-Pad8)"
+      "unconnected-(ITMO13-Pad9)" "unconnected-(ITMO13-Pad10)" "unconnected-(ITMO13-Pad12)" "unconnected-(ITMO13-Pad14)" "unconnected-(ITMO14-Pad5)" "unconnected-(ITMO14-Pad6)" "unconnected-(ITMO14-Pad7)" "unconnected-(ITMO14-Pad12)"
+      "unconnected-(ITMO14-Pad14)" "unconnected-(ITMO15-Pad7)" "unconnected-(ITMO15-Pad13)" "unconnected-(ITMO15-Pad14)" "unconnected-(ITMO16-Pad3)" "unconnected-(ITMO16-Pad6)" "unconnected-(ITMO16-Pad7)" "unconnected-(ITMO16-Pad14)"
+      "unconnected-(ITMO17-Pad4)" "unconnected-(ITMO17-Pad5)" "unconnected-(ITMO17-Pad6)" "unconnected-(ITMO17-Pad7)" "unconnected-(ITMO17-Pad14)" "unconnected-(ITMO18-Pad7)" "unconnected-(ITMO18-Pad14)" "Net-(ITMO1-Pad5)"
+      "Net-(ITMO11-Pad1)" "Net-(ITMO11-Pad5)" "Net-(ITMO17-Pad1)" "Net-(ITMO2-Pad11)" "Net-(ITMO15-Pad4)" "Net-(ITMO4-Pad11)" "Net-(ITMO14-Pad11)" "Net-(ITMO6-Pad5)"
+      "Net-(ITMO10-Pad6)"
+      (clearance_class default)
+      (via_rule default)
+      (rule
+        (width 250.0)
+      )
+      (circuit 
+        (use_layer F.Cu B.Cu)
+      )
+    )
+    (class "kicad_default"
+      (clearance_class "kicad_default")
+      (via_rule "kicad_default")
+      (rule
+        (width 250.0)
+      )
+      (circuit 
+        (use_layer F.Cu B.Cu)
+      )
+    )
+  )
+  (wiring
+    (wire
+      (polyline_path F.Cu 250.0
+        149860.0 -124555.0 149859.9 -124555.1 
+        149860.0 -124555.0 148590.0 -123285.0 
+        141152.8 -123285.0 123190.0 -123285.0 
+        123190.0 -123285.0 121920.0 -122015.0 
+        121920.0 -122015.0 121920.1 -122014.9 
+      )
+      (net "Net-(ITMO4-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        148772.8 -93624.6 148772.8 -93624.7 
+        144780.0 -94075.0 149860.0 -94075.0 
+        149860.0 -94075.0 149860.0 -94075.1 
+      )
+      (net "Net-(ITMO15-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -96615.0 142239.9 -96614.9 
+        142240.0 -96615.0 144780.0 -94075.0 
+        144780.0 -94075.0 149860.0 -94075.0 
+        148772.8 -93624.6 148772.8 -93624.7 
+      )
+      (net "Net-(ITMO15-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        149860.0 -63595.0 149860.1 -63594.9 
+        149860.0 -63595.0 150996.1 -64731.1 
+        150996.1 -64731.1 150996.1 -89429.1 
+        150996.1 -89429.1 150160.2 -90265.0 
+        150160.2 -90265.0 149553.1 -90265.0 
+        149553.1 -90265.0 148772.8 -91045.3 
+        148772.8 -93624.6 148772.8 -93624.7 
+        149860.0 -94075.0 144780.0 -94075.0 
+      )
+      (net "Net-(ITMO15-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        143222.1 -80977.5 143222.0 -80977.5 
+        143334.7 -65047.8 143334.7 -65047.7 
+        143692.8 -65047.8 142240.0 -63595.0 
+        142240.0 -63595.0 142240.1 -63594.9 
+      )
+      (net "Net-(ITMO14-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -119475.0 142239.9 -119475.1 
+        142240.0 -119475.0 139794.5 -117029.5 
+        139794.5 -117029.5 139794.5 -89870.4 
+        139794.5 -89870.4 141939.9 -87725.0 
+        141939.9 -87725.0 142546.9 -87725.0 
+        142546.9 -87725.0 143755.6 -86516.3 
+        143334.7 -65047.8 143334.7 -65047.7 
+        143222.1 -80977.5 143222.0 -80977.5 
+      )
+      (net "Net-(ITMO14-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        143334.7 -65047.7 143334.7 -65047.8 
+        143222.1 -80977.5 143222.0 -80977.5 
+        143222.1 -75506.4 143222.1 -80977.5 
+      )
+      (net "Net-(ITMO14-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        143222.1 -80977.5 143222.1 -80977.4 
+        143222.1 -80977.5 204407.2 -80977.5 
+        204407.2 -80977.5 208284.4 -84854.7 
+        206829.6 -87542.2 206829.6 -87542.3 
+        207192.8 -87542.2 205740.0 -88995.0 
+        205740.0 -88995.0 205739.9 -88994.9 
+      )
+      (net "Net-(ITMO14-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -99155.0 142239.9 -99155.1 
+        142240.0 -99155.0 140700.4 -97615.4 
+        140700.4 -97615.4 140700.4 -94037.7 
+        140700.4 -94037.7 141933.1 -92805.0 
+        141933.1 -92805.0 142540.2 -92805.0 
+        142540.2 -92805.0 143947.2 -91398.0 
+        143947.2 -91398.0 143947.2 -63758.3 
+        143947.2 -63758.3 142513.9 -62325.0 
+        142513.9 -62325.0 139782.2 -62325.0 
+        139782.2 -62325.0 132292.8 -54835.6 
+        132292.8 -54835.6 115439.4 -54835.6 
+        115439.4 -54835.6 114300.0 -55975.0 
+        114300.0 -55975.0 114299.9 -55974.9 
+      )
+      (net "Net-(ITMO1-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -129635.0 142240.0 -129634.9 
+        142240.0 -129635.0 142240.1 -129634.9 
+        143329.6 -120927.8 143329.6 -120927.7 
+        143692.8 -120927.8 142240.0 -119475.0 
+        142240.0 -119475.0 142240.1 -119474.9 
+      )
+      (net "Net-(ITMO14-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        78740.0 -93940.0 78740.0 -93940.1 
+        78740.0 -93940.0 78739.9 -93940.0 
+        77989.9 0.0 77989.9 -0.1 
+      )
+      (net "Net-(ITMO14-Pad11)" 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142240.0 -55975.0 142240.0 -55975.1 
+        142240.0 -55975.0 136016.4 -55975.0 
+        136016.4 -55975.0 124681.0 -67310.4 
+        124681.0 -67310.4 96357.1 -67310.4 
+        96357.1 -67310.4 77528.4 -86139.1 
+        77528.4 -86139.1 77528.4 -93478.5 
+        77528.4 -93478.5 77989.9 -93940.0 
+        77989.9 -93940.0 77989.8 -93940.1 
+      )
+      (net "Net-(ITMO14-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        77989.9 -89940.0 77989.8 -89940.0 
+        77989.9 -89940.0 77989.9 -86376.1 
+        77989.9 -86376.1 96605.5 -67760.5 
+        96605.5 -67760.5 124979.9 -67760.5 
+        125280.3 -67460.0 125280.4 -67459.9 
+        125243.5 -67460.0 173935.0 -67460.0 
+        173935.0 -67460.0 177800.0 -63595.0 
+        177800.0 -63595.0 177800.1 -63595.1 
+      )
+      (net "Net-(ITMO10-Pad6)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -86455.0 142240.1 -86455.1 
+        142240.0 -86455.0 139282.2 -89412.8 
+        139282.2 -89412.8 139282.2 -125356.2 
+        140787.2 -125642.2 142240.0 -127095.0 
+        142240.0 -127095.0 142239.9 -127095.1 
+      )
+      (net "Net-(ITMO11-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        93980.0 -116935.0 93980.1 -116934.9 
+        93980.0 -116935.0 111264.0 -134219.0 
+        111264.0 -134219.0 138044.1 -134219.0 
+        142240.0 -129635.0 142240.1 -129634.9 
+        142240.0 -129635.0 142240.1 -129635.1 
+      )
+      (net "Net-(ITMO14-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        140161.3 -66140.3 140161.3 -66140.2 
+        142240.0 -66135.0 142240.1 -66135.0 
+        142240.0 -66135.0 142239.9 -66135.1 
+      )
+      (net "Net-(ITMO2-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        121920.0 -55975.0 121920.0 -55974.9 
+        121920.0 -55975.0 130001.3 -55975.0 
+        130001.3 -55975.0 140161.3 -66135.0 
+        140161.3 -66135.0 140161.2 -66135.1 
+      )
+      (net "Net-(ITMO2-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        138266.3 -99290.6 138266.2 -99290.6 
+        138266.3 -99290.6 138266.3 -81770.1 
+        138312.3 -81770.1 140161.3 -79921.1 
+        140161.3 -66140.3 140161.3 -66140.2 
+        142240.0 -66135.0 142240.1 -66135.0 
+      )
+      (net "Net-(ITMO2-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        140531.2 -111113.6 140531.3 -111113.5 
+        140531.2 -111113.6 148407.2 -118989.6 
+        148407.2 -118989.6 148407.2 -128182.2 
+        148407.2 -128182.2 149860.0 -129635.0 
+        149860.0 -129635.0 149859.9 -129635.1 
+      )
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        93980.0 -119475.0 93979.9 -119474.9 
+        93980.0 -119475.0 101166.2 -112288.8 
+        140044.4 -112288.8 141018.1 -112288.8 
+        141018.1 -112288.8 141105.7 -112201.2 
+        141105.7 -112201.2 214617.7 -112201.2 
+        214617.7 -112201.2 230604.2 -96214.7 
+        230604.2 -96214.7 230604.2 -95358.0 
+        230604.2 -95358.0 230604.3 -95358.0 
+      )
+      (net "Net-(ITMO14-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        113181.3 -111464.6 113181.4 -111464.5 
+        113181.3 -111464.6 113555.4 -111838.7 
+        140230.9 -111838.7 140831.6 -111838.7 
+        140831.6 -111838.7 151032.3 -101638.0 
+        151032.3 -101638.0 176866.6 -101638.0 
+        176866.6 -101638.0 179660.8 -98843.8 
+        179660.8 -98843.8 179660.9 -98843.9 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        120013.3 -101653.6 120013.3 -101653.7 
+        120175.9 -101653.6 131071.2 -101653.6 
+        131071.2 -101653.6 140531.2 -111113.6 
+        140531.2 -111113.6 140531.1 -111113.7 
+      )
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        112373.4 -99834.3 114192.7 -101653.6 
+        119982.0 -101653.6 120175.7 -101653.6 
+        120013.3 -101653.6 120013.3 -101653.7 
+      )
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        139436.2 -79620.7 139436.1 -79620.6 
+        139436.2 -79620.7 149642.6 -69414.3 
+        192778.2 -69573.5 194681.5 -69573.5 
+        194681.5 -69573.5 198120.0 -66135.0 
+        198120.0 -66135.0 198120.1 -66135.1 
+      )
+      (net "Net-(ITMO10-Pad8)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        121920.0 -86455.0 121919.9 -86454.9 
+        121920.0 -86455.0 127743.4 -80631.6 
+        127743.4 -80631.6 142179.0 -80631.6 
+        143530.8 -79279.7 143530.9 -79279.6 
+        143530.8 -79448.7 143530.9 -79448.7 
+        229044.7 -79279.7 233680.0 -83915.0 
+        233680.0 -83915.0 233679.9 -83915.1 
+      )
+      (net "Net-(ITMO17-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        121920.0 -119475.0 121920.1 -119475.1 
+        121920.0 -119475.0 120830.5 -120564.5 
+        120830.5 -120564.5 120830.5 -122521.3 
+        120830.5 -122521.3 121415.2 -123106.0 
+        121415.2 -123106.0 122472.0 -123106.0 
+        122472.0 -123106.0 136215.4 -109362.6 
+        136215.4 -109362.6 136215.4 -82841.5 
+        136215.4 -82841.5 139436.2 -79620.7 
+        139436.2 -79620.7 139436.3 -79620.8 
+      )
+      (net "Net-(ITMO10-Pad8)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        120380.3 -118474.7 121920.0 -116935.0 
+        121920.0 -116935.0 121919.9 -116934.9 
+        118675.3 -115229.9 118675.3 -108696.5 
+        118675.3 -108696.5 130060.9 -97310.9 
+        130060.9 -97310.9 130060.9 -75879.9 
+        130060.9 -75879.9 139430.9 -66509.9 
+        139430.9 -66509.9 139431.0 -66510.0 
+      )
+      (net "Net-(ITMO10-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        139430.9 -66509.9 139430.8 -66509.8 
+        139430.9 -66509.9 140893.0 -65047.8 
+        140893.0 -65047.8 171267.2 -65047.8 
+        176530.0 -59785.0 177800.0 -58515.0 
+        177800.0 -58515.0 177800.1 -58515.1 
+      )
+      (net "Net-(ITMO10-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        121920.0 -116935.0 121920.1 -116935.1 
+        121920.0 -116935.0 120380.3 -118474.7 
+        120380.3 -118474.7 120380.3 -128095.3 
+        120380.3 -128095.3 121920.0 -129635.0 
+        121920.0 -129635.0 121919.9 -129635.1 
+      )
+      (net "Net-(ITMO10-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        121920.0 -83915.0 121920.1 -83914.9 
+        121920.0 -83915.0 123528.0 -85523.0 
+        123528.0 -85523.0 123528.0 -102196.8 
+        123528.0 -102196.8 118050.4 -107674.4 
+        118050.4 -107674.4 118050.4 -129984.5 
+        118050.4 -129984.5 114716.5 -133318.4 
+        114716.5 -133318.4 113854.0 -133318.4 
+        113854.0 -133318.4 113212.8 -132677.2 
+        113212.8 -132677.2 113212.8 -125642.2 
+        113212.8 -125642.2 114300.0 -124555.0 
+        114300.0 -124555.0 114300.1 -124555.1 
+      )
+      (net "Net-(ITMO10-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        119450.7 -111113.6 119450.8 -111113.5 
+        119450.7 -111113.6 123007.2 -114670.1 
+        123007.2 -114670.1 123007.2 -120927.8 
+        123007.2 -120927.8 121920.0 -122015.0 
+        121920.0 -122015.0 121919.9 -122014.9 
+      )
+      (net "Net-(ITMO4-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        208280.0 -119475.0 208279.9 -119475.1 
+        208280.0 -119475.0 206925.1 -118120.1 
+        206925.1 -118120.1 125076.2 -118120.1 
+        125076.2 -118120.1 123996.0 -117039.9 
+        123996.0 -117039.9 123395.3 -117039.9 
+        122218.6 -118216.7 122218.5 -118216.8 
+        122218.6 -118216.7 105398.3 -118216.7 
+        105398.3 -118216.7 93980.0 -129635.0 
+        93980.0 -129635.0 93979.9 -129634.9 
+      )
+      (net "Net-(ITMO14-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        114300.0 -96615.0 114299.9 -96614.9 
+        114300.0 -96615.0 119504.3 -91410.7 
+        119504.3 -62733.0 119504.3 -62507.8 
+        120467.2 -62507.8 121920.0 -61055.0 
+        121920.0 -61055.0 121920.1 -61055.1 
+      )
+      (net "Net-(ITMO11-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        78740.0 -91940.0 78740.0 -91939.9 
+        78740.0 -91940.0 80943.6 -91940.0 
+        80943.6 -91940.0 90817.7 -101814.1 
+        90817.7 -101814.1 110151.2 -101814.1 
+        110151.2 -101814.1 119450.7 -111113.6 
+        119450.7 -111113.6 119450.6 -111113.7 
+      )
+      (net "Net-(ITMO4-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        121920.0 -88995.0 121920.1 -88994.9 
+        121920.0 -88995.0 123061.4 -90136.4 
+        123061.4 -90136.4 123061.4 -100012.6 
+        123061.4 -100012.6 115838.8 -107235.2 
+        115838.8 -107235.2 115838.8 -130636.2 
+        115838.8 -130636.2 114300.0 -132175.0 
+        114300.0 -132175.0 114299.9 -132174.9 
+      )
+      (net "Net-(ITMO15-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        78740.0 -94940.0 78740.0 -94939.9 
+        78740.0 -94940.0 78740.1 -94940.0 
+        79490.1 0.0 79490.1 0.1 
+      )
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        93980.0 -61055.0 93980.1 -61055.1 
+        93980.0 -61055.0 81145.9 -73889.1 
+        81145.9 -73889.1 81145.9 -93284.2 
+        81145.9 -93284.2 79490.1 -94940.0 
+        79490.1 -94940.0 79490.0 -94939.9 
+      )
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        236220.0 -127000.0 236219.9 -126999.9 
+        236220.0 -127000.0 251376.7 -111843.3 
+        251376.7 -111843.3 251376.7 -97700.8 
+        251376.7 -97700.8 253732.5 -95345.0 
+        253732.5 -95345.0 254325.3 -95345.0 
+        254325.3 -95345.0 255482.4 -94187.9 
+        255100.5 -90447.8 255100.5 -90447.7 
+        255452.8 -90447.8 254000.0 -88995.0 
+        254000.0 -88995.0 254000.1 -88994.9 
+      )
+      (net "Net-(ITMO10-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        254000.0 -92805.0 254000.0 -94232.0 
+        254000.0 -94075.0 253999.9 -94075.1 
+        238165.7 -109391.2 238165.7 -121539.6 
+        238165.7 -121539.6 236515.3 -123190.0 
+        236515.3 -123190.0 232505.0 -123190.0 
+        230052.8 -125642.2 228600.0 -127095.0 
+        228600.0 -127095.0 228599.9 -127094.9 
+      )
+      (net "Net-(ITMO10-Pad8)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        254000.0 -91535.0 254000.1 -91535.0 
+        254000.0 -92805.0 254000.0 -94232.0 
+        254000.0 -94075.0 253999.9 -94075.0 
+      )
+      (net "Net-(ITMO10-Pad8)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        114300.0 -88995.0 114300.0 -88994.9 
+        114300.0 -88995.0 117614.9 -88995.0 
+        117614.9 -88995.0 118884.9 -87725.0 
+        118884.9 -87725.0 124211.1 -87725.0 
+        129886.0 -82050.0 129886.1 -82049.9 
+        129886.0 -82050.0 174339.1 -82050.0 
+        174339.1 -82050.0 174724.8 -82435.7 
+        174724.8 -82435.7 174724.8 -83504.9 
+        174724.8 -83504.9 174724.7 -83504.9 
+      )
+      (net "Net-(ITMO11-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        229901.5 -98227.2 229901.5 -98227.1 
+        229687.2 -118205.0 232592.8 -118205.0 
+        232592.8 -118292.8 236220.0 -121920.0 
+        236219.9 -121920.1 236220.0 -121920.0 
+      )
+      (net "Net-(ITMO14-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        220197.5 -124645.2 220197.4 -124645.1 
+        226481.7 -118361.0 226481.8 -118360.9 
+        229687.2 -118205.0 232592.8 -118205.0 
+        229901.5 -98227.2 229901.5 -98227.1 
+      )
+      (net "Net-(ITMO14-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        232592.8 -118205.0 229687.2 -118205.0 
+        229901.5 -98227.2 229901.5 -98227.1 
+        231955.4 -97777.1 226060.0 -91881.7 
+        226060.0 -91881.7 226060.0 -91535.0 
+        226060.0 -91535.0 226060.1 -91535.0 
+      )
+      (net "Net-(ITMO14-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        256540.0 -121920.0 256539.9 -121920.1 
+        256540.0 -121920.0 255087.2 -120467.2 
+        255087.2 -120467.2 249982.8 -120467.2 
+        249982.8 -120467.2 228701.9 -99186.3 
+        228701.9 -99186.3 228702.0 -99186.2 
+      )
+      (net "Net-(ITMO12-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        230096.2 -99186.3 230096.3 -99186.3 
+        228701.9 -96716.9 228701.9 -103024.2 
+        211444.4 -120281.7 211113.1 -120613.0 
+        211113.1 -120613.0 211113.0 -120612.9 
+      )
+      (net "Net-(ITMO12-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        226060.0 -94075.0 226060.1 -94074.9 
+        226060.0 -94075.0 230114.1 -98129.1 
+        228701.9 -96716.9 228701.9 -103024.2 
+        230096.2 -99186.3 230096.3 -99186.3 
+      )
+      (net "Net-(ITMO12-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        211444.4 -120281.7 211113.1 -120613.0 
+        211113.1 -120613.0 206559.6 -120613.0 
+        206559.6 -120613.0 205421.6 -119475.0 
+        205421.6 -119475.0 198120.0 -119475.0 
+        198120.0 -119475.0 198120.0 -119474.9 
+      )
+      (net "Net-(ITMO12-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        179401.4 -118941.8 179401.4 -118941.7 
+        179401.4 -118941.8 195683.5 -118941.8 
+        195683.5 -118941.8 197486.7 -120745.0 
+        197486.7 -120745.0 205736.8 -120745.0 
+        205736.8 -120745.0 207006.8 -122015.0 
+        207006.8 -122015.0 208280.0 -122015.0 
+        208280.0 -122015.0 208280.0 -122015.1 
+      )
+      (net "Net-(ITMO10-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        121920.0 -50895.0 121919.9 -50894.9 
+        121920.0 -50895.0 124416.4 -48398.6 
+        199207.2 -49807.3 199207.3 -49807.3 
+        203419.6 -48574.6 205740.0 -50895.0 
+        205740.0 -50895.0 205739.9 -50895.1 
+      )
+      (net "Net-(ITMO13-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        196129.3 -68125.7 198120.0 -66135.0 
+        198120.0 -66135.0 198120.1 -66135.1 
+        206378.1 -78149.3 246510.3 -78149.3 
+        246510.3 -78149.3 253546.0 -85185.0 
+        253546.0 -85185.0 254316.6 -85185.0 
+        254316.6 -85185.0 256364.8 -87233.2 
+        255097.7 -90082.2 255097.7 -90082.3 
+        255452.8 -90082.2 254000.0 -91535.0 
+        254000.0 -91535.0 253999.9 -91534.9 
+      )
+      (net "Net-(ITMO10-Pad8)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        198120.0 -63595.0 194039.4 -67675.6 
+        197452.5 -63925.2 197452.6 -63925.3 
+        205344.3 -71817.0 205344.4 -71816.9 
+      )
+      (net "Net-(ITMO10-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        208280.0 -129635.0 208279.9 -129635.1 
+        208280.0 -129635.0 200445.6 -121800.6 
+        200445.6 -121800.6 200445.6 -108368.6 
+        200445.6 -108368.6 204408.7 -104405.5 
+        204408.7 -104405.5 204408.7 -91278.7 
+        204408.7 -91278.7 205422.4 -90265.0 
+        205422.4 -90265.0 206020.9 -90265.0 
+        206020.9 -90265.0 207301.5 -88984.4 
+        207301.5 -88984.4 207301.5 -73774.2 
+        205668.2 -72140.9 205344.3 -71817.0 
+        205344.3 -71817.0 205344.4 -71816.9 
+      )
+      (net "Net-(ITMO10-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        198120.0 -61055.0 198120.1 -61054.9 
+        198120.0 -61055.0 203483.7 -66418.7 
+        203483.7 -84777.0 203483.7 -85002.2 
+        204287.2 -85002.2 205740.0 -86455.0 
+        205740.0 -86455.0 205739.9 -86455.1 
+      )
+      (net "Net-(ITMO10-Pad10)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        170180.0 -91535.0 170180.1 -91534.9 
+        170180.0 -91535.0 171507.0 -92862.0 
+        171507.0 -92862.0 196907.0 -92862.0 
+        197727.1 -93682.1 198120.0 -94075.0 
+        198120.0 -94075.0 198119.9 -94075.1 
+      )
+      (net "Net-(ITMO1-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        198120.0 -91535.0 198119.9 -91535.1 
+        198120.0 -91535.0 196051.1 -89466.1 
+        196051.1 -89466.1 196051.1 -55078.8 
+        196051.1 -55078.8 196286.4 -54843.5 
+        196286.4 -54843.5 196286.5 -54843.6 
+      )
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        196286.4 -54000.4 196286.4 -54000.3 
+        123256.2 -54843.5 123256.3 -54843.5 
+        232227.2 -59602.2 233680.0 -61055.0 
+        233680.0 -61055.0 233679.9 -61055.1 
+      )
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        121920.0 -53435.0 121920.1 -53434.9 
+        121920.0 -53435.0 123328.5 -54843.5 
+        123256.2 -54843.5 123256.3 -54843.5 
+        196286.4 -54000.4 196286.4 -54000.3 
+      )
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        226060.0 -53435.0 226059.9 -53435.1 
+        226060.0 -53435.0 224948.7 -52323.7 
+        224948.7 -52323.7 196937.7 -52323.7 
+        197594.2 -52323.7 197594.1 -52323.8 
+        187693.0 -61568.4 187693.0 -108493.0 
+        187693.0 -108493.0 180809.9 -115376.1 
+        180809.9 -115376.1 180809.8 -115376.0 
+      )
+      (net "Net-(ITMO12-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        179839.7 -94934.6 179839.8 -94934.6 
+        179839.7 -94934.6 179839.7 -98664.9 
+        179839.7 -98664.9 179660.8 -98843.8 
+        179660.8 -98843.8 179660.7 -98843.7 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        177800.0 -63595.0 177800.1 -63594.9 
+        177800.0 -63595.0 182598.5 -68393.5 
+        182598.5 -68393.5 182598.5 -110675.1 
+        182598.5 -110675.1 180065.0 -113208.6 
+        180065.0 -113208.6 180065.0 -116893.0 
+        180065.0 -116893.0 180138.7 -116966.7 
+        180138.7 -116966.7 180138.7 -120445.7 
+        178619.8 -121195.2 177800.0 -122015.0 
+        177800.0 -122015.0 177799.9 -122014.9 
+      )
+      (net "Net-(ITMO10-Pad6)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        177800.0 -61055.0 177800.1 -61055.1 
+        177800.0 -61055.0 176696.1 -62158.9 
+        176696.1 -62158.9 176696.1 -68152.9 
+        176696.1 -68152.9 182114.5 -73571.3 
+        182114.5 -73571.3 182114.5 -107331.0 
+        182114.5 -107331.0 179401.4 -110044.1 
+        179401.4 -110044.1 179401.4 -118941.8 
+        179401.4 -118941.8 179401.3 -118941.8 
+      )
+      (net "Net-(ITMO10-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        254000.0 -96615.0 253999.9 -96615.1 
+        254000.0 -96615.0 252730.0 -95345.0 
+        252730.0 -95345.0 232369.6 -95345.0 
+        232369.6 -95345.0 231631.8 -94607.2 
+        231631.8 -94607.2 229973.0 -94607.2 
+        229973.0 -94607.2 229413.3 -95166.9 
+        229413.3 -95166.9 180232.8 -95166.9 
+        180232.8 -95166.9 180000.5 -94934.6 
+        180000.5 -94934.6 180000.6 -94934.5 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        179839.7 -92022.1 179839.7 -98001.8 
+        180116.0 -94934.6 180116.1 -94934.6 
+        180000.5 -94934.6 180000.5 -94934.5 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        177800.0 -91535.0 177800.1 -91534.9 
+        177800.0 -91535.0 179349.1 -93084.1 
+        179275.4 -93157.8 179275.4 -95234.9 
+        179275.4 -95234.9 179349.1 -95308.6 
+        179349.1 -95308.6 179349.1 -97467.0 
+        179349.1 -97467.0 178935.7 -97880.4 
+        178935.7 -97880.4 178935.7 -99964.8 
+        178935.7 -99964.8 173857.5 -105043.0 
+        173857.5 -105043.0 173857.5 -113715.1 
+        173857.5 -113715.1 173857.4 -113715.1 
+      )
+      (net "Net-(ITMO11-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        180450.6 -92136.7 180450.6 -92136.8 
+        180450.6 -92136.8 180450.7 -92136.9 
+        180725.7 0.0 180725.7 -0.1 
+        180981.8 -98555.3 176712.8 -102824.3 
+        176712.8 -102824.3 176712.8 -118022.2 
+        176712.8 -118022.2 170180.0 -124555.0 
+        170179.9 -124554.9 170180.0 -124555.0 
+      )
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        198120.0 -91535.0 198120.1 -91535.1 
+        197009.1 -92645.9 196850.0 -92805.0 
+        180882.9 -92136.8 180450.6 -92136.8 
+        180450.6 -92136.8 180450.6 -92136.7 
+      )
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        177800.0 -83915.0 177800.1 -83915.1 
+        177800.0 -83915.0 176255.7 -85459.3 
+        176255.7 -85459.3 176255.7 -89010.5 
+        176255.7 -89010.5 177510.2 -90265.0 
+        177510.2 -90265.0 178082.6 -90265.0 
+        178082.6 -90265.0 179725.5 -91907.9 
+        179725.5 -91907.9 179725.5 -94820.4 
+        179725.5 -94820.4 179839.7 -94934.6 
+        179839.7 -94934.6 179839.6 -94934.7 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        178529.3 -85217.7 178529.3 -85217.8 
+        178529.3 -85217.7 177486.9 -85217.7 
+        177486.9 -85217.7 176705.9 -85998.7 
+        176705.9 -85998.7 176705.9 -86959.0 
+        176705.9 -86959.0 177471.9 -87725.0 
+        177471.9 -87725.0 178145.5 -87725.0 
+        178145.5 -87725.0 181612.2 -91191.7 
+        181175.8 0.0 181175.8 -0.1 
+        181612.2 -99198.3 177800.0 -103010.5 
+        177800.0 -103010.5 177800.0 -116935.0 
+        177800.0 -116935.0 177799.9 -116935.0 
+      )
+      (net "Net-(ITMO11-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        177800.1 -86454.9 177800.0 -86455.0 
+        177800.0 -86455.0 182115.9 -90770.9 
+        181625.9 0.0 181625.9 -0.1 
+        182115.9 -99649.4 178887.2 -102878.1 
+        178887.2 -102878.1 178887.2 -118387.8 
+        178887.2 -118387.8 177800.0 -119475.0 
+        177799.9 -119474.9 177800.0 -119475.0 
+      )
+      (net "Net-(ITMO10-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        177799.9 -91535.1 177800.0 -91535.0 
+        177800.0 -91535.0 177356.1 -91091.1 
+        174724.8 -83804.3 174724.8 -83504.9 
+        174724.8 -83504.9 174724.9 -83504.9 
+      )
+      (net "Net-(ITMO11-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -55975.0 142239.9 -55974.9 
+        142240.0 -55975.0 145888.7 -52326.3 
+        145888.7 -52326.3 151965.9 -52326.3 
+        151965.9 -52326.3 161910.2 -62270.6 
+        161910.2 -62270.6 170425.8 -62270.6 
+        170425.8 -62270.6 173220.0 -65064.8 
+        173151.4 -65133.4 173151.4 -90989.7 
+        173151.4 -90989.7 177506.7 -95345.0 
+        177506.7 -95345.0 178128.0 -95345.0 
+        178128.0 -95345.0 178899.0 -96116.0 
+        178899.0 -96116.0 178899.0 -97058.0 
+        178899.0 -97058.0 178072.0 -97885.0 
+        178072.0 -97885.0 177524.1 -97885.0 
+        177524.1 -97885.0 172957.3 -102451.8 
+        172957.3 -102451.8 172957.3 -119237.7 
+        172957.3 -119237.7 170180.0 -122015.0 
+        170180.0 -122015.0 170179.9 -122014.9 
+      )
+      (net "Net-(ITMO14-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        173999.6 -82778.6 173999.7 -82778.6 
+        173999.6 -84104.7 173999.6 -84104.8 
+        173601.5 -89876.5 177800.0 -94075.0 
+        177800.0 -94075.0 177799.9 -94075.1 
+      )
+      (net "Net-(ITMO11-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        170180.0 -61055.0 170180.1 -61054.9 
+        170180.0 -61055.0 174206.3 -65081.3 
+        173999.6 -80474.9 173999.6 -82778.6 
+        173999.6 -82778.6 173999.5 -82778.6 
+      )
+      (net "Net-(ITMO11-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142239.9 -86455.0 142240.0 -86455.0 
+        142240.0 -86455.0 142240.1 -86454.9 
+        173999.6 -82778.6 173999.7 -82778.6 
+        173999.6 -82778.5 173999.6 -82778.6 
+      )
+      (net "Net-(ITMO11-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        93979.9 -94074.9 93980.0 -94075.0 
+        93980.0 -94075.0 95432.8 -92622.2 
+        95432.8 -92622.2 118956.1 -92622.2 
+        118956.1 -92622.2 121182.2 -90396.1 
+        121182.2 -90396.1 123959.5 -90396.1 
+        123959.5 -90396.1 128217.1 -86138.5 
+        142239.9 -86455.0 142240.0 -86455.0 
+        142240.0 -86455.1 142240.0 -86455.0 
+      )
+      (net "Net-(ITMO11-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        170180.0 -88995.0 170180.1 -88994.9 
+        170180.0 -88995.0 171267.2 -90082.2 
+        171267.2 -117656.6 171267.2 -117656.7 
+        171632.8 -118022.2 170180.0 -119475.0 
+        170180.0 -119475.0 170179.9 -119474.9 
+      )
+      (net "Net-(ITMO11-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        105107.2 -94090.2 106205.1 -95188.1 
+        106205.1 -95188.1 132475.3 -95188.1 
+        139530.4 -87907.8 139713.2 -87725.0 
+        143327.2 -87725.0 148590.0 -87725.0 
+        148590.0 -87725.0 149860.0 -86455.0 
+        149860.0 -86455.0 149860.1 -86455.1 
+      )
+      (net "Net-(ITMO11-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        93980.0 -86455.0 93980.0 -86454.9 
+        95537.3 -86455.0 97472.0 -86455.0 
+        105107.2 -94090.2 106205.1 -95188.1 
+        106205.1 -95188.1 106205.0 -95188.2 
+      )
+      (net "Net-(ITMO11-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        115140.1 -97885.8 115140.0 -97885.7 
+        115140.1 -97885.8 116020.4 -97005.5 
+        116020.4 -97005.5 116020.4 -96389.8 
+        116020.4 -96389.8 120467.2 -91943.0 
+        120467.2 -91943.0 120467.2 -87907.8 
+        120467.2 -87907.8 121920.0 -86455.0 
+        121920.0 -86455.0 121920.1 -86455.1 
+      )
+      (net "Net-(ITMO17-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        93980.0 -96615.0 93980.1 -96614.9 
+        93980.0 -96615.0 95409.2 -98044.2 
+        115140.1 -97885.8 115140.2 -97885.8 
+        115140.1 -97885.8 115140.2 -97885.9 
+      )
+      (net "Net-(ITMO17-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        78740.0 -90939.9 78740.0 -90940.0 
+        78740.0 -90940.0 88305.0 -90940.0 
+        93649.8 -96284.8 95250.0 -97885.0 
+        93980.0 -96615.0 93979.9 -96615.1 
+      )
+      (net "Net-(ITMO17-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        112468.0 -131880.5 112467.9 -131880.6 
+        112372.0 -131784.5 114597.7 -134010.2 
+        199635.2 -133307.1 199635.3 -133307.1 
+        199635.2 -133307.1 199635.3 -133307.2 
+      )
+      (net "Net-(ITMO10-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        114300.0 -122015.0 114300.1 -122015.1 
+        114300.0 -122015.0 112372.0 -123943.0 
+        112468.0 -131880.5 112468.0 -131880.6 
+        112468.0 -131880.5 112467.9 -131880.6 
+      )
+      (net "Net-(ITMO10-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        137516.2 -96136.2 137516.3 -96136.3 
+        140294.4 -93358.0 140294.5 -93357.9 
+        143327.2 -92805.0 148590.0 -92805.0 
+        148590.0 -92805.0 149860.0 -91535.0 
+        149860.0 -91535.0 149860.1 -91535.1 
+      )
+      (net "Net-(ITMO6-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        121920.0 -127095.0 121919.9 -127094.9 
+        121920.0 -127095.0 137516.2 -111498.8 
+        137516.2 -111498.8 137516.2 -96136.2 
+        137516.2 -96136.2 137516.3 -96136.2 
+      )
+      (net "Net-(ITMO6-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        170180.0 -99155.0 170180.0 -99155.1 
+        170180.0 -99155.0 151584.1 -99155.0 
+        151584.1 -99155.0 150497.0 -100242.1 
+        150497.0 -100242.1 139217.8 -100242.1 
+        139217.8 -100242.1 138174.7 -99199.0 
+        138266.3 -99290.6 138266.2 -99290.7 
+      )
+      (net "Net-(ITMO2-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        93980.0 -83914.9 93980.0 -83915.0 
+        93980.0 -83915.0 96454.1 -83915.0 
+        112373.4 -99834.3 114192.7 -101653.6 
+        114192.7 -101653.6 114192.6 -101653.7 
+      )
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        95087.1 -95345.0 95087.1 -95344.9 
+        100330.0 -95345.0 93238.0 -95345.0 
+        93238.0 -95345.0 92643.0 -95940.0 
+        92643.0 -95940.0 78740.0 -95940.0 
+        78740.0 -95940.0 78740.0 -95939.9 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        113181.3 -111464.6 113181.2 -111464.6 
+        113181.3 -111464.6 113181.2 -111464.5 
+        100330.0 -95345.0 93238.0 -95345.0 
+        95087.1 -95345.0 95087.1 -95344.9 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        100330.0 -95345.0 93238.0 -95345.0 
+        95087.1 -95345.0 95087.1 -95344.9 
+        94434.5 -89449.5 93980.0 -88995.0 
+        93980.0 -88995.0 93980.1 -88994.9 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        114299.9 -119475.1 114300.0 -119475.0 
+        114300.0 -119475.0 112973.6 -118148.6 
+        113181.3 -113743.2 113181.3 -108102.9 
+        113324.9 -111464.6 113325.0 -111464.6 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        197785.5 -62325.0 197032.8 -61572.3 
+        197032.8 -61572.3 197032.8 -59602.2 
+        197032.8 -59602.2 198120.0 -58515.0 
+        198120.0 -58515.0 198120.1 -58515.1 
+      )
+      (net "Net-(ITMO10-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        254000.0 -66135.0 254000.1 -66135.1 
+        254000.0 -66135.0 252878.9 -67256.1 
+        252878.9 -67256.1 205221.8 -67256.1 
+        205221.8 -67256.1 200290.7 -62325.0 
+        200290.7 -62325.0 197785.5 -62325.0 
+        197785.5 -62325.0 197032.8 -61572.3 
+        197032.8 -61572.3 197032.9 -61572.3 
+      )
+      (net "Net-(ITMO10-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        175555.1 -67225.3 175555.1 -67225.2 
+        175555.1 -67225.3 191379.8 -67225.3 
+        191379.8 -67225.3 197032.8 -61572.3 
+        197032.8 -61572.3 197032.9 -61572.4 
+      )
+      (net "Net-(ITMO10-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        175555.1 -67225.3 175555.2 -67225.3 
+        175555.1 -67225.3 175555.1 -79663.1 
+        175555.1 -79663.1 179299.3 -83407.3 
+        179299.3 -83407.3 179299.3 -85473.4 
+        179299.3 -85473.4 178317.7 -86455.0 
+        178317.7 -86455.0 177800.0 -86455.0 
+        177800.0 -86455.0 177800.0 -86454.9 
+      )
+      (net "Net-(ITMO10-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        121920.0 -83915.0 121919.9 -83914.9 
+        121920.0 -83915.0 138159.4 -67675.6 
+        0.0 -67955.7 0.1 -67955.7 
+        243805.9 0.0 243806.0 0.1 
+        138159.4 -67675.6 194039.4 -67675.6 
+        194039.4 -67675.6 198120.0 -63595.0 
+        197452.5 -63925.2 197452.6 -63925.3 
+      )
+      (net "Net-(ITMO10-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        237439.1 -129540.0 237439.0 -129540.0 
+        237322.8 -125912.8 237322.8 -125912.7 
+        237672.8 -125912.8 236220.0 -124460.0 
+        236220.0 -124460.0 236220.1 -124459.9 
+      )
+      (net "Net-(ITMO10-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        199635.2 -133307.1 199635.1 -133307.0 
+        199635.2 -133307.1 202132.3 -130810.0 
+        202132.3 -130810.0 236494.1 -130810.0 
+        236494.1 -130810.0 237850.8 -129453.3 
+        237322.8 -125912.8 237322.8 -125912.7 
+        237439.1 -129540.0 237439.0 -129540.0 
+      )
+      (net "Net-(ITMO10-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        256540.0 -129540.0 256540.0 -129540.1 
+        237439.1 -129540.0 237439.0 -129540.0 
+        237322.8 -125912.8 237322.8 -125912.7 
+      )
+      (net "Net-(ITMO10-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        235076.2 -123102.2 235076.2 -123102.3 
+        209415.2 -123102.2 209415.1 -123102.2 
+        209391.2 -123126.2 208280.0 -122015.0 
+        208280.0 -122015.0 208280.1 -122014.9 
+      )
+      (net "Net-(ITMO10-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        256540.0 -127000.0 256539.9 -127000.1 
+        256540.0 -127000.0 252642.2 -123102.2 
+        236040.3 -123102.2 232774.0 -123102.2 
+        235076.2 -123102.2 235076.2 -123102.1 
+      )
+      (net "Net-(ITMO10-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        235076.2 -123102.2 235076.1 -123102.2 
+        235076.2 -123102.2 235076.2 -120800.0 
+        235799.6 -120800.0 235799.7 -120799.9 
+        235076.2 -120800.0 236362.3 -120800.0 
+        236362.3 -120800.0 237310.1 -119852.2 
+        237310.1 -119852.2 237310.1 -117930.1 
+        237310.1 -117930.1 236220.0 -116840.0 
+        236220.0 -116840.0 236220.1 -116839.9 
+      )
+      (net "Net-(ITMO10-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        198120.0 -124555.0 198119.9 -124555.1 
+        198120.0 -124555.0 196533.2 -122968.2 
+        197019.7 -122968.2 197019.7 -122968.1 
+        196533.2 -99182.4 197830.6 -97885.0 
+        197830.6 -97885.0 198406.9 -97885.0 
+        198406.9 -97885.0 202590.6 -93701.3 
+        202590.6 -93701.3 202590.6 -90598.5 
+        202590.6 -90598.5 205464.1 -87725.0 
+        205464.1 -87725.0 206008.4 -87725.0 
+        206008.4 -87725.0 206846.4 -86887.0 
+        206846.4 -86887.0 206846.4 -77218.6 
+        206846.4 -77218.6 204612.4 -74984.6 
+        204612.4 -74984.6 204612.4 -63180.9 
+        204612.4 -63180.9 205285.5 -62507.8 
+        205285.5 -62507.8 216949.3 -62507.8 
+        216949.3 -62507.8 224752.1 -54705.0 
+        224752.1 -54705.0 229870.0 -54705.0 
+        232227.2 -52347.8 233680.0 -50895.0 
+        233680.0 -50895.0 233680.1 -50895.1 
+      )
+      (net "Net-(ITMO12-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        198120.0 -53435.0 198120.1 -53434.9 
+        198120.0 -53435.0 199250.6 -54565.6 
+        199250.6 -54565.6 199250.6 -58986.9 
+        199250.6 -58986.9 198452.5 -59785.0 
+        198452.5 -59785.0 197792.4 -59785.0 
+        197792.4 -59785.0 197021.4 -60556.0 
+        197021.4 -60556.0 197021.4 -76074.7 
+        197021.4 -76074.7 199685.2 -78738.5 
+        199685.2 -78738.5 199685.2 -94072.0 
+        199685.2 -94072.0 198412.2 -95345.0 
+        198412.2 -95345.0 197846.0 -95345.0 
+        197846.0 -95345.0 195896.6 -97294.4 
+        196518.1 -117540.6 196518.1 -117540.7 
+        195896.7 -128964.9 197836.8 -130905.0 
+        197836.8 -130905.0 198420.2 -130905.0 
+        198420.2 -130905.0 199635.2 -132120.0 
+        199635.2 -132120.0 199635.2 -133307.1 
+        199635.2 -133307.1 199635.1 -133307.1 
+      )
+      (net "Net-(ITMO10-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        198120.0 -127095.0 198119.9 -127094.9 
+        198120.0 -127095.0 199657.2 -125557.8 
+        199657.2 -125557.8 199657.2 -100692.2 
+        199657.2 -100692.2 198120.0 -99155.0 
+        198120.0 -99155.0 198120.1 -99154.9 
+      )
+      (net "Net-(ITMO10-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        208280.0 -124555.0 208279.9 -124554.9 
+        208280.0 -124555.0 230987.8 -101847.2 
+        229437.7 -101847.2 229437.7 -101847.1 
+        230987.8 -97446.2 226346.6 -92805.0 
+        226346.6 -92805.0 225771.7 -92805.0 
+        225771.7 -92805.0 224963.4 -91996.7 
+        224963.4 -91996.7 224963.4 -79285.7 
+        224963.4 -79285.7 232227.2 -72021.9 
+        232227.2 -72021.9 232227.2 -59967.8 
+        232227.2 -59967.8 233680.0 -58515.0 
+        233680.0 -58515.0 233680.1 -58515.1 
+      )
+      (net "Net-(ITMO15-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        205740.1 -63594.9 205740.0 -63595.0 
+        205740.0 -63595.0 223210.5 -81065.5 
+        223210.5 -81065.5 223210.5 -91225.3 
+        225537.5 -93552.5 226888.8 -94903.8 
+        226060.0 -94075.0 226059.9 -94075.1 
+      )
+      (net "Net-(ITMO12-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        222485.4 -88429.8 222485.4 -88429.7 
+        222485.4 -88429.8 222485.5 -88429.7 
+        227147.2 -87725.0 232410.0 -87725.0 
+        232410.0 -87725.0 233680.0 -86455.0 
+        233680.0 -86455.0 233680.1 -86455.1 
+      )
+      (net "Net-(ITMO1-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        226060.0 -99155.0 226059.9 -99155.1 
+        226060.0 -99155.0 222485.4 -95580.4 
+        222485.4 -92656.1 222485.4 -88429.8 
+        222485.4 -88429.8 222485.5 -88429.8 
+      )
+      (net "Net-(ITMO1-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        201724.5 -111476.1 201724.6 -111476.1 
+        201724.5 -111476.1 201724.5 -120539.5 
+        207460.2 -126275.2 208280.0 -127095.0 
+        208280.0 -127095.0 208279.9 -127095.1 
+      )
+      (net "Net-(ITMO15-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        201170.7 -108668.9 201170.8 -108669.0 
+        201170.7 -108668.9 200999.4 -108840.2 
+        200999.4 -108840.2 200999.4 -121351.7 
+        200999.4 -121351.7 207853.4 -128205.7 
+        207853.4 -128205.7 208754.0 -128205.7 
+        208754.0 -128205.7 214301.9 -133753.6 
+        214301.9 -133753.6 232006.4 -133753.6 
+        232006.4 -133753.6 236220.0 -129540.0 
+        236220.0 -129540.0 236220.1 -129540.1 
+      )
+      (net "Net-(ITMO18-Pad6)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        167235.3 -102363.1 167235.4 -102363.0 
+        167235.3 -102363.1 176348.3 -111476.1 
+        176348.3 -111476.1 201724.5 -111476.1 
+        201724.5 -111476.1 201724.5 -111476.2 
+      )
+      (net "Net-(ITMO15-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        149860.0 -124555.0 149859.9 -124554.9 
+        149860.0 -124555.0 167960.4 -106454.6 
+        167960.4 -106454.6 167960.4 -102062.7 
+        167960.4 -102062.7 167959.9 -102062.2 
+        167959.9 -102062.2 167959.9 -88675.1 
+        167959.9 -88675.1 170180.0 -86455.0 
+        170180.0 -86455.0 170180.1 -86455.1 
+      )
+      (net "Net-(ITMO4-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        149860.0 -94075.0 149860.0 -94074.9 
+        150947.2 -94075.0 158947.2 -94075.0 
+        158947.2 -94075.0 167235.3 -102363.1 
+        167235.3 -102363.1 167235.2 -102363.2 
+      )
+      (net "Net-(ITMO15-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        254000.0 -53435.0 254000.1 -53434.9 
+        254000.0 -53435.0 256009.3 -55444.3 
+        256009.3 -55444.3 256009.3 -108775.1 
+        256009.3 -108775.1 236514.4 -128270.0 
+        236514.4 -128270.0 234271.0 -128270.0 
+        234271.0 -128270.0 229261.5 -133279.5 
+        229261.5 -133279.5 214464.5 -133279.5 
+        214464.5 -133279.5 208280.0 -127095.0 
+        208280.0 -127095.0 208280.1 -127094.9 
+      )
+      (net "Net-(ITMO15-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        186967.9 -102734.1 186968.0 -102734.0 
+        186967.9 -102734.1 192960.1 -108726.3 
+        201170.7 -108668.9 201170.8 -108668.9 
+        201170.7 -108668.9 201170.8 -108669.0 
+      )
+      (net "Net-(ITMO18-Pad6)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        170180.0 -55975.0 170180.1 -55974.9 
+        170180.0 -55975.0 173990.0 -59785.0 
+        173990.0 -59785.0 178100.2 -59785.0 
+        178100.2 -59785.0 184843.0 -66527.8 
+        184843.0 -66527.8 184843.0 -100609.2 
+        184843.0 -100609.2 186967.9 -102734.1 
+        186967.9 -102734.1 186967.8 -102734.2 
+      )
+      (net "Net-(ITMO18-Pad6)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        197452.5 -63925.2 197452.6 -63925.3 
+        194039.4 -67675.6 198120.0 -63595.0 
+        198120.0 -63595.0 198120.1 -63595.1 
+      )
+      (net "Net-(ITMO10-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        177800.0 -129635.0 177799.9 -129634.9 
+        177800.0 -129635.0 192042.3 -115392.7 
+        192042.3 -115392.7 192042.3 -98606.8 
+        192042.3 -98606.8 197844.1 -92805.0 
+        197844.1 -92805.0 198440.5 -92805.0 
+        198440.5 -92805.0 199235.0 -92010.5 
+        199235.0 -92010.5 199235.0 -82827.8 
+        199235.0 -82827.8 196117.6 -79710.4 
+        196529.7 -58979.9 196529.7 -58979.8 
+        196667.2 -57427.8 198120.0 -55975.0 
+        198120.0 -55975.0 198120.1 -55975.1 
+      )
+      (net "Net-(ITMO10-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        186967.9 -98237.2 186967.9 -58786.5 
+        179252.8 -52347.8 177800.0 -50895.0 
+        177800.0 -50895.0 177800.1 -50894.9 
+      )
+      (net "Net-(ITMO10-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        186967.9 -98237.2 186967.8 -98237.2 
+        186967.9 -98237.2 186967.9 -58786.5 
+        186967.9 -60062.9 186968.0 -60062.8 
+      )
+      (net "Net-(ITMO10-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        186967.9 -60062.9 186967.8 -60062.8 
+        186967.9 -60062.9 197227.8 -49803.0 
+        197227.8 -49803.0 246661.7 -49803.0 
+        246661.7 -49803.0 251563.7 -54705.0 
+        251563.7 -54705.0 254318.7 -54705.0 
+        254318.7 -54705.0 255559.2 -55945.5 
+        255559.2 -55945.5 255559.2 -63573.4 
+        255559.2 -63573.4 254442.8 -64689.8 
+        254442.8 -64689.8 253532.6 -64689.8 
+        253532.6 -64689.8 252855.1 -64012.3 
+        252855.1 -64012.3 252855.1 -62199.9 
+        252855.1 -62199.9 254000.0 -61055.0 
+        254000.0 -61055.0 254000.1 -61055.1 
+      )
+      (net "Net-(ITMO10-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        198120.0 -99155.0 198120.0 -99155.1 
+        188563.7 -99155.0 188563.6 -99155.0 
+        188224.7 -99494.0 186967.9 -98237.2 
+        186967.9 -98237.2 186968.0 -98237.1 
+      )
+      (net "Net-(ITMO10-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        177799.9 -124554.9 177800.0 -124555.0 
+        177800.0 -124555.0 179252.8 -123102.2 
+        180809.9 -118460.6 180809.9 -113882.1 
+        180809.9 -115376.1 180810.0 -115376.1 
+      )
+      (net "Net-(ITMO12-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        93980.0 -124555.0 93979.9 -124554.9 
+        93980.0 -124555.0 102710.5 -115824.5 
+        102710.5 -115824.5 180232.9 -115824.5 
+        180232.9 -115824.5 180509.6 -116101.2 
+        180509.6 -116101.2 181155.5 -116101.2 
+        181155.5 -116101.2 181432.2 -115824.5 
+        181432.2 -115824.5 207169.5 -115824.5 
+        207169.5 -115824.5 208280.0 -116935.0 
+        208280.0 -116935.0 208279.9 -116935.1 
+      )
+      (net "Net-(ITMO14-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        93980.0 -122015.0 93979.9 -122014.9 
+        100395.5 -115599.5 100395.6 -115599.4 
+        100395.5 -115374.3 180808.1 -115374.3 
+        180808.1 -115374.3 180809.9 -115376.1 
+        180809.9 -115376.1 180809.8 -115376.2 
+      )
+      (net "Net-(ITMO12-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        194424.0 -98043.7 194423.9 -98043.8 
+        194424.0 -98043.7 193835.9 -97455.6 
+        193835.9 -97455.6 179360.5 -97455.6 
+        179360.5 -97455.6 179009.9 -97806.2 
+        179009.9 -97806.2 143588.8 -97806.2 
+        143588.8 -97806.2 142240.0 -99155.0 
+        142240.0 -99155.0 142239.9 -99154.9 
+      )
+      (net "Net-(ITMO1-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        178529.3 -85217.7 178529.3 -85217.6 
+        197016.4 -85351.4 149599.2 -85351.4 
+        149860.1 -86454.9 149860.0 -86455.0 
+        149860.0 -86455.0 148720.6 -85315.6 
+      )
+      (net "Net-(ITMO11-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        198119.9 -86455.1 198120.0 -86455.0 
+        198120.0 -86455.0 197016.4 -85351.4 
+        197016.4 -85351.4 149599.2 -85351.4 
+        178529.3 -85217.7 178529.3 -85217.6 
+      )
+      (net "Net-(ITMO11-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        197016.4 -85351.4 149599.2 -85351.4 
+        178529.3 -85217.7 178529.3 -85217.6 
+        178529.3 -85217.7 178529.4 -85217.6 
+      )
+      (net "Net-(ITMO11-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        173857.5 -113715.1 173857.6 -113715.1 
+        173857.5 -113715.1 173857.5 -119924.1 
+        173857.5 -119924.1 170496.6 -123285.0 
+        170496.6 -123285.0 169879.9 -123285.0 
+        169879.9 -123285.0 169089.1 -124075.8 
+        169089.1 -124075.8 169089.1 -128544.1 
+        169089.1 -128544.1 170180.0 -129635.0 
+        170180.0 -129635.0 170179.9 -129635.1 
+      )
+      (net "Net-(ITMO11-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        78740.0 -89940.0 78740.0 -89940.1 
+        78740.0 -89940.0 78739.9 -89940.0 
+        77989.9 0.0 77989.9 -0.1 
+      )
+      (net "Net-(ITMO10-Pad6)" 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        149860.0 -53435.0 149860.1 -53434.9 
+        149860.0 -53435.0 161290.0 -64865.0 
+        161290.0 -64865.0 170482.4 -64865.0 
+        170482.4 -64865.0 171773.1 -66155.7 
+        171773.1 -66155.7 171773.1 -92202.8 
+        176980.2 -95795.2 177800.0 -96615.0 
+        177800.0 -96615.0 177799.9 -96615.1 
+      )
+      (net "Net-(ITMO1-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        149860.0 -127095.0 149860.1 -127094.9 
+        149860.0 -127095.0 153514.5 -130749.5 
+        153514.5 -130749.5 170618.3 -130749.5 
+        170618.3 -130749.5 175537.9 -125829.9 
+        175537.9 -125829.9 175537.9 -121737.1 
+        175537.9 -121737.1 177800.0 -119475.0 
+        177800.0 -119475.0 177800.1 -119475.1 
+      )
+      (net "Net-(ITMO10-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        170180.0 -122015.0 170180.1 -122014.9 
+        170180.0 -122015.0 171290.7 -123125.7 
+        171290.7 -123125.7 208388.4 -123125.7 
+        208388.4 -123125.7 209907.9 -124645.2 
+        209907.9 -124645.2 220197.5 -124645.2 
+        220197.5 -124645.2 220197.5 -124645.3 
+      )
+      (net "Net-(ITMO14-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        169069.6 -91535.0 169069.7 -91535.1 
+        169069.6 -91535.0 168685.0 -91919.6 
+        168685.0 -91919.6 168685.0 -100692.2 
+        168685.0 -100692.2 168684.9 -100692.2 
+      )
+      (net "Net-(ITMO1-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        169069.1 -90424.1 170180.0 -91535.0 
+        170180.0 -91535.0 170179.9 -91535.0 
+        169069.6 -92713.5 169069.6 -92713.4 
+      )
+      (net "Net-(ITMO1-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        170179.9 -91535.0 170180.0 -91535.0 
+        169069.6 -92713.5 169069.6 -92713.4 
+        169543.2 -88094.3 170091.0 -87546.5 
+        171042.0 -87546.5 171267.2 -87546.5 
+        171290.9 -86934.8 171291.0 -86934.7 
+        171322.9 -85593.0 171322.9 -85592.9 
+        170690.9 -85367.8 170690.8 -85367.7 
+        169092.8 -85367.8 168778.6 -85367.8 
+        168778.6 -85367.8 168026.9 -84616.1 
+        168026.9 -84616.1 168027.0 -84616.0 
+      )
+      (net "Net-(ITMO1-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        168026.9 -84616.1 168026.9 -84616.2 
+        168026.9 -84616.1 150561.1 -84616.1 
+        150561.1 -84616.1 149860.0 -83915.0 
+        149860.0 -83915.0 149860.1 -83914.9 
+      )
+      (net "Net-(ITMO1-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -94075.0 142240.1 -94075.1 
+        142240.0 -94075.0 141150.6 -95164.4 
+        141150.6 -95164.4 141150.6 -97095.7 
+        141150.6 -97095.7 141939.9 -97885.0 
+        141939.9 -97885.0 145091.3 -97885.0 
+        145091.3 -97885.0 160189.3 -112983.0 
+        160189.3 -112983.0 160189.2 -112983.1 
+      )
+      (net "Net-(ITMO15-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        149860.0 -58515.0 149860.1 -58515.1 
+        149860.0 -58515.0 147957.1 -60417.9 
+        147957.1 -60417.9 147957.1 -88417.5 
+        142240.0 -94075.0 142239.9 -94075.1 
+        142240.0 -94075.0 142239.9 -94074.9 
+      )
+      (net "Net-(ITMO15-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        160189.3 -112983.0 160189.4 -112982.9 
+        160189.3 -112983.0 161773.6 -114567.3 
+        161773.6 -114567.3 221152.3 -114567.3 
+        227147.2 -120562.2 228600.0 -122015.0 
+        228600.0 -122015.0 228599.9 -122015.1 
+      )
+      (net "Net-(ITMO15-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -88995.0 142240.1 -88995.1 
+        142240.0 -88995.0 140063.7 -91171.3 
+        140244.7 -91171.3 140244.7 -91171.4 
+        140063.7 -99781.9 141558.4 -101276.6 
+        141558.4 -101276.6 141558.4 -111173.4 
+        141558.4 -111173.4 149860.0 -119475.0 
+        149860.0 -119475.0 149859.9 -119475.1 
+      )
+      (net "Net-(ITMO5-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142240.0 -88995.0 142240.1 -88995.1 
+        142240.0 -88995.0 134620.0 -96615.0 
+        134620.0 -96615.0 121920.0 -96615.0 
+        121920.0 -96615.0 121920.0 -96614.9 
+      )
+      (net "Net-(ITMO5-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        121920.0 -127095.0 121920.1 -127094.9 
+        121920.0 -127095.0 123017.4 -128192.4 
+        123017.4 -128192.4 123017.4 -130083.7 
+        123017.4 -130083.7 122196.1 -130905.0 
+        122196.1 -130905.0 121599.7 -130905.0 
+        118267.6 -134237.2 118267.5 -134237.3 
+        118725.8 -133768.6 118725.7 -133768.6 
+        113789.3 -134237.2 113789.2 -134237.1 
+        77989.9 -98704.1 77989.9 -92940.0 
+        77989.9 -92940.0 77990.0 -92940.0 
+      )
+      (net "Net-(ITMO6-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        93980.0 -61055.0 93979.9 -61054.9 
+        93980.0 -61055.0 100147.2 -54887.8 
+        100147.2 -54887.8 120467.2 -54887.8 
+        121283.2 -54071.8 121920.0 -53435.0 
+        121920.0 -53435.0 121920.1 -53435.1 
+      )
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        114300.0 -129635.0 114300.0 -127095.0 
+        114300.0 -127095.0 114300.1 -127094.9 
+        115388.6 -126788.1 115388.6 -100900.0 
+        115388.6 -100900.0 114744.9 -100256.3 
+        114744.9 -100256.3 114745.0 -100256.2 
+      )
+      (net "Net-(ITMO1-Pad2)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        114299.9 -129635.0 114300.0 -129635.0 
+        114300.0 -129635.0 114300.0 -127095.0 
+        114300.1 -127095.0 114300.0 -127095.0 
+      )
+      (net "Net-(ITMO1-Pad2)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        113863.9 -100256.3 114744.9 -100256.3 
+        114744.9 -100256.3 116696.2 -98305.0 
+        116696.2 -98305.0 116696.2 -96758.8 
+        121100.2 -92354.8 121920.0 -91535.0 
+        121920.0 -91535.0 121920.1 -91535.1 
+      )
+      (net "Net-(ITMO1-Pad2)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        93980.0 -53435.0 93980.1 -53434.9 
+        93980.0 -53435.0 108965.8 -68420.8 
+        108965.8 -68420.8 108965.8 -95358.2 
+        108965.8 -95358.2 113863.9 -100256.3 
+        113863.9 -100256.3 114744.9 -100256.3 
+        114744.9 -100500.4 114744.9 -100256.3 
+      )
+      (net "Net-(ITMO1-Pad2)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        170180.0 -88995.0 170180.1 -88995.1 
+        170180.0 -88995.0 163830.0 -95345.0 
+        163830.0 -95345.0 145413.3 -95345.0 
+        145413.3 -95345.0 143051.8 -97706.5 
+        143051.8 -97706.5 116165.9 -97706.5 
+        116165.9 -97706.5 115074.4 -96615.0 
+        115074.4 -96615.0 114300.0 -96615.0 
+        114300.0 -96615.0 114300.0 -96614.9 
+      )
+      (net "Net-(ITMO11-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        120013.3 -101653.6 120013.2 -101653.7 
+        120013.3 -101653.6 120013.3 -101653.5 
+        117425.0 -98570.0 121920.0 -94075.0 
+        121920.0 -94075.0 121920.1 -94075.1 
+      )
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        168685.0 -100692.2 168685.0 -100692.3 
+        168685.0 -100692.2 115837.2 -100692.2 
+        115837.2 -100692.2 114300.0 -99155.0 
+        114300.0 -99155.0 114300.1 -99154.9 
+      )
+      (net "Net-(ITMO1-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        233680.0 -53435.0 233680.1 -53434.9 
+        233680.0 -53435.0 237490.0 -57245.0 
+        237490.0 -57245.0 254328.1 -57245.0 
+        254328.1 -57245.0 255088.7 -58005.6 
+        255088.7 -58005.6 255088.7 -62506.3 
+        255088.7 -62506.3 254000.0 -63595.0 
+        254000.0 -63595.0 253999.9 -63594.9 
+      )
+      (net "Net-(ITMO1-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        226060.1 -86454.9 226060.0 -86455.0 
+        226060.0 -86455.0 226542.2 -86937.2 
+        230604.2 -95117.0 230604.2 -95358.0 
+        230604.2 -95358.0 230604.1 -95358.0 
+      )
+      (net "Net-(ITMO14-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        205740.0 -86455.0 205740.1 -86455.1 
+        205740.0 -86455.0 204651.2 -87543.8 
+        204651.2 -87543.8 204651.2 -89478.9 
+        204651.2 -89478.9 205620.1 -90447.8 
+        230323.9 -90084.5 230324.0 -90084.5 
+        232227.2 -90447.8 233680.0 -88995.0 
+        233680.0 -88995.0 233680.1 -88995.1 
+      )
+      (net "Net-(ITMO10-Pad10)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142240.0 -91535.0 142239.9 -91534.9 
+        142240.0 -91535.0 143510.0 -90265.0 
+        143510.0 -90265.0 165203.7 -90265.0 
+        165203.7 -90265.0 167585.0 -87883.7 
+        167585.0 -87883.7 198614.0 -87883.7 
+        198614.0 -87883.7 203601.5 -92871.2 
+        203601.5 -92871.2 206758.0 -92871.2 
+        206758.0 -92871.2 207961.8 -94075.0 
+        207961.8 -94075.0 226060.0 -94075.0 
+        226060.0 -94075.0 226060.0 -94075.1 
+      )
+      (net "Net-(ITMO12-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        254000.0 -86455.0 254000.1 -86455.1 
+        254000.0 -86455.0 247808.8 -92646.2 
+        247808.8 -92646.2 207487.8 -92646.2 
+        207487.8 -92646.2 206376.6 -91535.0 
+        206376.6 -91535.0 205740.0 -91535.0 
+        205740.0 -91535.0 205740.0 -91534.9 
+      )
+      (net "Net-(ITMO14-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        208280.0 -119475.0 208280.0 -119474.9 
+        208280.0 -119475.0 208280.1 -119474.9 
+        227149.6 -98067.8 227149.6 -98067.7 
+        227512.8 -98067.8 226060.0 -96615.0 
+        226060.0 -96615.0 226060.1 -96614.9 
+      )
+      (net "Net-(ITMO14-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        208280.0 -93200.4 208280.0 -116935.0 
+        208280.0 -116935.0 208279.9 -116935.1 
+        207172.2 -116955.6 207172.2 -116955.7 
+        206687.6 -124532.7 207979.9 -125825.0 
+        207979.9 -125825.0 222250.0 -125825.0 
+        227147.2 -130722.2 228600.0 -132175.0 
+        228600.0 -132175.0 228599.9 -132175.1 
+      )
+      (net "Net-(ITMO14-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        208280.0 -116935.0 208279.9 -116935.0 
+        208280.0 -116935.0 208280.0 -94075.0 
+        208280.0 -94075.0 205740.0 -91535.0 
+        205740.0 -91535.0 205740.1 -91534.9 
+      )
+      (net "Net-(ITMO14-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        198120.0 -129635.0 198120.1 -129634.9 
+        198120.0 -129635.0 202688.8 -134203.8 
+        202688.8 -134203.8 241716.2 -134203.8 
+        241716.2 -134203.8 256540.0 -119380.0 
+        256540.0 -119380.0 256540.1 -119380.1 
+      )
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        177800.0 -127095.0 177799.9 -127095.1 
+        177800.0 -127095.0 176692.9 -125987.9 
+        176692.9 -125987.9 176692.9 -121568.9 
+        176692.9 -121568.9 177516.8 -120745.0 
+        177516.8 -120745.0 178100.2 -120745.0 
+        178100.2 -120745.0 179533.5 -119311.7 
+        179401.4 -118941.8 179401.4 -118941.7 
+        179269.2 -118941.8 179269.1 -118941.8 
+      )
+      (net "Net-(ITMO10-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        149860.0 -122015.0 149859.9 -122014.9 
+        149860.0 -122015.0 150971.3 -120903.7 
+        150971.3 -120903.7 197008.7 -120903.7 
+        197008.7 -120903.7 198120.0 -122015.0 
+        198120.0 -122015.0 198119.9 -122015.1 
+      )
+      (net "Net-(ITMO12-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        170180.0 -88995.0 170180.0 -88994.9 
+        177800.0 -88995.0 177800.1 -88995.0 
+        177800.0 -88995.0 177800.1 -88995.1 
+      )
+      (net "Net-(ITMO11-Pad3)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        78740.0 -86939.9 78740.0 -86940.0 
+        78740.0 -86940.0 92643.0 -86940.0 
+        92643.0 -86940.0 93445.2 -87742.2 
+        115314.4 -87742.2 115387.2 -87742.2 
+        115387.2 -87742.2 115387.2 -87742.3 
+      )
+      (net "Net-(ITMO2-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        236220.0 -119380.0 236219.9 -119380.1 
+        236220.0 -119380.0 230555.1 -113715.1 
+        230555.1 -113715.1 173857.5 -113715.1 
+        173857.5 -113715.1 173857.5 -113715.0 
+      )
+      (net "Net-(ITMO11-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        93980.0 -58515.0 93979.9 -58514.9 
+        93980.0 -58515.0 100147.2 -52347.8 
+        100147.2 -52347.8 148772.8 -52347.8 
+        149223.2 -52798.2 149860.0 -53435.0 
+        149860.0 -53435.0 149859.9 -53435.1 
+      )
+      (net "Net-(ITMO1-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -58515.0 142239.9 -58514.9 
+        142240.0 -58515.0 143351.3 -57403.7 
+        143351.3 -57403.7 150286.9 -57403.7 
+        150286.9 -57403.7 150995.0 -58111.8 
+        150995.0 -58111.8 150995.0 -58923.1 
+        150995.0 -58923.1 150133.1 -59785.0 
+        150133.1 -59785.0 149566.6 -59785.0 
+        149566.6 -59785.0 148767.9 -60583.7 
+        148767.9 -60583.7 148767.9 -87902.9 
+        148767.9 -87902.9 149860.0 -88995.0 
+        149860.0 -88995.0 149859.9 -88995.1 
+      )
+      (net "Net-(ITMO4-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        146627.0 -126724.4 146626.9 -126724.3 
+        146627.0 -126724.4 147526.4 -125825.0 
+        204923.9 -126007.8 206827.2 -126007.8 
+        206827.2 -126007.8 208280.0 -124555.0 
+        208280.0 -124555.0 208280.1 -124555.1 
+      )
+      (net "Net-(ITMO15-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        142240.0 -132175.0 142239.9 -132174.9 
+        146019.3 -128395.7 146019.4 -128395.6 
+        146627.0 -126724.4 146627.0 -126724.3 
+        146627.0 -126724.4 146627.1 -126724.3 
+      )
+      (net "Net-(ITMO15-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142240.0 -122015.0 142239.9 -122015.1 
+        142240.0 -122015.0 140970.0 -120745.0 
+        121058.0 -120906.3 121057.9 -120906.3 
+        121581.3 -120745.0 121581.2 -120745.1 
+        120824.5 -123102.2 120824.5 -123102.3 
+        120467.2 -123102.2 121920.0 -124555.0 
+        121920.0 -124555.0 121919.9 -124555.1 
+      )
+      (net "Net-(ITMO12-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        149860.0 -122015.1 149860.0 -122015.0 
+        144939.1 -122015.0 125679.1 -122015.0 
+        142240.0 -122015.0 142240.0 -122014.9 
+      )
+      (net "Net-(ITMO12-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        78740.0 -92940.0 78740.0 -92940.1 
+        78740.0 -92940.0 78739.9 -92940.0 
+        77989.9 0.0 77989.9 -0.1 
+      )
+      (net "Net-(ITMO6-Pad5)" 1)
+      (clearance_class default)
+      (type shove_fixed)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        121920.0 -88995.0 121920.1 -88995.1 
+        121920.0 -88995.0 120826.6 -90088.4 
+        120826.6 -90088.4 90611.6 -90088.4 
+        90611.6 -90088.4 88463.2 -87940.0 
+        88463.2 -87940.0 78740.0 -87940.0 
+        78740.0 -87940.0 78740.0 -87939.9 
+      )
+      (net "Net-(ITMO15-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        78740.0 -88940.0 78740.0 -88939.9 
+        78740.0 -88940.0 88581.4 -88940.0 
+        88581.4 -88940.0 93716.4 -94075.0 
+        93716.4 -94075.0 93980.0 -94075.0 
+        93980.0 -94075.0 93980.0 -94075.1 
+      )
+      (net "Net-(ITMO11-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        115241.5 -87742.2 115241.4 -87742.2 
+        115387.2 -60150.6 115387.2 -90447.8 
+        115387.2 -90447.8 114300.0 -91535.0 
+        114299.9 -91534.9 114300.0 -91535.0 
+      )
+      (net "Net-(ITMO2-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        121920.1 -55975.1 121920.0 -55975.0 
+        121920.0 -55975.0 120467.2 -57427.8 
+        115387.2 -60150.6 115387.2 -90447.8 
+        115241.5 -87742.2 115241.4 -87742.2 
+      )
+      (net "Net-(ITMO2-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142240.0 -61055.0 142239.9 -61054.9 
+        142240.0 -61055.0 145909.8 -57385.2 
+        145909.8 -57385.2 198587.5 -57385.2 
+        198587.5 -57385.2 199390.0 -58187.7 
+        199390.0 -58187.7 199390.0 -59626.2 
+        199390.0 -59626.2 199389.9 -59626.2 
+      )
+      (net "Net-(ITMO10-Pad10)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        233680.0 -53435.0 233679.9 -53435.1 
+        233680.0 -53435.0 232592.8 -52347.8 
+        232592.8 -52347.8 150947.2 -52347.8 
+        150496.8 -52798.2 149860.0 -53435.0 
+        149860.0 -53435.0 149859.9 -53434.9 
+      )
+      (net "Net-(ITMO1-Pad4)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        194424.0 -98043.7 194424.0 -98043.6 
+        206827.2 -98043.7 206827.3 -98043.7 
+        224790.0 -97885.0 226060.0 -99155.0 
+        226060.0 -99155.0 226059.9 -99155.1 
+      )
+      (net "Net-(ITMO1-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        114300.0 -63595.0 114300.1 -63595.1 
+        114300.0 -63595.0 113210.4 -64684.6 
+        113210.4 -97702.2 113210.4 -97702.3 
+        112847.2 -97702.2 114300.0 -99155.0 
+        114300.0 -99155.0 114299.9 -99155.1 
+      )
+      (net "Net-(ITMO1-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        149860.0 -88995.0 149859.9 -88994.9 
+        149860.0 -88995.0 152400.0 -86455.0 
+        152400.0 -86455.0 170180.0 -86455.0 
+        170180.0 -86455.0 170180.0 -86455.1 
+      )
+      (net "Net-(ITMO4-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        256540.0 -124460.0 256539.9 -124460.1 
+        256540.0 -124460.0 254000.0 -121920.0 
+        245110.0 -121920.0 235322.5 -121920.0 
+        236220.0 -121920.0 236220.0 -121919.9 
+      )
+      (net "Net-(ITMO14-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        236220.0 -127000.0 236220.1 -127000.1 
+        236220.0 -127000.0 234703.4 -128516.6 
+        234703.4 -128516.6 197514.4 -128516.6 
+        197514.4 -128516.6 196396.0 -129635.0 
+        196396.0 -129635.0 177800.0 -129635.0 
+        177800.0 -129635.0 177800.0 -129634.9 
+      )
+      (net "Net-(ITMO10-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        256540.0 -129540.0 256540.1 -129540.0 
+        256540.0 -129540.0 256540.0 -132080.0 
+        256540.0 -132080.0 256539.9 -132080.0 
+      )
+      (net "Net-(ITMO10-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        198120.0 -132175.0 198119.9 -132175.1 
+        198120.0 -132175.0 194424.1 -128479.1 
+        194424.1 -128479.1 194424.1 -98043.7 
+        194424.1 -98043.7 194424.0 -98043.7 
+        194424.0 -98043.7 194424.0 -98043.6 
+      )
+      (net "Net-(ITMO1-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        198119.9 -61054.9 198120.0 -61055.0 
+        198120.0 -61055.0 199390.0 -59785.0 
+        199390.0 -59785.0 199390.0 -59784.9 
+        204652.8 -59626.2 204652.7 -59626.2 
+      )
+      (net "Net-(ITMO10-Pad10)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        226060.0 -58515.0 226060.1 -58515.1 
+        226060.0 -58515.0 224790.0 -59785.0 
+        204652.8 -59626.2 204652.7 -59626.2 
+        199390.0 -59785.0 199390.0 -59784.9 
+      )
+      (net "Net-(ITMO10-Pad10)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        254000.0 -96615.0 254000.1 -96615.0 
+        254000.0 -96615.0 254000.0 -99155.0 
+        254000.0 -99155.0 253999.9 -99155.0 
+      )
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        228600.0 -124555.0 228600.1 -124555.1 
+        226580.3 -126574.7 226580.2 -126574.8 
+        227510.4 -128182.2 227510.4 -128182.3 
+        227147.2 -128182.2 228600.0 -129635.0 
+        228600.0 -129635.0 228599.9 -129635.1 
+      )
+      (net "Net-(ITMO15-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        228600.0 -122015.0 228600.1 -122015.0 
+        228600.0 -123285.0 228600.0 -125014.0 
+        228600.0 -124555.0 228599.9 -124555.0 
+      )
+      (net "Net-(ITMO15-Pad11)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        226060.0 -86455.0 226059.9 -86454.9 
+        252547.2 -59967.8 254000.0 -58515.0 
+        254000.0 -58515.0 254000.1 -58515.1 
+      )
+      (net "Net-(ITMO14-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        226060.0 -66135.0 226059.9 -66134.9 
+        226060.0 -66135.0 229870.0 -62325.0 
+        229870.0 -62325.0 247650.0 -62325.0 
+        252547.2 -57427.8 254000.0 -55975.0 
+        254000.0 -55975.0 254000.1 -55975.1 
+      )
+      (net "Net-(ITMO13-Pad8)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        93980.0 -127095.0 93980.1 -127095.1 
+        93980.0 -127095.0 92891.2 -128183.8 
+        92891.2 -128183.8 92891.2 -130118.9 
+        92891.2 -130118.9 93526.8 -130754.5 
+        93526.8 -130754.5 109474.2 -130754.5 
+        109474.2 -130754.5 111705.0 -128523.7 
+        111705.0 -128523.7 176688.7 -128523.7 
+        176688.7 -128523.7 177800.0 -129635.0 
+        177800.0 -129635.0 177799.9 -129635.1 
+      )
+      (net "Net-(ITMO10-Pad12)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        198120.0 -86455.0 198119.9 -86454.9 
+        198120.0 -86455.0 200660.0 -83915.0 
+        200660.0 -83915.0 205740.0 -83915.0 
+        205740.0 -83915.0 205740.0 -83915.1 
+      )
+      (net "Net-(ITMO11-Pad13)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        149860.0 -129635.0 149860.1 -129634.9 
+        149860.0 -129635.0 151130.0 -130905.0 
+        178887.2 -130746.2 178887.3 -130746.2 
+        196850.0 -130905.0 198120.0 -129635.0 
+        198120.0 -129635.0 198120.1 -129635.1 
+      )
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        170180.0 -127095.0 170180.0 -127094.9 
+        170180.0 -127095.0 175896.7 -127095.0 
+        176983.9 -128182.2 177166.7 -128365.0 
+        178887.2 -128206.2 178887.3 -128206.2 
+        196850.0 -128365.0 198120.0 -127095.0 
+        198120.0 -127095.0 198120.1 -127095.1 
+      )
+      (net "Net-(ITMO10-Pad1)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path B.Cu 250.0
+        170180.0 -66135.0 170180.1 -66135.0 
+        170180.0 -66135.0 170180.0 -71215.0 
+        170180.0 -71215.0 149860.0 -91535.0 
+        149860.0 -91535.0 149859.9 -91534.9 
+      )
+      (net "Net-(ITMO6-Pad5)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        142240.0 -124555.0 142240.1 -124555.1 
+        142240.0 -124555.0 140970.0 -125825.0 
+        140834.5 -125689.5 115705.5 -125689.5 
+        115705.5 -125689.5 114300.0 -127095.0 
+        114300.0 -127095.0 114299.9 -127094.9 
+      )
+      (net "Net-(ITMO1-Pad2)" 1)
+      (clearance_class default)
+    )
+    (wire
+      (polyline_path F.Cu 250.0
+        114300.0 -132175.0 114299.9 -132174.9 
+        114300.0 -132175.0 115570.0 -130905.0 
+        123007.2 -131063.7 123007.3 -131063.7 
+        140970.0 -130905.0 142240.0 -132175.0 
+        142240.0 -132175.0 142239.9 -132175.1 
+      )
+      (net "Net-(ITMO15-Pad4)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 143222.1 -80977.5
+      (net "Net-(ITMO14-Pad3)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 140531.2 -111113.6
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 139436.2 -79620.7
+      (net "Net-(ITMO10-Pad8)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 139430.9 -66509.9
+      (net "Net-(ITMO10-Pad4)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 119450.7 -111113.6
+      (net "Net-(ITMO4-Pad11)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 211113.1 -120613.0
+      (net "Net-(ITMO12-Pad13)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 196286.4 -54843.5
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 174724.8 -83504.9
+      (net "Net-(ITMO11-Pad4)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 173999.6 -82778.6
+      (net "Net-(ITMO11-Pad5)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 106205.1 -95188.1
+      (net "Net-(ITMO11-Pad13)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 115140.1 -97885.8
+      (net "Net-(ITMO17-Pad1)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 112468.0 -131880.5
+      (net "Net-(ITMO10-Pad13)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 175555.1 -67225.3
+      (net "Net-(ITMO10-Pad11)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 228701.9 -99186.3
+      (net "Net-(ITMO12-Pad13)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 222485.4 -88429.8
+      (net "Net-(ITMO1-Pad12)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 201724.5 -111476.1
+      (net "Net-(ITMO15-Pad5)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 167235.3 -102363.1
+      (net "Net-(ITMO15-Pad5)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 201170.7 -108668.9
+      (net "Net-(ITMO18-Pad6)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 186967.9 -102734.1
+      (net "Net-(ITMO18-Pad6)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 205344.3 -71817.0
+      (net "Net-(ITMO10-Pad9)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 186967.9 -98237.2
+      (net "Net-(ITMO10-Pad1)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 180809.9 -115376.1
+      (net "Net-(ITMO12-Pad4)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 180000.5 -94934.6
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 179660.8 -98843.8
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 113181.3 -111464.6
+      (net "Net-(ITMO11-Pad1)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 178529.3 -85217.7
+      (net "Net-(ITMO11-Pad13)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 180450.6 -92136.8
+      (net "Net-(ITMO1-Pad5)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 220197.5 -124645.2
+      (net "Net-(ITMO14-Pad11)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 168026.9 -84616.1
+      (net "Net-(ITMO1-Pad9)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 160189.3 -112983.0
+      (net "Net-(ITMO15-Pad11)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 137516.2 -96136.2
+      (net "Net-(ITMO6-Pad5)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 114192.7 -101653.6
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 230604.2 -95358.0
+      (net "Net-(ITMO14-Pad13)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 179401.4 -118941.8
+      (net "Net-(ITMO10-Pad5)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 173857.5 -113715.1
+      (net "Net-(ITMO11-Pad4)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 146627.0 -126724.4
+      (net "Net-(ITMO15-Pad4)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 138266.3 -99290.6
+      (net "Net-(ITMO2-Pad11)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 120013.3 -101653.6
+      (net "Net-(ITMO12-Pad9)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 115387.2 -87742.2
+      (net "Net-(ITMO2-Pad11)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 199635.2 -133307.1
+      (net "Net-(ITMO10-Pad13)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 168685.0 -100692.2
+      (net "Net-(ITMO1-Pad9)" 1)
+      (clearance_class default)
+    )
+    (via "Via[0-1]_800:400_um" 194424.0 -98043.7
+      (net "Net-(ITMO1-Pad12)" 1)
+      (clearance_class default)
+    )
+  )
+)
