@@ -4,26 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a2f913982ccc9ec7",
+        "id": "0f58fca5b604a5b8",
         "type": "tabs",
         "children": [
           {
-            "id": "8a957dfa1885a1ad",
+            "id": "fe87068ef5c78e1c",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Drawing 2023-05-09 15.18.49.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "e927ae72c43a7e8f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.7"
+                "file": "Excalidraw/RISCV-pipeline.excalidraw.md"
               }
             }
           }
@@ -85,7 +75,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "f806b233eb905e1b",
@@ -101,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Drawing 2023-05-09 15.18.49.excalidraw.md",
+                "file": "Excalidraw/RISCV-pipeline.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Drawing 2023-05-09 15.18.49.excalidraw.md",
+                "file": "Excalidraw/RISCV-pipeline.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Drawing 2023-05-09 15.18.49.excalidraw.md"
+                "file": "Excalidraw/RISCV-pipeline.excalidraw.md"
               }
             }
           }
@@ -163,17 +154,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c544ac5ca96fd946",
+  "active": "fe87068ef5c78e1c",
   "lastOpenFiles": [
-    "Excalidraw/lab2.md",
+    "Pasted Image 20230604103213_443.png",
+    "Pasted Image 20230529231512_413.png",
+    "Pasted Image 20230406205942_646.png",
+    "Pasted Image 20230406151822_852.png",
+    "Pasted Image 20230406150021_564.png",
     "Drawing 2023-05-09 15.18.49.excalidraw.md",
+    "Excalidraw/RISCV-pipeline.excalidraw.md",
+    "Pasted Image 20230528211802_362.png",
+    "Excalidraw/lab2.md",
     "Excalidraw/mul.md",
     "Excalidraw/CAD1.md",
     "Pasted Image 20230407140448_120.png",
     "Pasted Image 20230407135446_077.png",
-    "Pasted Image 20230406205942_646.png",
-    "Pasted Image 20230406151822_852.png",
-    "Pasted Image 20230406150021_564.png",
     "Excalidraw"
   ]
 }
