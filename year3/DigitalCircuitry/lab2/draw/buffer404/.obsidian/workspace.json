@@ -16,8 +16,29 @@
                 "file": "Excalidraw/RISCV-pipeline.excalidraw.md"
               }
             }
+          },
+          {
+            "id": "76fe82aa3167b23c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-06-28 19.55.43.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "d3c2e85f55f81b91",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-06-10 23.23.45.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/RISCV-pipeline.excalidraw.md",
+                "file": "Excalidraw/Drawing 2023-06-28 19.55.43.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/RISCV-pipeline.excalidraw.md",
+                "file": "Excalidraw/Drawing 2023-06-28 19.55.43.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/RISCV-pipeline.excalidraw.md"
+                "file": "Excalidraw/Drawing 2023-06-28 19.55.43.excalidraw.md"
               }
             }
           }
@@ -154,21 +175,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fe87068ef5c78e1c",
+  "active": "76fe82aa3167b23c",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2023-06-10 23.23.45.excalidraw.md",
+    "Excalidraw/Drawing 2023-06-28 19.55.43.excalidraw.md",
+    "Pasted Image 20230628200326_462.png",
+    "Pasted Image 20230628195925_392.png",
+    "Pasted Image 20230628195910_390.png",
+    "Pasted Image 20230628195808_384.png",
+    "Pasted Image 20230628195748_378.png",
+    "Pasted Image 20230628195729_360.png",
+    "Excalidraw/RISCV-pipeline.excalidraw.md",
+    "Pasted Image 20230610232400_249.png",
     "Pasted Image 20230604103213_443.png",
     "Pasted Image 20230529231512_413.png",
     "Pasted Image 20230406205942_646.png",
-    "Pasted Image 20230406151822_852.png",
-    "Pasted Image 20230406150021_564.png",
     "Drawing 2023-05-09 15.18.49.excalidraw.md",
-    "Excalidraw/RISCV-pipeline.excalidraw.md",
-    "Pasted Image 20230528211802_362.png",
     "Excalidraw/lab2.md",
     "Excalidraw/mul.md",
     "Excalidraw/CAD1.md",
-    "Pasted Image 20230407140448_120.png",
-    "Pasted Image 20230407135446_077.png",
     "Excalidraw"
   ]
 }
