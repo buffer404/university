@@ -1,0 +1,29 @@
+18:25:45 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'submain':
+../src/helloworld.c:194:6: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+      MB_Sleep(3000);
+      ^~~~~~~~
+In file included from ../src/helloworld.c:53:
+../../SoC_SW_Lab1_bsp/microblaze_0/include/microblaze_sleep.h:119:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158876	   1672	   3484	 164032	  280c0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+
+18:25:45 Build Finished (took 569ms)
+

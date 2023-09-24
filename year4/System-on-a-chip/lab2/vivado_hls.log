@@ -1,0 +1,78 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'leonid' on host 'leonid-lenovo' (Linux_x86_64 version 6.2.0-33-generic) on Sun Sep 24 19:15:35 MSK 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/leonid/Desktop/university/year4/System-on-a-chip/lab2'
+Sourcing Tcl script '/home/leonid/Desktop/university/year4/System-on-a-chip/lab2/lab2/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/home/leonid/Desktop/university/year4/System-on-a-chip/lab2/lab2'.
+INFO: [HLS 200-10] Adding design file 'main.c' to the project
+INFO: [HLS 200-10] Opening solution '/home/leonid/Desktop/university/year4/System-on-a-chip/lab2/lab2/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a100t-csg324-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'main.c' ... 
+WARNING: [HLS 200-40] In file included from main.c:1:
+main.c:101:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+void main(){
+^
+1 warning generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 876.582 ; gain = 192.969 ; free physical = 787 ; free virtual = 6168
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 876.582 ; gain = 192.969 ; free physical = 792 ; free virtual = 6173
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 876.582 ; gain = 192.969 ; free physical = 800 ; free virtual = 6172
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'count_inversion' into 'eval_elem' (main.c:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_element' into 'eval_elem' (main.c:87) automatically.
+INFO: [XFORM 203-602] Inlining function 'swap' into 'next_set' (main.c:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'clear_perm' into 'calc_det' (main.c:93) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 876.582 ; gain = 192.969 ; free physical = 807 ; free virtual = 6180
+INFO: [XFORM 203-602] Inlining function 'count_inversion' into 'eval_elem' (main.c:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_element' into 'eval_elem' (main.c:87) automatically.
+INFO: [XFORM 203-602] Inlining function 'swap' into 'next_set' (main.c:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'clear_perm' into 'calc_det' (main.c:93) automatically.
+INFO: [XFORM 203-602] Inlining function 'calc_det' into 'main' (main.c:102) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 876.582 ; gain = 192.969 ; free physical = 783 ; free virtual = 6160
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 876.582 ; gain = 192.969 ; free physical = 782 ; free virtual = 6160
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'main' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'next_set' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7 seconds; current allocated memory: 104.921 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 3 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 105.241 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'main' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 105.371 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 105.476 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'next_set' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'next_set'.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 105.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'main' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on function 'main' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'main'.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 106.865 MB.
+INFO: [RTMG 210-278] Implementing memory 'main_permutations_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 876.582 ; gain = 192.969 ; free physical = 771 ; free virtual = 6151
+INFO: [VHDL 208-304] Generating VHDL RTL for main.
+INFO: [VLOG 209-307] Generating Verilog RTL for main.
+INFO: [HLS 200-112] Total elapsed time: 7.57 seconds; peak allocated memory: 106.865 MB.

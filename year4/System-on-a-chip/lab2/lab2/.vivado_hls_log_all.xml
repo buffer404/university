@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-40] In file included from main.c:1:&#xA;main.c:101:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]&#xA;void main(){&#xA;^&#xA;1 warning generated." projectName="lab2" solutionName="solution1" date="2023-09-24T19:15:41.543+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

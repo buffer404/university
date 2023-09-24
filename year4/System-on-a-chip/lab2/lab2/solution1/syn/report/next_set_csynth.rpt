@@ -1,0 +1,170 @@
+
+
+================================================================
+== Vivado HLS Report for 'next_set'
+================================================================
+* Date:           Sun Sep 24 19:15:42 2023
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        lab2
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a100t-csg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     5.140|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+------------+----------+-----------+-----------+----------------+----------+
+        |          |      Latency     | Iteration|  Initiation Interval  |      Trip      |          |
+        | Loop Name| min |     max    |  Latency |  achieved |   target  |      Count     | Pipelined|
+        +----------+-----+------------+----------+-----------+-----------+----------------+----------+
+        |- Loop 1  |    2|  8589934591|         2|          -|          -| 1 ~ 4294967295 |    no    |
+        |- Loop 2  |    ?|           ?|         2|          -|          -|               ?|    no    |
+        |- Loop 3  |    ?|           ?|         3|          -|          -|               ?|    no    |
+        +----------+-----+------------+----------+-----------+-----------+----------------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|    267|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|    164|    -|
+|Register         |        -|      -|     280|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|     280|    431|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      270|    240|  126800|  63400|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |add_ln53_fu_148_p2     |     +    |      0|  0|  39|          32|           1|
+    |add_ln61_fu_210_p2     |     +    |      0|  0|  39|          32|           2|
+    |j_fu_165_p2            |     +    |      0|  0|  39|          32|           2|
+    |k_fu_171_p2            |     +    |      0|  0|  39|          32|           2|
+    |l_fu_188_p2            |     +    |      0|  0|  39|          32|           1|
+    |icmp_ln53_1_fu_159_p2  |   icmp   |      0|  0|  18|          32|          32|
+    |icmp_ln53_fu_137_p2    |   icmp   |      0|  0|  18|          32|           2|
+    |icmp_ln57_fu_182_p2    |   icmp   |      0|  0|  18|          32|          32|
+    |icmp_ln60_fu_194_p2    |   icmp   |      0|  0|  18|          32|          32|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |      0|  0| 267|         288|         106|
+    +-----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm              |  50|         11|    1|         11|
+    |ap_return              |   9|          2|    1|          2|
+    |i_assign_reg_74        |   9|          2|   32|         64|
+    |k_0_in_reg_86          |   9|          2|   32|         64|
+    |l_0_in_reg_108         |   9|          2|   32|         64|
+    |permutations_address0  |  33|          6|    3|         18|
+    |permutations_address1  |  27|          5|    3|         15|
+    |r_reg_97               |   9|          2|   32|         64|
+    |reg_131                |   9|          2|   32|         64|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  | 164|         34|  168|        366|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+----+----+-----+-----------+
+    |             Name            | FF | LUT| Bits| Const Bits|
+    +-----------------------------+----+----+-----+-----------+
+    |add_ln61_reg_269             |  32|   0|   32|          0|
+    |ap_CS_fsm                    |  10|   0|   10|          0|
+    |ap_return_preg               |   1|   0|    1|          0|
+    |i_assign_reg_74              |  32|   0|   32|          0|
+    |k_0_in_reg_86                |  32|   0|   32|          0|
+    |k_reg_238                    |  32|   0|   32|          0|
+    |l_0_in_reg_108               |  32|   0|   32|          0|
+    |l_reg_251                    |  32|   0|   32|          0|
+    |p_0_reg_118                  |   1|   0|    1|          0|
+    |permutations_addr_2_reg_243  |   3|   0|    3|          0|
+    |permutations_addr_3_reg_259  |   3|   0|    3|          0|
+    |permutations_addr_4_reg_264  |   3|   0|    3|          0|
+    |permutations_addr_reg_219    |   3|   0|    3|          0|
+    |r_reg_97                     |  32|   0|   32|          0|
+    |reg_131                      |  32|   0|   32|          0|
+    +-----------------------------+----+----+-----+-----------+
+    |Total                        | 280|   0|  280|          0|
+    +-----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+--------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------------+-----+-----+------------+--------------+--------------+
+|ap_clk                 |  in |    1| ap_ctrl_hs |   next_set   | return value |
+|ap_rst                 |  in |    1| ap_ctrl_hs |   next_set   | return value |
+|ap_start               |  in |    1| ap_ctrl_hs |   next_set   | return value |
+|ap_done                | out |    1| ap_ctrl_hs |   next_set   | return value |
+|ap_idle                | out |    1| ap_ctrl_hs |   next_set   | return value |
+|ap_ready               | out |    1| ap_ctrl_hs |   next_set   | return value |
+|ap_return              | out |    1| ap_ctrl_hs |   next_set   | return value |
+|permutations_address0  | out |    3|  ap_memory | permutations |     array    |
+|permutations_ce0       | out |    1|  ap_memory | permutations |     array    |
+|permutations_we0       | out |    1|  ap_memory | permutations |     array    |
+|permutations_d0        | out |   32|  ap_memory | permutations |     array    |
+|permutations_q0        |  in |   32|  ap_memory | permutations |     array    |
+|permutations_address1  | out |    3|  ap_memory | permutations |     array    |
+|permutations_ce1       | out |    1|  ap_memory | permutations |     array    |
+|permutations_we1       | out |    1|  ap_memory | permutations |     array    |
+|permutations_d1        | out |   32|  ap_memory | permutations |     array    |
+|permutations_q1        |  in |   32|  ap_memory | permutations |     array    |
++-----------------------+-----+-----+------------+--------------+--------------+
+

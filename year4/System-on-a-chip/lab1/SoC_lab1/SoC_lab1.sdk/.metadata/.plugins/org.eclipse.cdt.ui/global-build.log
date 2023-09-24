@@ -1,0 +1,1646 @@
+14:10:06 **** Build of project SoC_SW_Lab1_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_3/src
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_9/src
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/gpio_v4_4/src
+make -C microblaze_0/libsrc/gpio_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v7_0/src
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_3/src
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_9/src
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/gpio_v4_4/src
+make -C microblaze_0/libsrc/gpio_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpio
+Running Make libs in microblaze_0/libsrc/standalone_v7_0/src
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Finished building libraries
+14:10:08 **** Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2696	    268	   3108	   6072	   17b8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:11:31 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2696	    268	   3108	   6072	   17b8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:14:10 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2608	    268	   3108	   5984	   1760	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:32:51 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:5: error: too many arguments to function 'Xil_In16'
+     Xil_In16(0x40000000, 0x55AA);
+     ^~~~~~~~
+In file included from ../src/helloworld.c:51:
+../../SoC_SW_Lab1_bsp/microblaze_0/include/xil_io.h:130:19: note: declared here
+ static INLINE u16 Xil_In16(UINTPTR Addr)
+                   ^~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:33:00 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93608	   1672	   3168	  98448	  18090	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:33:18 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93608	   1672	   3168	  98448	  18090	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:34:50 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93620	   1672	   3172	  98464	  180a0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:35:07 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93624	   1672	   3168	  98464	  180a0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:35:13 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93620	   1672	   3172	  98464	  180a0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:38:01 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93620	   1672	   3172	  98464	  180a0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:40:06 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93572	   1672	   3172	  98416	  18070	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:43:06 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:14: warning: format '%x' expects argument of type 'unsigned int *', but argument 2 has type 'uint16_t *' {aka 'short unsigned int *'} [-Wformat=]
+      scanf("%x", &i);
+             ~^   ~~
+             %hx
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154628	   1672	   3172	 159472	  26ef0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+14:43:36 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154628	   1672	   3172	 159472	  26ef0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:18:03 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 155604	   1672	   3404	 160680	  273a8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:41:06 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:15: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint16_t *' {aka 'short unsigned int *'} [-Wformat=]
+       scanf("%d", value + i);
+              ~^   ~~~~~~~~~
+              %hd
+../src/helloworld.c:100:18: warning: passing argument 1 of 'fill_matrix' from incompatible pointer type [-Wincompatible-pointer-types]
+      fill_matrix(value, index);
+                  ^~~~~
+../src/helloworld.c:67:24: note: expected 'char *' but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ void fill_matrix(char *arr, size_t index){
+                  ~~~~~~^~~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156456	   1672	   3400	 161528	  276f8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:41:33 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:15: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint16_t *' {aka 'short unsigned int *'} [-Wformat=]
+       scanf("%d", value + i);
+              ~^   ~~~~~~~~~
+              %hd
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156460	   1672	   3404	 161536	  27700	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:41:49 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:15: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint16_t *' {aka 'short unsigned int *'} [-Wformat=]
+       scanf("%d", value + i);
+              ~^   ~~~~~~~~~
+              %hd
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156464	   1672	   3400	 161536	  27700	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:41:53 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156468	   1672	   3404	 161544	  27708	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:42:08 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156464	   1672	   3400	 161536	  27700	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:46:28 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'fill_matrix':
+../src/helloworld.c:71:2: error: 'check_filter' undeclared (first use in this function); did you mean 'check_filler'?
+  check_filter[index] = 1;
+  ^~~~~~~~~~~~
+  check_filler
+../src/helloworld.c:71:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+15:52:06 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'fill_matrix':
+../src/helloworld.c:80:2: error: 'check_filter' undeclared (first use in this function); did you mean 'check_filler'?
+  check_filter[index] = 1;
+  ^~~~~~~~~~~~
+  check_filler
+../src/helloworld.c:80:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+15:52:42 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156636	   1672	   3404	 161712	  277b0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:53:00 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156736	   1672	   3400	 161808	  27810	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:53:31 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156768	   1672	   3400	 161840	  27830	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:53:52 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:63:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before numeric constant
+ int answers 7];
+             ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+15:54:01 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156768	   1672	   3424	 161864	  27848	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:54:08 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156768	   1672	   3424	 161864	  27848	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+15:57:40 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_matrix':
+../src/helloworld.c:73:18: error: 'answer' undeclared (first use in this function); did you mean 'answers'?
+   printf("= %d", answer[i]);
+                  ^~~~~~
+                  answers
+../src/helloworld.c:73:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:118:19: error: 'answer' undeclared (first use in this function); did you mean 'answers'?
+      printf("%d", answer[index]);
+                   ^~~~~~
+                   answers
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+15:57:44 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_matrix':
+../src/helloworld.c:73:18: error: 'answer' undeclared (first use in this function); did you mean 'answers'?
+   printf("= %d", answer[i]);
+                  ^~~~~~
+                  answers
+../src/helloworld.c:73:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:117:19: error: 'answer' undeclared (first use in this function); did you mean 'answers'?
+      printf("%d", answer[index]);
+                   ^~~~~~
+                   answers
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+15:57:56 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:117:19: error: 'answer' undeclared (first use in this function); did you mean 'answers'?
+      printf("%d", answer[index]);
+                   ^~~~~~
+                   answers
+../src/helloworld.c:117:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+15:58:13 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156936	   1672	   3424	 162032	  278f0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+16:01:29 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156936	   1672	   3424	 162032	  278f0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+16:02:05 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 156956	   1672	   3428	 162056	  27908	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+16:06:17 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:116:21: error: too few arguments to function 'get_index'
+      size_t index = get_index(Xil_In16(0x40000008));
+                     ^~~~~~~~~
+../src/helloworld.c:92:10: note: declared here
+ uint16_t get_index(uint16_t raw, uint16_t val) {
+          ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+16:06:25 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157104	   1672	   3424	 162200	  27998	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+16:09:01 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157120	   1672	   3424	 162216	  279a8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+16:11:33 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157120	   1672	   3424	 162216	  279a8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+16:11:50 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157120	   1672	   3424	 162216	  279a8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+16:21:13 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'calc_result':
+../src/helloworld.c:102:6: warning: unused variable 'main_delta' [-Wunused-variable]
+  int main_delta = calc_det();
+      ^~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:134:5: error: variable-sized object may not be initialized
+     int result [n] = calc_result();
+     ^~~
+../src/helloworld.c:134:9: warning: unused variable 'result' [-Wunused-variable]
+     int result [n] = calc_result();
+         ^~~~~~
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:99:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+16:22:43 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:5: error: variable-sized object may not be initialized
+     int result [n] = calc_result();
+     ^~~
+../src/helloworld.c:138:9: warning: unused variable 'result' [-Wunused-variable]
+     int result [n] = calc_result();
+         ^~~~~~
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:99:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+16:37:23 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:145:5: error: variable-sized object may not be initialized
+     int result [n] = calc_result();
+     ^~~
+../src/helloworld.c:145:9: warning: unused variable 'result' [-Wunused-variable]
+     int result [n] = calc_result();
+         ^~~~~~
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:106:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+16:37:35 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:146:5: error: variable-sized object may not be initialized
+     int result [n] = calc_result();
+     ^~~
+../src/helloworld.c:146:9: warning: unused variable 'result' [-Wunused-variable]
+     int result [n] = calc_result();
+         ^~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+16:38:07 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157772	   1672	   3460	 162904	  27c58	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+16:58:39 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:102:20: error: expected ';' before 'int'
+ int count_inversion
+                    ^
+                    ;
+../src/helloworld.c:104:1:
+ int calc_det(int size, int init_i, int init_j, int param){
+ ~~~                 
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:113:48: error: 'j' undeclared (first use in this function)
+      * calc_det(size - 1, init_i + 1, init_j + j + 1);
+                                                ^
+../src/helloworld.c:113:48: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:113:8: error: too few arguments to function 'calc_det'
+      * calc_det(size - 1, init_i + 1, init_j + j + 1);
+        ^~~~~~~~
+../src/helloworld.c:104:5: note: declared here
+ int calc_det(int size, int init_i, int init_j, int param){
+     ^~~~~~~~
+../src/helloworld.c:109:7: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+   int res = 0;
+       ^~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+17:01:06 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:117:7: warning: unused variable 'res' [-Wunused-variable]
+   int res = 0;
+       ^~~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157776	   1672	   3456	 162904	  27c58	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:02:22 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157408	   1672	   3456	 162536	  27ae8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:06:51 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'swap':
+../src/helloworld.c:99:6: warning: unused variable 'temp' [-Wunused-variable]
+  int temp = permutations[i];
+      ^~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157408	   1672	   3456	 162536	  27ae8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:07:00 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157408	   1672	   3456	 162536	  27ae8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:10:23 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157408	   1672	   3456	 162536	  27ae8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:11:58 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:134:1: error: expected '(' before '}' token
+ }
+ ^
+ (
+../src/helloworld.c: In function 'calc_result':
+../src/helloworld.c:137:19: error: too many arguments to function 'calc_det'
+  int main_delta = calc_det(n, 0, 0, n + 1);
+                   ^~~~~~~~
+../src/helloworld.c:132:5: note: declared here
+ int calc_det(int param){
+     ^~~~~~~~
+../src/helloworld.c:139:15: error: too many arguments to function 'calc_det'
+   int delta = calc_det(n, 0, 0, i);
+               ^~~~~~~~
+../src/helloworld.c:132:5: note: declared here
+ int calc_det(int param){
+     ^~~~~~~~
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+17:14:11 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:137:17: error: expected expression before '{' token
+  permutations = {0, 1, 2, 3, 4, 5, 6};
+                 ^
+../src/helloworld.c: In function 'calc_result':
+../src/helloworld.c:146:19: error: too many arguments to function 'calc_det'
+  int main_delta = calc_det(n, 0, 0, n + 1);
+                   ^~~~~~~~
+../src/helloworld.c:136:5: note: declared here
+ int calc_det(int param){
+     ^~~~~~~~
+../src/helloworld.c:148:15: error: too many arguments to function 'calc_det'
+   int delta = calc_det(n, 0, 0, i);
+               ^~~~~~~~
+../src/helloworld.c:136:5: note: declared here
+ int calc_det(int param){
+     ^~~~~~~~
+../src/helloworld.c: In function 'eval_elem':
+../src/helloworld.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+17:14:38 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:137:17: error: expected expression before '{' token
+  permutations = {0, 1, 2, 3, 4, 5, 6};
+                 ^
+../src/helloworld.c: In function 'eval_elem':
+../src/helloworld.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+17:14:49 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:137:17: error: expected expression before '{' token
+  permutations = {0, 1, 2, 3, 4, 5, 6};
+                 ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+17:15:48 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 157988	   1700	   3464	 163152	  27d50	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:15:56 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158100	   1700	   3464	 163264	  27dc0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:18:04 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'eval_elem':
+../src/helloworld.c:139:21: error: 'nl' undeclared (first use in this function); did you mean 'n'?
+  for(int i = 0; i < nl i++) {
+                     ^~
+                     n
+../src/helloworld.c:139:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:139:23: error: expected ';' before 'i'
+  for(int i = 0; i < nl i++) {
+                       ^~
+                       ;
+../src/helloworld.c:142:10: error: 'sum' undeclared (first use in this function)
+  return  sum;
+          ^~~
+../src/helloworld.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+17:18:15 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158596	   1700	   3464	 163760	  27fb0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:19:13 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158684	   1700	   3464	 163848	  28008	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:20:15 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:178:15: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint16_t *' {aka 'short unsigned int *'} [-Wformat=]
+       scanf("%d", value + i);
+              ~^   ~~~~~~~~~
+              %hd
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158680	   1700	   3460	 163840	  28000	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:20:35 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:184:18: warning: passing argument 1 of 'fill_matrix' from incompatible pointer type [-Wincompatible-pointer-types]
+      fill_matrix(value, index);
+                  ^~~~~
+../src/helloworld.c:80:28: note: expected 'uint16_t *' {aka 'short unsigned int *'} but argument is of type 'int *'
+ void fill_matrix(uint16_t *arr, size_t index){
+                  ~~~~~~~~~~^~~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158688	   1700	   3460	 163848	  28008	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:20:58 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158688	   1700	   3460	 163848	  28008	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:26:47 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158720	   1700	   3460	 163880	  28028	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:27:02 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158740	   1700	   3464	 163904	  28040	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:28:08 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158776	   1700	   3460	 163936	  28060	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:30:59 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158400	   1700	   3460	 163560	  27ee8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:37:23 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94672	   1924	   3204	  99800	  185d8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:38:38 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'calc_det':
+../src/helloworld.c:153:30: error: expected ';' before 'res'
+   printf("elem: %d\n\r", res)
+                              ^
+                              ;
+   res += eval_elem(param);
+   ~~~                         
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+17:38:49 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94708	   1924	   3208	  99840	  18600	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:40:30 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94708	   1928	   3204	  99840	  18600	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:44:08 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94744	   1928	   3200	  99872	  18620	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:54:10 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94848	   1928	   3200	  99976	  18688	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:54:50 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94964	   1928	   3204	 100096	  18700	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:56:37 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94892	   1928	   3204	 100024	  186b8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+17:58:14 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94892	   1928	   3204	 100024	  186b8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:00:48 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94892	   1928	   3204	 100024	  186b8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:03:50 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94892	   1928	   3204	 100024	  186b8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:03:53 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94892	   1928	   3204	 100024	  186b8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:07:56 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94892	   1700	   3432	 100024	  186b8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:08:01 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94892	   1672	   3460	 100024	  186b8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:08:16 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158620	   1672	   3484	 163776	  27fc0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:12:03 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:204:12: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+     printf("");
+            ^~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158600	   1672	   3480	 163752	  27fa8	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:13:26 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:204:6: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+      MB_Sleep(3000);
+      ^~~~~~~~
+In file included from ../src/helloworld.c:53:
+../../SoC_SW_Lab1_bsp/microblaze_0/include/microblaze_sleep.h:119:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^~~~~~~~
+../src/helloworld.c:206:12: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+     printf("");
+            ^~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158780	   1672	   3484	 163936	  28060	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:13:50 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:203:6: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+      MB_Sleep(3000);
+      ^~~~~~~~
+In file included from ../src/helloworld.c:53:
+../../SoC_SW_Lab1_bsp/microblaze_0/include/microblaze_sleep.h:119:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158700	   1672	   3484	 163856	  28010	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:20:36 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:194:6: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+      MB_Sleep(3000);
+      ^~~~~~~~
+In file included from ../src/helloworld.c:53:
+../../SoC_SW_Lab1_bsp/microblaze_0/include/microblaze_sleep.h:119:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158444	   1672	   3484	 163600	  27f10	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:25:28 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'submain':
+../src/helloworld.c:196:6: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+      MB_Sleep(3000);
+      ^~~~~~~~
+In file included from ../src/helloworld.c:53:
+../../SoC_SW_Lab1_bsp/microblaze_0/include/microblaze_sleep.h:119:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158500	   1672	   3484	 163656	  27f48	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
+18:25:45 **** Auto Build of configuration Debug for project SoC_SW_Lab1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SoC_SW_Lab1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'submain':
+../src/helloworld.c:194:6: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+      MB_Sleep(3000);
+      ^~~~~~~~
+In file included from ../src/helloworld.c:53:
+../../SoC_SW_Lab1_bsp/microblaze_0/include/microblaze_sleep.h:119:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: SoC_SW_Lab1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SoC_SW_Lab1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SoC_SW_Lab1.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: SoC_SW_Lab1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size SoC_SW_Lab1.elf  |tee "SoC_SW_Lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 158876	   1672	   3484	 164032	  280c0	SoC_SW_Lab1.elf
+Finished building: SoC_SW_Lab1.elf.size
+ 
