@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-70] Compilation errors found: In file included from lab2/.apc/main.c:1:&#xA;lab2/.apc/main.c:18:22: error: use of undeclared identifier 'n'&#xA; for (int i = 0; i &lt; n; i++){&#xA;                     ^&#xA;lab2/.apc/main.c:19:23: error: use of undeclared identifier 'n'&#xA;  for (int j = 0; j &lt; n ; j++){&#xA;                      ^&#xA;lab2/.apc/main.c:28:22: error: use of undeclared identifier 'n'&#xA; for (int i = 0; i &lt; n; i++){&#xA;                     ^&#xA;lab2/.apc/main.c:35:21: error: use of undeclared identifier 'n'&#xA; for(int i = 0; i &lt; n; i++)&#xA;                    ^&#xA;lab2/.apc/main.c:52:10: error: use of undeclared identifier 'n'&#xA; int j = n - 2;&#xA;         ^&#xA;lab2/.apc/main.c:56:10: error: use of undeclared identifier 'n'&#xA; int k = n - 1;&#xA;         ^&#xA;lab2/.apc/main.c:59:21: error: use of undeclared identifier 'n'&#xA; int l = j + 1, r = n - 1;&#xA;                    ^&#xA;lab2/.apc/main.c:71:22: error: use of undeclared identifier 'n'&#xA; for (int i = 0; i &lt; n; i++) {&#xA;                     ^&#xA;lab2/.apc/main.c:72:27: error: use of undeclared identifier 'n'&#xA;  for (int j = i + 1; j &lt; n; j++) {&#xA;                          ^&#xA;lab2/.apc/main.c:86:21: error: use of undeclared identifier 'n'&#xA; for(int i = 0; i &lt; n; i++) {&#xA;                    ^&#xA;10 errors generated.&#xA;Failed during preprocessing.&#xA;    while executing&#xA;&quot;source /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/csynth.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/csynth.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="lab2" solutionName="solution1" date="2023-10-04T11:59:52.293+0300"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

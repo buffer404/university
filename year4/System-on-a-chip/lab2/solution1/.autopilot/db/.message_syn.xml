@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;lab2/.apc/main.c&apos; ..."/>
+	<Message severity="ERROR" prefix="[HLS 200-70]" key="HLS_70_1454" tag="" content="Compilation errors found: In file included from lab2/.apc/main.c:1:
+lab2/.apc/main.c:18:22: error: use of undeclared identifier &apos;n&apos;
+ for (int i = 0; i &lt; n; i++){
+                     ^
+lab2/.apc/main.c:19:23: error: use of undeclared identifier &apos;n&apos;
+  for (int j = 0; j &lt; n ; j++){
+                      ^
+lab2/.apc/main.c:28:22: error: use of undeclared identifier &apos;n&apos;
+ for (int i = 0; i &lt; n; i++){
+                     ^
+lab2/.apc/main.c:35:21: error: use of undeclared identifier &apos;n&apos;
+ for(int i = 0; i &lt; n; i++)
+                    ^
+lab2/.apc/main.c:52:10: error: use of undeclared identifier &apos;n&apos;
+ int j = n - 2;
+         ^
+lab2/.apc/main.c:56:10: error: use of undeclared identifier &apos;n&apos;
+ int k = n - 1;
+         ^
+lab2/.apc/main.c:59:21: error: use of undeclared identifier &apos;n&apos;
+ int l = j + 1, r = n - 1;
+                    ^
+lab2/.apc/main.c:71:22: error: use of undeclared identifier &apos;n&apos;
+ for (int i = 0; i &lt; n; i++) {
+                     ^
+lab2/.apc/main.c:72:27: error: use of undeclared identifier &apos;n&apos;
+  for (int j = i + 1; j &lt; n; j++) {
+                          ^
+lab2/.apc/main.c:86:21: error: use of undeclared identifier &apos;n&apos;
+ for(int i = 0; i &lt; n; i++) {
+                    ^
+10 errors generated."/>
+</Messages>
