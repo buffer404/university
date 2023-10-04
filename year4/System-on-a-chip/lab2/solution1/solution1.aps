@@ -6,8 +6,9 @@
         <schedule model="calc_result"/>
     </config>
     <UIConfigurations>
-        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
+        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/artix7/artix7</Platform>
+            <Platform>xilinx/artix7/artix7_fpv6</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -61,13 +62,13 @@
     </targetInfo>
     <libraryList>
         <library name="DefaultPlatform" value="xilinx/artix7/artix7"/>
-        <library value="xilinx/artix7/artix7_fpv6" name="DefaultPlatform"/>
+        <library name="DefaultPlatform" value="xilinx/artix7/artix7_fpv6"/>
     </libraryList>
     <downStreamTool>
         <DownStreamTool name="vivado"/>
     </downStreamTool>
     <clockList>
-        <clock name="default" default="false" period="10"/>
+        <clock default="false" name="default" period="10"/>
     </clockList>
 </solution>
 

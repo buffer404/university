@@ -12,7 +12,7 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [HLS 200-40] lab2/.apc/main.c:1:10: fatal error: 'main.h' file not found&#xA;#include &quot;main.h&quot;&#xA;         ^&#xA;1 error generated.&#xA;C preprocessor failed.&#xA;    while executing&#xA;&quot;source /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/csynth.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/csynth.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="lab2" solutionName="solution1" date="2023-10-04T12:41:42.050+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] lab2/.apc/main.c:1:10: fatal error: 'main.h' file not found&#xA;#include &quot;main.h&quot;&#xA;         ^&#xA;1 error generated.&#xA;C preprocessor failed.&#xA;    while executing&#xA;&quot;source /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/csynth.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/csynth.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="lab2" solutionName="solution1" date="2023-10-04T15:17:50.704+0300" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

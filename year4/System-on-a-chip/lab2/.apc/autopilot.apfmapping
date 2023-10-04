@@ -5,6 +5,6 @@
     <originFiles name="main.h" path="/home/leonid/Desktop/university/year4/System-on-a-chip/lab2/.apc/.tb/main.h"/>
   </source>
   <testbench>
-    <originFiles name="main_tb.c" path="/home/leonid/Desktop/university/year4/System-on-a-chip/lab2/.apc/.tb/main_tb.c"/>
+    <originFiles name="main_tb.c" path="/home/leonid/Desktop/university/year4/System-on-a-chip/lab2/.apc/main_tb.c"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

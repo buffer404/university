@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1 opened at Wed Oct 04 12:41:39 MSK 2023
+INFO-FLOW: Workspace /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1 opened at Wed Oct 04 15:17:48 MSK 2023
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -56,7 +56,7 @@ Execute     source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/artix7/a
 Execute       source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     set_part xc7a100t-csg324-1 
 Execute       ap_part_info -name xc7a100t-csg324-1 -data single -quiet 
-Command       ap_part_info done; 0.39 sec.
+Command       ap_part_info done; 0.43 sec.
 Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute       add_library xilinx/artix7/artix7:xc7a100t:-csg324:-1 
 Execute         get_default_platform 
@@ -71,22 +71,10 @@ Execute         ap_part_info -name xc7a100t-csg324-1 -data info
 Execute         config_chip_info -quiet -speed slow 
 Execute       add_library xilinx/artix7/artix7_fpv6 
 Execute         get_default_platform 
-Execute         open_platform DefaultPlatform 
-Execute         import_lib /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/artix7/artix7_fpv6 
-Execute           source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
-Execute           source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
-Execute             source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
-Execute               source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
-Execute               source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute                 source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
-Execute                 source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
-Execute               source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
-Execute         source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/artix7/artix7_fpv6.gen 
-Execute           source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 INFO: [HLS 200-10] Setting target device to 'xc7a100t-csg324-1'
 Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 0.46 sec.
+Command     set_part done; 0.51 sec.
 Execute     ap_part_info -data single -name xc7a100t-csg324-1 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data resources 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
@@ -94,10 +82,10 @@ Execute     ap_part_info -name xc7a100t-csg324-1 -data info
 Execute     config_chip_info -quiet -resource {SLICE 15850} {LUT 63400} {FF 126800} {DSP48E 240} {BRAM 270} {URAM 0} 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.59 sec.
-Execute   set_part xc7a100tcsg324-1 -tool vivado 
-Execute     ap_part_info -name xc7a100tcsg324-1 -data single -quiet 
-Execute     ap_part_info -name xc7a100tcsg324-1 -data info 
+Command   open_solution done; 0.65 sec.
+Execute   set_part xc7a100t-csg324-1 -tool vivado 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data single -quiet 
+Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute     add_library xilinx/artix7/artix7:xc7a100t:-csg324:-1 
 Execute       get_default_platform 
 Execute       license_isbetapart xc7a100t 
@@ -111,21 +99,11 @@ Execute       ap_part_info -name xc7a100t-csg324-1 -data info
 Execute       config_chip_info -quiet -speed slow 
 Execute     add_library xilinx/artix7/artix7_fpv6 
 Execute       get_default_platform 
-Execute       open_platform DefaultPlatform 
-Execute       import_lib /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/artix7/artix7_fpv6 
-Execute         source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
-Execute         source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
-Execute           source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
-Execute             source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
-Execute             source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute               source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
-Execute               source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
-Execute             source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/artix7/artix7_fpv6.gen 
-Execute         source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute     get_default_platform 
 Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute   csynth_design 
 Execute     get_config_compile -dump_cfg 
 Execute     get_config_compile -effort 
@@ -155,8 +133,8 @@ WARNING: [HLS 200-40] lab2/.apc/main.c:1:10: fatal error: 'main.h' file not foun
 #include "main.h"
          ^
 1 error generated.
-Command       clang done; error code: 2; 1.41 sec.
-Command     elaborate done; error code: 2; 1.41 sec.
-Command   csynth_design done; error code: 2; 1.42 sec.
-Command ap_source done; error code: 1; 2.08 sec.
+Command       clang done; error code: 2; 1.44 sec.
+Command     elaborate done; error code: 2; 1.45 sec.
+Command   csynth_design done; error code: 2; 1.45 sec.
+Command ap_source done; error code: 1; 2.17 sec.
 Execute cleanup_all 
