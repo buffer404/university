@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1 opened at Wed Oct 04 11:59:48 MSK 2023
+INFO-FLOW: Workspace /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1 opened at Wed Oct 04 12:41:39 MSK 2023
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -56,7 +56,7 @@ Execute     source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/artix7/a
 Execute       source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     set_part xc7a100t-csg324-1 
 Execute       ap_part_info -name xc7a100t-csg324-1 -data single -quiet 
-Command       ap_part_info done; 0.4 sec.
+Command       ap_part_info done; 0.39 sec.
 Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute       add_library xilinx/artix7/artix7:xc7a100t:-csg324:-1 
 Execute         get_default_platform 
@@ -86,7 +86,7 @@ Execute           source /tools/Xilinx/Vivado/2019.1/common/technology/xilinx/co
 INFO: [HLS 200-10] Setting target device to 'xc7a100t-csg324-1'
 Execute       ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 0.48 sec.
+Command     set_part done; 0.46 sec.
 Execute     ap_part_info -data single -name xc7a100t-csg324-1 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data resources 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
@@ -94,7 +94,7 @@ Execute     ap_part_info -name xc7a100t-csg324-1 -data info
 Execute     config_chip_info -quiet -resource {SLICE 15850} {LUT 63400} {FF 126800} {DSP48E 240} {BRAM 270} {URAM 0} 
 Execute     ap_part_info -name xc7a100t-csg324-1 -data info 
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.6 sec.
+Command   open_solution done; 0.59 sec.
 Execute   set_part xc7a100tcsg324-1 -tool vivado 
 Execute     ap_part_info -name xc7a100tcsg324-1 -data single -quiet 
 Execute     ap_part_info -name xc7a100tcsg324-1 -data info 
@@ -151,46 +151,12 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "lab2/.apc/main.c"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/.autopilot/db/main.pp.0.c" 
 INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E lab2/.apc/main.c -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/.autopilot/db/main.pp.0.c
-Command       clang done; 1.44 sec.
-Execute       tidy_31 xilinx-xfmat-array-geometry /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/.autopilot/db/main.pp.0.c std=gnu89 
-INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/.autopilot/db/main.pp.0.c -- -std=gnu89 -fhls -ferror-limit=0
-INFO-FLOW: Syntax Checking before pre-processing...
-Execute       clang -syntaxcheck -src /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/.autopilot/db/main.pp.0.c  -fno-limit-debug-info -gcc-toolchain "/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/.autopilot/db/main.pp.0.c"  -o "/home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/.autopilot/db/useless.bc"  
-INFO-FLOW: exec /tools/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -std=gnu89 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot -I /tools/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/.autopilot/db/main.pp.0.c -o /home/leonid/Desktop/university/year4/System-on-a-chip/lab2/solution1/.autopilot/db/useless.bc
-ERROR: [HLS 200-70] Compilation errors found: In file included from lab2/.apc/main.c:1:
-lab2/.apc/main.c:18:22: error: use of undeclared identifier 'n'
- for (int i = 0; i < n; i++){
-                     ^
-lab2/.apc/main.c:19:23: error: use of undeclared identifier 'n'
-  for (int j = 0; j < n ; j++){
-                      ^
-lab2/.apc/main.c:28:22: error: use of undeclared identifier 'n'
- for (int i = 0; i < n; i++){
-                     ^
-lab2/.apc/main.c:35:21: error: use of undeclared identifier 'n'
- for(int i = 0; i < n; i++)
-                    ^
-lab2/.apc/main.c:52:10: error: use of undeclared identifier 'n'
- int j = n - 2;
+WARNING: [HLS 200-40] lab2/.apc/main.c:1:10: fatal error: 'main.h' file not found
+#include "main.h"
          ^
-lab2/.apc/main.c:56:10: error: use of undeclared identifier 'n'
- int k = n - 1;
-         ^
-lab2/.apc/main.c:59:21: error: use of undeclared identifier 'n'
- int l = j + 1, r = n - 1;
-                    ^
-lab2/.apc/main.c:71:22: error: use of undeclared identifier 'n'
- for (int i = 0; i < n; i++) {
-                     ^
-lab2/.apc/main.c:72:27: error: use of undeclared identifier 'n'
-  for (int j = i + 1; j < n; j++) {
-                          ^
-lab2/.apc/main.c:86:21: error: use of undeclared identifier 'n'
- for(int i = 0; i < n; i++) {
-                    ^
-10 errors generated.
-Command       clang done; error code: 2; 1.47 sec.
-Command     elaborate done; error code: 2; 2.94 sec.
-Command   csynth_design done; error code: 2; 2.95 sec.
-Command ap_source done; error code: 1; 3.62 sec.
+1 error generated.
+Command       clang done; error code: 2; 1.41 sec.
+Command     elaborate done; error code: 2; 1.41 sec.
+Command   csynth_design done; error code: 2; 1.42 sec.
+Command ap_source done; error code: 1; 2.08 sec.
 Execute cleanup_all 

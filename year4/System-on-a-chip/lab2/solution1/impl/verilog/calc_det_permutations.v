@@ -3,7 +3,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1 ns / 1 ps
-module calc_result_permutations_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
+module calc_det_permutations_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
 parameter DWIDTH = 32;
 parameter AWIDTH = 3;
@@ -24,7 +24,7 @@ input clk;
 (* ram_style = "block" *)reg [DWIDTH-1:0] ram[0:MEM_SIZE-1];
 
 initial begin
-    $readmemh("./calc_result_permutations_ram.dat", ram);
+    $readmemh("./calc_det_permutations_ram.dat", ram);
 end
 
 
@@ -58,7 +58,7 @@ end
 endmodule
 
 `timescale 1 ns / 1 ps
-module calc_result_permutations(
+module calc_det_permutations(
     reset,
     clk,
     address0,
@@ -90,7 +90,7 @@ output[DataWidth - 1:0] q1;
 
 
 
-calc_result_permutations_ram calc_result_permutations_ram_U(
+calc_det_permutations_ram calc_det_permutations_ram_U(
     .clk( clk ),
     .addr0( address0 ),
     .ce0( ce0 ),

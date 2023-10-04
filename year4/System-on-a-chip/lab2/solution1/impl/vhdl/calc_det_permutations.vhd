@@ -7,7 +7,7 @@ library ieee;
 use ieee.std_logic_1164.all; 
 use ieee.std_logic_unsigned.all;
 
-entity calc_result_permutations_ram is 
+entity calc_det_permutations_ram is 
     generic(
             MEM_TYPE    : string := "block"; 
             DWIDTH     : integer := 32; 
@@ -30,7 +30,7 @@ entity calc_result_permutations_ram is
 end entity; 
 
 
-architecture rtl of calc_result_permutations_ram is 
+architecture rtl of calc_det_permutations_ram is 
 
 signal addr0_tmp : std_logic_vector(AWIDTH-1 downto 0); 
 signal addr1_tmp : std_logic_vector(AWIDTH-1 downto 0); 
@@ -99,7 +99,7 @@ end rtl;
 Library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity calc_result_permutations is
+entity calc_det_permutations is
     generic (
         DataWidth : INTEGER := 32;
         AddressRange : INTEGER := 7;
@@ -119,8 +119,8 @@ entity calc_result_permutations is
         q1 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
 end entity;
 
-architecture arch of calc_result_permutations is
-    component calc_result_permutations_ram is
+architecture arch of calc_det_permutations is
+    component calc_det_permutations_ram is
         port (
             clk : IN STD_LOGIC;
             addr0 : IN STD_LOGIC_VECTOR;
@@ -138,7 +138,7 @@ architecture arch of calc_result_permutations is
 
 
 begin
-    calc_result_permutations_ram_U :  component calc_result_permutations_ram
+    calc_det_permutations_ram_U :  component calc_det_permutations_ram
     port map (
         clk => clk,
         addr0 => address0,

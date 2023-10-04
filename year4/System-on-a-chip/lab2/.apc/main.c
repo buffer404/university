@@ -1,42 +1,10 @@
-#include "stdio.h"
-
-#define MAX_LINE_SIZE 64
+#include "main.h"
 
 //int n = 5;
 //int matrix[7][7] = {{1, 0, 1, 0, 1},{0, 1, 0, 1, 0},{1, 1, 0, 0, 0},{0, 1, 1, 0, 1}, {1, 0, 0, 0, 1}};
 //int answer[7] = {5, 6, 5, 6, 3};
 
-int matrix[7][7];
-int answer[7];
-int result[7];
 int permutations[7];
-int check_filler[7] = {0};
-int point_n = 0;
-int point_m = 0;
-
-void print_matrix(){
-	for (int i = 0; i < n; i++){
-		for (int j = 0; j < n ; j++){
-			printf("%d ", matrix[i][j]);
-		}
-		printf("= %d", answer[i]);
-		printf("\n\r");
-	}
-}
-
-void fill_matrix(int *arr, size_t index){
-	for (int i = 0; i < n; i++){
-		matrix[index][i] = arr[i];
-	}
-	check_filler[index] = 1;
-}
-
-int check_matrix(){
-	for(int i = 0; i < n; i++)
-		if(!check_filler[i])
-			return 0;
-	return 1;
-}
 
 int get_index(int raw, int val) {
 	return !raw ? 0 : (raw & 1 ? val : get_index(raw / 2, val + 1));
@@ -48,7 +16,7 @@ void swap(int i, int j) {
 	permutations[j] = temp;
 }
 
-int next_set() {
+int next_set(int n) {
 	int j = n - 2;
 	while (j != -1 && permutations[j] >= permutations[j + 1]) j--;
 	if (j == -1)
@@ -62,11 +30,11 @@ int next_set() {
 	return 1;
 }
 
-int get_element(int i, int j, int exc) {
-	return j == exc ? answer[i] : matrix[i][j];
+int get_element(int i, int j, int exc, int matrix[7][7], int y[7]) {
+	return j == exc ? y[i] : matrix[i][j];
 }
 
-int count_inversion() {
+int count_inversion(int n) {
 	int sum = 0;
 	for (int i = 0; i < n; i++) {
 		for (int j = i + 1; j < n; j++) {
@@ -81,27 +49,27 @@ void clear_perm(){
 		permutations[i] = i;
 }
 
-int eval_elem(int param) {
-	int res = count_inversion() % 2 ? -1 : 1;
+int eval_elem(int param, int n, int matrix[7][7], int y[7]) {
+	int res = count_inversion(n) % 2 ? -1 : 1;
 	for(int i = 0; i < n; i++) {
-		res *= get_element(i, permutations[i], param);
+		res *= get_element(i, permutations[i], param, matrix, y);
 	}
 	return  res;
 }
 
-int calc_det(int param, int n){
+int calc_det(int param, int n, int matrix[7][7], int y[7]){
 	clear_perm();
-	int res = eval_elem(param);
-	while(next_set()){
-		res += eval_elem(param);
+	int res = eval_elem(param, n, matrix, y);
+	while(next_set(n)){
+		res += eval_elem(param, n, matrix, y);
 	}
 	return res;
 }
 
-void calc_result(int n){
-	int main_delta = calc_det(n + 1, n);
+void calc_result(int n, int matrix[7][7], int y[7], int result[7]){
+	int main_delta = calc_det(n + 1, n, matrix, y);
 	for (int i = 0; i < n; i++) {
-		int delta = calc_det(i, n);
+		int delta = calc_det(i, n, matrix, y);
 		result[i] = delta / main_delta;
 	}
 }
