@@ -28,6 +28,16 @@
             }
           },
           {
+            "id": "9c4fb681b90d888b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.7"
+              }
+            }
+          },
+          {
             "id": "d3c2e85f55f81b91",
             "type": "leaf",
             "state": {
